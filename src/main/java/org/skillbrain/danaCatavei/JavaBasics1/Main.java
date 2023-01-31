@@ -1,4 +1,4 @@
-package org.skillbrain.danaCatavei;
+package org.skillbrain.danaCatavei.JavaBasics1;
 
 public class Main {
 
