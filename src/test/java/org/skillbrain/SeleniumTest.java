@@ -1,8 +1,0 @@
-package org.skillbrain;
-
-public class SeleniumTest {
-
-    public static void main(String[] args) {
-        System.out.println("Doing selenium Test");
-    }
-}
