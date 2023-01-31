@@ -1,4 +1,7 @@
+package Tema1;
+
 import java.util.Scanner;
+
 public class javaBasic {
     public static void main(String[] args) {
         exercitiul1();
