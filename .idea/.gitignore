@@ -9,6 +9,7 @@
 .idea/**/shelf
 .idea/**/misc.xml
 /vcs.xml
+
 out/
 .idea/artifacts
 .idea/compiler.xml
@@ -25,4 +26,5 @@ src/main/java/.DS_Store
 src/main/java/org/.DS_Store
 src/main/java/org/skillbrain/.DS_Store
 src/main/java/org/skillbrain/cristianSandu/.DS_Store
+*.DS_Store
 
