@@ -10,7 +10,7 @@
 .idea/**/misc.xml
 /vcs.xml
 
-out/
+/out/
 .idea/artifacts
 .idea/compiler.xml
 .idea/jarRepositories.xml
@@ -19,7 +19,7 @@ out/
 .idea/modules
 *.iml
 *.ipr
-target/
+/target/
 src/.DS_Store
 src/main/.DS_Store
 src/main/java/.DS_Store
@@ -27,4 +27,5 @@ src/main/java/org/.DS_Store
 src/main/java/org/skillbrain/.DS_Store
 src/main/java/org/skillbrain/cristianSandu/.DS_Store
 *.DS_Store
+/drivers/
 
