@@ -1,4 +1,4 @@
-package org.skillbrain;
+package org.skillbrain.cristianLuca;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
