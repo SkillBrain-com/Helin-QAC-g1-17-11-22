@@ -1,4 +1,4 @@
-package org.skillbrain.cristianLuca.Tema3;
+package org.skillbrain.cristianLuca.Tema3.PigLatin;
 
 import java.util.Scanner;
 

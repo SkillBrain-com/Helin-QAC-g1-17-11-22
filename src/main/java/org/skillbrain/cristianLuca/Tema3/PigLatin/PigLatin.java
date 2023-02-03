@@ -1,4 +1,4 @@
-package org.skillbrain.cristianLuca.Tema3;
+package org.skillbrain.cristianLuca.Tema3.PigLatin;
 
 public class PigLatin {
     public static Boolean isVowel(char c) {

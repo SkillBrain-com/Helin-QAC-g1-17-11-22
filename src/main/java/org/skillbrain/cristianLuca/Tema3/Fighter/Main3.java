@@ -1,4 +1,4 @@
-package org.skillbrain.cristianLuca.Tema3;
+package org.skillbrain.cristianLuca.Tema3.Fighter;
 
 public class Main {
     public static void main(String[] args) {

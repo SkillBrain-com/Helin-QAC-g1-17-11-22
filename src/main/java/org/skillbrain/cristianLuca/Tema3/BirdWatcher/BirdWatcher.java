@@ -1,4 +1,4 @@
-package org.skillbrain.cristianLuca.Tema3;
+package org.skillbrain.cristianLuca.Tema3.BirdWatcher;
 
 class BirdWatcher {
     private int[] birdsPerDay;

@@ -1,4 +1,4 @@
-package org.skillbrain.cristianLuca.Tema3;
+package org.skillbrain.cristianLuca.Tema3.RockPapersScissors;
 
 public class Main6 {
     public static void main(String[] args) {

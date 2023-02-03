@@ -1,6 +1,4 @@
-package org.skillbrain.cristianLuca.Tema3;
-
-import org.skillbrain.cristianLuca.Tema3.ElonsToyCar;
+package org.skillbrain.cristianLuca.Tema3.ElonsToyCar;
 
 public class Main1 {
     public static void main(String[] args) {

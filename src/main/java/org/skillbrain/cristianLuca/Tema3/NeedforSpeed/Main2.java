@@ -1,4 +1,4 @@
-package org.skillbrain.cristianLuca.Tema3;
+package org.skillbrain.cristianLuca.Tema3.NeedforSpeed;
 
 public class Main2 {
     public static void main(String[] args) {
