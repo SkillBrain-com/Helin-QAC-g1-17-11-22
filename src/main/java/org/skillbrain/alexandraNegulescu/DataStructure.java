@@ -1,4 +1,4 @@
-package org.skillbrain.alexandraNegulescu.Tema1;
+package org.skillbrain.alexandraNegulescu;
 
 public class DataStructure {
 
