@@ -1,4 +1,4 @@
-package org.skillbrain.alexandraNegulescu;
+package org.skillbrain.alexandraNegulescu.Tema_1;
 
 import java.util.Scanner;
 
