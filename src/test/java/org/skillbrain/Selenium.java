@@ -23,10 +23,11 @@ public class Selenium {
 
         WebElement forms= driver.findElement(By.xpath("(//div[@class='card mt-4 top-card'])[2]"));
         WebElement footer = driver.findElement(By.tagName("footer"));
+        String footerMsg=footer.getText();
 
-        System.out.println(footer.getText());
-        forms.click();
-     //  driver.quit();
+        System.out.println(footerMsg);
+//        forms.click();
+       driver.quit();
 
     }
 }
