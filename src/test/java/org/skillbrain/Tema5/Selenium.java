@@ -23,13 +23,13 @@ public class Selenium {
         WebElement textBox=driver.findElement(By.id("item-0")); // fara diez
         textBox.click();
       //  Thread.sleep(2000);
-        driver.findElement(By.id("username")).sendKeys("LucSim");
+        driver.findElement(By.id("userName")).sendKeys("LucSim");
         driver.findElement(By.id("userEmail")).sendKeys("Luc@simmsn");
         driver.findElement(By.id("currentAddress")).sendKeys("Bucuresti");
         driver.findElement(By.id("permanentAddress")).sendKeys("Cluj");
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
         //Thread.sleep(2000);
-        driver.quit();
+      //  driver.quit();
 
 
 
