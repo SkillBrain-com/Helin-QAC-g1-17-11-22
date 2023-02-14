@@ -1,6 +1,6 @@
 package Utilities;
 
-import org.apache.commons.io.FileUtils;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +20,7 @@ public class Utils {
         File source = screenshot.getScreenshotAs(OutputType.FILE);
         destinationFile = "Logs/printScreen-" + LocalDateTime.now() + ".png";
         destinationFile = System.getProperty("user.dir")+"C:\\Users\\stelu\\IdeaProjects\\Helin-QAC-g1-17-11-22\\imagine.png";
-        FileUtils.copyFile(source, new File(destinationFile));
+
     }
 //    public static void takeScreenshot(WebDriver driver) {
 //        try {

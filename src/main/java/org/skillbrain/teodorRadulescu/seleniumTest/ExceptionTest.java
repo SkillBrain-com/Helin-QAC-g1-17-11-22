@@ -30,12 +30,12 @@ public class ExceptionTest extends Utils {
         }
         catch (Exception e){
             System.out.println(e.getMessage());
-            takeScreenshot(driver);
+//            takeScreenshot(driver);
         }
         finally{
             driver.quit();
 
-            takeScreenshot(driver);
+//            takeScreenshot(driver);
     }
 
 
