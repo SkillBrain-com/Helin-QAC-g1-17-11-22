@@ -1,7 +1,7 @@
 package Utilities;
 
 public class Utils {
-    /* public void takeScreenshot (WebDriver driver){
+     public void takeScreenshot (WebDriver driver){
           try {
               TakesScreenshot screenshot = (TakesScreenshot) driver;
               File source = screenshot.getScreenshotAs(OutputType.FILE);
@@ -10,7 +10,7 @@ public class Utils {
           } catch (IOException e) {
               e.printStackTrace();
           }
-      }*/
+      }
    /* public static void takeScreenshot(WebDriver driver) throws IOException {
         String destinationFile = null;
         TakesScreenshot screenshot = (TakesScreenshot) driver;
@@ -19,7 +19,7 @@ public class Utils {
                 + "/Logs/printScreen-" + LocalDateTime.now() + ".png";
         FileUtils.copyFile(source, new File(destinationFile));
     }*/
-    public static void takeScreenshot(WebDriver driver) throws IOException {
+   /* public static void takeScreenshot(WebDriver driver) throws IOException {
         String destinationFile = null;
         TakesScreenshot screenshot = (TakesScreenshot) driver;
 
@@ -29,5 +29,5 @@ public class Utils {
         //FileUtils.copyFile(source, new File(
 
 
-    }
+    }*/
 }

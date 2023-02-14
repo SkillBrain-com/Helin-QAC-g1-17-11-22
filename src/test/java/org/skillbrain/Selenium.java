@@ -8,6 +8,8 @@ import org.openqa.selenium.interactions.Actions;
 
 public class Selenium {
     public static void main(String[] args) throws InterruptedException {
+
+
         //Unde se afla chromedriver
         System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
