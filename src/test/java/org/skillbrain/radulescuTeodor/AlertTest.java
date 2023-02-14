@@ -11,7 +11,7 @@ import java.io.IOException;
 public class AlertTest {
 
     public static void main(String[] args) throws IOException {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         ChromeDriver driver = new ChromeDriver();
         try {
             driver.manage().window().maximize();

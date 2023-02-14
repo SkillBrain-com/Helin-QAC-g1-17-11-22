@@ -1,4 +1,4 @@
-package java.org.skillbrain.radulescuTeodor.temaExtra;
+package org.skillbrain.radulescuTeodor.temaExtra;
 
 import java.util.Arrays;
 

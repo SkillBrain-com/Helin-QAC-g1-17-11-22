@@ -1,4 +1,4 @@
-package java.org.skillbrain.radulescuTeodor.temaExtra;
+package org.skillbrain.radulescuTeodor.temaExtra;
 
 public class tema3 {
     public static void main(String[] args) {

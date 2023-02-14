@@ -9,7 +9,7 @@ public class Selenium {
         // Unde se afla chromedriver
 
         // Setam path-ul catre chromedriver
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 
         // Deschidem un browser
         ChromeDriver driver = new ChromeDriver();

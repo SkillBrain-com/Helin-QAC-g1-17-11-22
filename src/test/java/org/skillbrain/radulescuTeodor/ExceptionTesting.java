@@ -13,7 +13,7 @@ public class ExceptionTesting  {
 
     public static void main(String[] args) throws IOException {
 
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         ChromeDriver driver = new ChromeDriver();
 
         try {

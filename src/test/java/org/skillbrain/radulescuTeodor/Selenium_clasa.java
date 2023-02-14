@@ -11,10 +11,9 @@ public class Selenium_clasa {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
         ChromeDriver driver = new ChromeDriver();
-        //maximizeaza fereastra
-        //driver.manage().window().maximize();
+
         driver.get("https://demoqa.com/");
-        // localizez hedear 1
+
         WebElement forms = driver.findElement(By.tagName("header"));
         forms.click();
         Thread.sleep(2000);
@@ -24,9 +23,9 @@ public class Selenium_clasa {
         WebElement textBox =driver.findElement(By.id("item-0"));
         textBox.click();
         Thread.sleep(2000);
-        driver.findElement(By.id("userName")).sendKeys("Dana Catavei");
-        driver.findElement(By.id("userEmail")).sendKeys("email@yahoo.com");
-        driver.findElement(By.id("currentAddress")).sendKeys("Bucuresti");
+        driver.findElement(By.id("userName")).sendKeys("Rdl Teodor");
+        driver.findElement(By.id("userEmail")).sendKeys("aaaaaaa@yahoo.com");
+        driver.findElement(By.id("currentAddress")).sendKeys("aaaaaa222");
         driver.findElement(By.id("permanentAddress")).sendKeys("Home");
 
         //Actions actions = new Actions(driver);
@@ -41,14 +40,6 @@ public class Selenium_clasa {
         for (int i=0; i<mbElement.size(); i++){
             System.out.println(mbElement.get(i).getText());
         }
-//de veificat..
-//        driver.findElement(By.xpath("(//li[@id='item-1'])[1]"));
-//        driver.findElement(By.cssSelector(".rct-icon.rct-icon-expand-close")).click();
-//
-//        driver.findElement(By.xpath("//label[@for='tree-node-desktop']//span[@class='rct-checkbox']//*[name()='svg']")).click();
-//
-//        //driver.findElement(By.id("result").getText();
-//        System.out.println(driver.findElement(By.id("result")).getText());
 
         driver.findElement(By.xpath("(//li[@id='item-1'])[1]")).click();
         Thread.sleep(2000);

@@ -18,15 +18,15 @@ public class Selenium_Basics_Part1_Tema2 {
         addButton.click();
         Thread.sleep(2000);
 
-        driver.findElement(By.id("firstName")).sendKeys("Daniela");
-        driver.findElement(By.id("lastName")).sendKeys("Catavei");
-        driver.findElement(By.id("userEmail")).sendKeys("dana.catavei@gmail.com");
+        driver.findElement(By.id("firstName")).sendKeys("prenume");
+        driver.findElement(By.id("lastName")).sendKeys("nume");
+        driver.findElement(By.id("userEmail")).sendKeys("1111@gmail.com");
         driver.findElement(By.id("age")).sendKeys("50");
         driver.findElement(By.id("salary")).sendKeys("5000");
-        driver.findElement(By.id("department")).sendKeys("QA Engineer");
+        driver.findElement(By.id("department")).sendKeys("QA ");
         driver.findElement(By.id("submit")).click();
         Thread.sleep(3000);
-        driver.findElement(By.id("searchBox")).sendKeys("Daniela");
+        driver.findElement(By.id("searchBox")).sendKeys("nume");
         driver.findElement(By.id("basic-addon2")).click();
         Thread.sleep(3000);
         List<WebElement> rand = driver.findElements(By.xpath("(//div[@class='rt-tr -odd'])[1]"));
