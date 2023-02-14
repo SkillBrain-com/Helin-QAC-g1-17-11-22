@@ -20,7 +20,7 @@
 *.iml
 *.ipr
 /target/
- .DS_Store
+*.DS_Store
 /drivers/
 /Helin-QAC-g1-17-11-22.iml
 
