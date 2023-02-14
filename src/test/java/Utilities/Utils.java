@@ -11,19 +11,14 @@ import java.time.LocalDateTime;
 
 public class Utils {
 
-
     public static void takeScreenshot(WebDriver driver) throws IOException {
-
-        try {
-            TakesScreenshot screenshot = (TakesScreenshot) driver;
-            File source = screenshot.getScreenshotAs(OutputType.FILE);
-            String destinationFile = System.getProperty("user.dir") +"/Logs/printScreen-"
-                    + LocalDateTime.now() +".png";
-            FileUtils.copyFile(source, new File(destinationFile));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
+        String destinationFile = null;
+        TakesScreenshot screenshot = (TakesScreenshot) driver;
+        File source = screenshot.getScreenshotAs(OutputType.FILE);
+        destinationFile = System.getProperty("user.dir")
+                + "/Logs/printScreen-" + LocalDateTime.now() + ".png";
+        FileUtils.copyFile(source, new File(destinationFile));
     }
+
+
 }
