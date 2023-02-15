@@ -1,4 +1,4 @@
-package org.skillbrain;
+package org.skillbrain.Tema5;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
