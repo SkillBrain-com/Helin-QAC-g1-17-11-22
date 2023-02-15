@@ -17,18 +17,18 @@ public class Selenium {
         WebElement header=driver.findElement(By.tagName("header"));
         WebElement elements= driver.findElement(By.cssSelector(".card.mt-4.top-card"));
         Thread.sleep(2000);
-     //   header.click();
+        //header.click();
         Thread.sleep(2000);
         elements.click();
         WebElement textBox=driver.findElement(By.id("item-0")); // fara diez
         textBox.click();
-        Thread.sleep(2000);
-        driver.findElement(By.id("username")).sendKeys("Luc Sim");
-        driver.findElement(By.id("userEmail")).sendKeys("Luc@sim.msn");
-        driver.findElement(By.id("currentAddress")).sendKeys("Vaslui");
-        driver.findElement(By.id("permanentAddress")).sendKeys("Tecuci");
+      //  Thread.sleep(2000);
+        driver.findElement(By.id("userName")).sendKeys("LucSim");
+        driver.findElement(By.id("userEmail")).sendKeys("Luc@simmsn");
+        driver.findElement(By.id("currentAddress")).sendKeys("Bucuresti");
+        driver.findElement(By.id("permanentAddress")).sendKeys("Cluj");
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-     //   Thread.sleep(4000);
+        //Thread.sleep(2000);
       //  driver.quit();
 
 
