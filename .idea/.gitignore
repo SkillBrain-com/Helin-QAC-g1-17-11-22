@@ -20,7 +20,12 @@
 *.iml
 *.ipr
 /target/
-*.DS_Store
 /drivers/
 /Helin-QAC-g1-17-11-22.iml
+.DS_Store
+src/.DS_Store
+src/main/.DS_Store
+src/main/java/.DS_Store
+src/main/java/org/.DS_Store
+src/main/java/org/skillbrain/.DS_Store
 
