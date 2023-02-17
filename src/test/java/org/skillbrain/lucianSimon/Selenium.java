@@ -1,4 +1,4 @@
-package org.skillbrain.Tema5;
+package org.skillbrain.lucianSimon;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
