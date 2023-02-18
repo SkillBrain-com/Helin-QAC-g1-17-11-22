@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
@@ -51,20 +50,8 @@ public class Selenium {
         driver.findElement(By.id("currentAddress")).sendKeys("Home");
         driver.findElement(By.id("permanentAddress")).sendKeys("Home");
 
-//        driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-          // nu a mers
-//       Actions actions = new Actions(driver);
-//        WebElement submitButton = driver.findElement(By.cssSelector(".btn.btn-primary"));
-//        driver.Executescript("arguments[0].scrollIntoView(true);",submitButton);
-//         Thread.sleep(2000);
-//         actions.click();
 
-//        Actions actions = new Actions(driver);
-//        actions.moveToElement(submitButton).perform();
-//       submitButton.click();
-
-
-           //test3 Verificam ca printeaza in consola datele introduce
+        //test3 Verificam ca printeaza in consola datele introduce
          List<WebElement>mbElement = driver.findElements(By.tagName("p"));
          for(int i = 0;i < mbElement.size();i++){
              System.out.println(mbElement.get(i).getText());

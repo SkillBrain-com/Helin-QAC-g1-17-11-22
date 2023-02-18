@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 
 import java.io.File;
 import java.io.IOException;
-import java.time.LocalDateTime;
 
 public class Utils {
 
@@ -22,12 +21,12 @@ public class Utils {
             TakesScreenshot screenshot = (TakesScreenshot) driver;
             File sourse = screenshot.getScreenshotAs(OutputType.FILE);
             String destinationFile = System.getProperty("user.dir")
-                    +"//Logs//printScreen" +LocalDateTime.now()+ ".png";
+                    +"\\Logs\\printScreen.png";
             FileUtils.copyFile(sourse, new File(destinationFile));
         }catch (IOException e){
             e.printStackTrace();
             driver.quit();
-        }g
+        }
 
 
 
