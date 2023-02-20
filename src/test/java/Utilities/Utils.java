@@ -46,8 +46,7 @@ public class Utils {
         String formatDateTime = LocalDateTime.now().format(formatter);
         System.out.println("Formatted Time :" +formatDateTime);
         destinationFile = "Logs/printScreen-" + LocalDateTime.now() + ".png";
-        destinationFile = System.getProperty("user.dir")+"C:\\Users\\Asus\\Desktop\\Helin\\Logs\\imagine.png";
-        FileUtils.copyFile(source, new File("C:\\Users\\Asus\\Desktop\\Helin\\Logs\\imagine.png"));
+
         int i=1;
         FileUtils.copyFile(source, new File(System.getProperty("user.dir")+"\\Logs\\print-"+ formatDateTime + ".png"));
         i+=1;
