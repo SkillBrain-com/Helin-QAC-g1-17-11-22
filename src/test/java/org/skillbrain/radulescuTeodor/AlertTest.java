@@ -4,30 +4,43 @@ package org.skillbrain.radulescuTeodor;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.UnhandledAlertException;
 
 
 import java.io.IOException;
 
-public class AlertTest {
+import static Utilities.Utils.takeScreenshot;
+
+
+public class AlertTest{
+
+    private static ChromeDriver driver; // declar fara initializare
 
     public static void main(String[] args) throws IOException {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-        ChromeDriver driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver" , "drivers/chromedriver.exe");
+        driver = new ChromeDriver();  // initilizare
         try {
             driver.manage().window().maximize();
             driver.get("https://demoqa.com/alerts");
-            driver.findElement(By.id("alertButton")).click();
+            takeScreenshot(driver);
+            driver.findElement(By.id("promtButton")).click();
+            // schimbati focus-ul pe fereastra de alerta
             Alert alert = driver.switchTo().alert();
+            // accept - OK;    dismiss - cancel
+            alert.sendKeys("Selenium Test");
 
-//        } catch (Exception e) {
-//            System.out.println("Exception: " + e.getMessage());
-//            takeScreenshot(driver);
-//        } finally {
-//            takeScreenshot(driver);
-//            driver.quit();
-//        }
-
+            alert.accept();
+            Thread.sleep(2000);
+            System.out.println(driver.findElement(By.id("promptResult")).getText());
+            takeScreenshot(driver);
+        } catch (Exception exception) {
+            System.out.println(exception.getMessage());
+            takeScreenshot(driver);
         } finally {
-
+            driver.quit();
         }
-}}
+    }
+
+
+
+}

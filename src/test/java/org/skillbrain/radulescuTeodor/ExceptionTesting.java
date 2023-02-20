@@ -8,6 +8,8 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.io.IOException;
 
+import static Utilities.Utils.takeScreenshot;
+
 
 public class ExceptionTesting  {
 
@@ -28,9 +30,9 @@ public class ExceptionTesting  {
             System.out.println(message);
         } catch (Exception e) {
             System.out.println("Exception: " + e.getMessage());
-//            takeScreenshot(driver);
-//        } finally {
-//            takeScreenshot(driver);
+            takeScreenshot(driver);
+        } finally {
+            takeScreenshot(driver);
             driver.quit();
         }
 

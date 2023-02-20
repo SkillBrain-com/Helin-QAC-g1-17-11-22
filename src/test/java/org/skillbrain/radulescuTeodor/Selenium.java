@@ -3,9 +3,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.IOException;
+
 public class Selenium {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         // Unde se afla chromedriver
 
         // Setam path-ul catre chromedriver
