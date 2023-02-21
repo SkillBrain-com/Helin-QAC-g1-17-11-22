@@ -23,9 +23,7 @@ public class Utils {
         WebDriver driver = new ChromeDriver(options);  // initilizare
 //        driver.manage().window().maximize();
         // setam un wait global (implicit)
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-
-
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         return driver;
     }
 

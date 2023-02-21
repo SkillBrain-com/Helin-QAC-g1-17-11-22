@@ -11,6 +11,7 @@ import java.time.Duration;
 public class EmagTest extends Utils {
 
 
+
     public static void main(String[] args) {
         WebDriver driver = getChromeDriver();
         try {

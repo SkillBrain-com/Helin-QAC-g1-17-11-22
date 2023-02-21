@@ -11,9 +11,7 @@ public class EmagHomePage {
     private static final String GDPR_FOOTER =".gdpr-cookie-banner.js-gdpr-cookie-banner.pad-sep-xs.pad-hrz-none.show";
     private static final String CLOSE_OFERTA_ZILEI ="//button[@class='close']";
     private static final String INTRARE_IN_CONT = ".js-dismiss-login-notice-btn.dismiss-btn.btn.btn-link.pad-sep-none.pad-hrz-none";
-
     private static final String INTRARE_CONT_BANNER =".gdpr-cookie-banner.js-gdpr-cookie-banner.pad-sep-xs.pad-hrz-none.login-view.login-view-ro.show";
-
     private static final String BANNER_INTRARE_BUTTON =".js-dismiss-login-notice-btn.dismiss-btn.btn.btn-link.pad-sep-none.pad-hrz-none";
     private static final String INTRARE_IN_CONT_BUTTON ="//a[@class='font-size-ms strong login-btn btn btn-primary js-login-btn']";
     private static final String EMAG_LOGO = "//img[@alt=\"eMAG\"]";
@@ -45,6 +43,7 @@ public class EmagHomePage {
 
     @FindBy(css = INTRARE_IN_CONT)
     public WebElement intraInCont;
+
 
 
     public EmagHomePage(WebDriver driver) {
