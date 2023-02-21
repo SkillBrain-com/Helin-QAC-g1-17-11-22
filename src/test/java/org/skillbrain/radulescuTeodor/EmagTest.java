@@ -4,6 +4,7 @@ package org.skillbrain.radulescuTeodor;
 import Utilities.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
@@ -19,9 +20,12 @@ public class EmagTest extends Utils {
 
     public static void main(String[] args) {
         ChromeOptions options = new ChromeOptions();
+        WebDriver driver = new ChromeDriver();
         options.addArguments("start-maximized");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
-        WebDriver driver = null;
+
+
         try {
             driver = getChromeDriver();
             driver.get("https://www.emag.ro/");

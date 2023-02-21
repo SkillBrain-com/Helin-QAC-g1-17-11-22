@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 
 public class EmagHomePage {
+
     private static final String ACCEPT_BUTTON = ".btn.btn-primary.js-accept.gtm_h76e8zjgoo.btn-block";
     private static final String GDPR_FOOTER = ".gdpr-cookie-banner.js-gdpr-cookie-banner.pad-sep-xs.pad-hrz-none.show";
     private static final String  CLOSE_OFERTA_ZILEI = "(//i[@class='em em-close'])[1]";

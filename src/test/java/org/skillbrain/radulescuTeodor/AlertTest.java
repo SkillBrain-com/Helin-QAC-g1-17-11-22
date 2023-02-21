@@ -1,18 +1,25 @@
 package org.skillbrain.radulescuTeodor;
 
 //import Utilities.Utils;
+
+import Utilities.Utils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.UnhandledAlertException;
+import pageObjects.DemoqaPage;
 
 
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.Set;
 
 import static Utilities.Utils.takeScreenshot;
 
 
-public class AlertTest{
+public class AlertTest extends Utils {
+
 
     private static ChromeDriver driver; // declar fara initializare
 
@@ -39,8 +46,7 @@ public class AlertTest{
         } finally {
             driver.quit();
         }
-    }
+
+        }}
 
 
-
-}

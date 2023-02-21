@@ -64,6 +64,10 @@ public class Selenium_Tema2_3 {
                     break;
                 }
             }
+            System.out.println("Current url is : " + driver.getCurrentUrl());
+
+
+
             driver.close();
 
         } catch (Exception e) {
@@ -74,6 +78,7 @@ public class Selenium_Tema2_3 {
             }
         } finally {
             driver.quit();
+
         }
     }
 }

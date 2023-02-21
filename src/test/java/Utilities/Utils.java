@@ -45,7 +45,7 @@ public class Utils {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMATTER);
         String formatDateTime = LocalDateTime.now().format(formatter);
         System.out.println("Formatted Time :" +formatDateTime);
-        destinationFile = "Logs/printScreen-" + LocalDateTime.now() + ".png";
+
 
         int i=1;
         FileUtils.copyFile(source, new File(System.getProperty("user.dir")+"\\Logs\\print-"+ formatDateTime + ".png"));
