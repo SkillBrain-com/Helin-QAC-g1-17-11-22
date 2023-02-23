@@ -23,7 +23,6 @@ public class AppTest extends Utils {
             driver.switchTo().window(childId);
             demoqaPage.goToRegistrationButton.click();
             demoqaPage.optionRO.click();
-            Thread.sleep(5000);
 
 
         } catch (Exception e) {

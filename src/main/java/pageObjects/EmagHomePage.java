@@ -16,7 +16,30 @@ public class EmagHomePage {
     private static final String INTRARE_IN_CONT_BUTTON ="//a[@class='font-size-ms strong login-btn btn btn-primary js-login-btn']";
     private static final String EMAG_LOGO = "//img[@alt=\"eMAG\"]";
     private static final String SALUT_MSG ="//*[contains(text(),'Salut!')]";
+    private static final String EMAIL ="user_login_email";
+    private static final String LOGIN_BUTTON ="user_login_continue";
+    private static final String PASSWORD = "user_login_password";
+    private static final String CONTINUE_LOGIN = "user_login_continue";
+    private static final String LOGIN_ERROR ="//*[contains(text(),'Ai introdus greșit parola sau adresa de email. Te rugăm completează din nou.')]";
 
+    private static final String PASSWORD_HEADER ="//label[@for='user_login_password']";
+
+    @FindBy(xpath = PASSWORD_HEADER)
+    public WebElement passwordHeader;
+
+    @FindBy(xpath = LOGIN_ERROR)
+    public WebElement loginErrorMessage;
+
+    @FindBy(id = CONTINUE_LOGIN)
+    public WebElement continueButton;
+
+    @FindBy(id = PASSWORD)
+    public WebElement password;
+    @FindBy(id = LOGIN_BUTTON)
+    public WebElement loginButton;
+
+    @FindBy(id = EMAIL)
+    public WebElement email;
     @FindBy(xpath = SALUT_MSG)
     public WebElement salutMsg;
 

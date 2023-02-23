@@ -29,7 +29,7 @@ public class EmagTest extends Utils {
             wait.until(ExpectedConditions.visibilityOf(homePage.emagLogo));
             System.out.println(homePage.salutMsg.getText());
             // alerts, file uploads, modals - de gasit exemple
-            System.out.println("Test finished.");
+            System.out.println("Skillbrain va saluta!");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
