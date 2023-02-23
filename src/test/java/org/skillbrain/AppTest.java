@@ -1,38 +1,65 @@
 package org.skillbrain;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import Utilities.Utils;
+import org.openqa.selenium.WebDriver;
+import pageObject.DemoqaPage;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+import java.util.Iterator;
+import java.util.Set;
+
+
+public class AppTest extends Utils{
+
+    public static void main(String[] args) {
+        WebDriver driver = getChromeDriver();
+        try {
+            driver.get("https://demoqa.com/");
+           // String firstPageId = driver.getWindowHandle();
+           // System.out.println("ID = " + firstPageId);
+            DemoqaPage demoqaPage = new DemoqaPage(driver);
+            demoqaPage.bannerImage.click();
+         Set<String>tabIDs =  driver.getWindowHandles();
+            Thread.sleep(4000);
+            Iterator<String> iterator = tabIDs.iterator();
+            String parentid = iterator.next();
+            String childId = iterator.next();
+            driver.switchTo().window(childId);
+            demoqaPage.goToRegistrationButton.click();
+            demoqaPage.optionRomania.click();
+            Thread.sleep(4000);
+
+
+        } catch(Exception e){
+                e.printStackTrace();
+
+            }finally {
+            driver.quit();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+
 }
+

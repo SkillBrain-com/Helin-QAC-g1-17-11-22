@@ -4,9 +4,12 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 
 public class Utils {
 
@@ -23,14 +26,34 @@ public class Utils {
             String destinationFile = System.getProperty("user.dir")
                     +"\\Logs\\printScreen.png";
             FileUtils.copyFile(sourse, new File(destinationFile));
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-            driver.quit();
+            System.out.println("Screenshot taken");
+
         }
+        driver.quit();
+        }
+
+
+
+        public static WebDriver getChromeDriver(){
+            ChromeOptions options = new ChromeOptions();
+             options.addArguments("start-maximized");
+        //     options.addArguments("--headless");
+        //     options.setHeadless(true); browser invizibil
+
+            System.out.println("Started chrome driver with version:" +options.getBrowserVersion());
+            System.setProperty("webdriver.chrome.driver ", "drivers/chromedriver.exe ");
+            WebDriver driver =new ChromeDriver();// initializare
+            // driver.manage().window().maximize();
+            // setam un wait global(implicit)
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+            return driver;
+        }
+
 
 
 
     }
 
 
-}

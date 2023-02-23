@@ -28,7 +28,7 @@ public class Selenium {
         driver.get("https://demoqa.com/");
 
 
-    //testul1 Header
+         //testul1 Header
               Thread.sleep(2000);
                   //definim element de tip header
                WebElement header = driver.findElement(By.tagName("header"));
@@ -39,8 +39,8 @@ public class Selenium {
        WebElement elements = driver.findElement(By.cssSelector(".card.mt-4.top-card"));
 //        Thread.sleep(2000);
         elements.click();
-//       WebElement textBox = driver.findElement(By.id("item-0")); // FARA #!!!
-//        textBox.click();
+       WebElement textBox = driver.findElement(By.id("item-0")); // FARA #!!!
+        textBox.click();
 //        Thread.sleep(2000);//este o metoda statica
 
         //testul3 completam campurile
@@ -80,45 +80,45 @@ public class Selenium {
         // Exemplu xpath: //a[@target='_blank'],//div[@class='card mt4 top-card'])[2]
         // tagname ->tagname
 
-        //   WebElement element1 =driver.findElement(By.xpath("//div[@class='home-banner']/a"));
-        //   WebElement element2 = driver.findElement(By.cssSelector("div.home-banner a"));
-        //   element2.click();
+           WebElement element1 =driver.findElement(By.xpath("//div[@class='home-banner']/a"));
+           WebElement element2 = driver.findElement(By.cssSelector("div.home-banner a"));
+           element2.click();
 
         //By.tagName
-//        WebElement header = driver.findElement(By.tagName("header"));
-        //       header.click();
+       WebElement header1 =  driver.findElement(By.tagName("header"));
+       header1.click();
 
         //By.id
-//        driver.get("https://demoqa.com/webtables");
-//        WebElement buttton =driver.findElement(By.id("addNewRecordButton"));
-//        buttton.click();
+        driver.get("https://demoqa.com/webtables");
+        WebElement buttton =driver.findElement(By.id("addNewRecordButton"));
+        buttton.click();
 
         // By.linkText
         //   driver.get("https://demoqa.com/links");
-//        WebElement link = driver.findElement(By.linkText("Home"));
-//        link.click();
+         WebElement link = driver.findElement(By.linkText("Home"));
+         link.click();
 
         //By.partiallinkText
-//        WebElement link2 = driver.findElement(By.partialLinkText("Content"));
-//        link2.click();
+          WebElement link2 = driver.findElement(By.partialLinkText("Content"));
+          link2.click();
 
         //By.name
-//        driver.get("https://demoqa.com/");
-//        WebElement meta = driver.findElement(By.name("viewport"));
-//        meta.getAttribute("content");
+        driver.get("https://demoqa.com/");
+        WebElement meta = driver.findElement(By.name("viewport"));
+        meta.getAttribute("content");
 
         //By.className
-//      WebElement homeBanner = driver.findElement(By.className("home-banner"));
-//      homeBanner.click();
+      WebElement homeBanner = driver.findElement(By.className("home-banner"));
+      homeBanner.click();
 
 
-        //   WebElement  forms = driver.findElement(By.xpath("//div[@class='card mt-4 top-card'])[2]"));
-        //   WebElement footer = driver.findElement(By.tagName("footer"));
-        //   System.out.println(footer.getText());
-        //   forms.click();
+           WebElement  forms = driver.findElement(By.xpath("//div[@class='card mt-4 top-card'])[2]"));
+           WebElement footer = driver.findElement(By.tagName("footer"));
+           System.out.println(footer.getText());
+           forms.click();
 
-        //   driver.quit();
-        //     System.out.println("Finish");
+           driver.quit();
+            System.out.println("Finish");
 
 
     }
