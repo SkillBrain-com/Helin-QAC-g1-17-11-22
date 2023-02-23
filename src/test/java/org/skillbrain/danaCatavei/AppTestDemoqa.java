@@ -17,16 +17,11 @@ public class AppTestDemoqa extends Utils {
 //            String firstPageId = driver.getWindowHandle(); // capteaza hash-ul paginii
 //            System.out.println(firstPageId);
 //
-
-
-
-
             DemoqaPage demoqaPage = new DemoqaPage(driver);
             demoqaPage.bannerImage.click();
 
-            Set<String> tabIds = driver.getWindowHandles();
+            Set<String> tabIds = driver.getWindowHandles(); // capteaza hash-urile paginilor deschise
             Iterator<String> iter = tabIds.iterator();
-
 
             String parentid = iter.next();
             String childId = iter.next();
@@ -36,7 +31,6 @@ public class AppTestDemoqa extends Utils {
             Thread.sleep(5000);
             demoqaPage.optionRO.click();
             Thread.sleep(5000);
-
 
         }
         catch(Exception e) {

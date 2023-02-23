@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class ExceptionTest extends Utils {
     private static ChromeDriver driver; // declar fara intilializare
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws Exception {
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         driver = new ChromeDriver(); // initializare
 

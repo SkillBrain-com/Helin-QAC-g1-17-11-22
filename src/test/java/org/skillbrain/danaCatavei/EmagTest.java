@@ -20,7 +20,7 @@ public class EmagTest extends Utils {
 
           driver.get("https://www.emag.ro/");
           EmagHomePage homePage = new EmagHomePage(driver);
-          homePage.closeOfertaZileiButton.click();
+        //  homePage.closeOfertaZileiButton.click();
 //          if(homePage.loginBanner.isDisplayed()){
 //                homePage.bannerCloseButton.click();
 //          }
