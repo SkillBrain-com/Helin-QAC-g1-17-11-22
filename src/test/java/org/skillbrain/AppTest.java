@@ -21,12 +21,19 @@ public class AppTest extends Utils {
             String childID = iter.next();
             driver.switchTo().window(childID);
             demoqaPage.goToRegistrationButton.click();
+            demoqaPage.firstName.sendKeys("NELUTU");
+            demoqaPage.lastName.sendKeys("MOLDOVAN");
+            demoqaPage.email.sendKeys("email@yahoo.com");
+            demoqaPage.mobile.sendKeys("0754000754");
             demoqaPage.optionRO.click();
+            demoqaPage.city.sendKeys("ORAS");
+            demoqaPage.message.sendKeys("OK");
+            demoqaPage.send.click();
 
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            driver.quit();
+          //  driver.quit();
         }
 
 
