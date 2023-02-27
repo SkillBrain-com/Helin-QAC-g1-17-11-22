@@ -11,7 +11,7 @@ public class Selenium {
     public static void main(String[] args) throws Exception {
 
 //      Unde se afla Chrome driver-ul
-        System.setProperty("webdriver.chrome.driver" , "drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         //ChromeDriver driver = new ChromeDriver;   ambele sunt legale
         driver.manage().window().maximize();
@@ -30,7 +30,7 @@ public class Selenium {
         driver.findElement(By.id("permanentAddress")).sendKeys("acasa");
         driver.findElement(By.cssSelector(".btn.btn-primary")).click();
         List<WebElement> mbElements = driver.findElements(By.tagName("p"));
-        for (int i = 0; i <mbElements.size(); i++){
+        for (int i = 0; i < mbElements.size(); i++) {
             System.out.println(mbElements.get(i).getText());
         }
 
@@ -52,15 +52,11 @@ public class Selenium {
         System.out.println("result is " + isYes);
 
 
-
-
         driver.quit();
-
 
 
 //        header.click();
 //        Thread.sleep(2000);
-
 
 
         //selectori
@@ -77,7 +73,7 @@ public class Selenium {
 //        System.out.println(footer.getText());
 //        forms.click();
 
- //       driver.quit();
+        //       driver.quit();
 
 
     }

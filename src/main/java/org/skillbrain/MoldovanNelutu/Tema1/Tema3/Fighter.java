@@ -2,10 +2,10 @@ package org.skillbrain.MoldovanNelutu.Tema1.Tema3;
 
 public abstract class Fighter {
 
-    abstract  int damagePoints(Fighter fighter);
+    abstract int damagePoints(Fighter fighter);
 
-    boolean isVulnerable(){
-          return false;
+    boolean isVulnerable() {
+        return false;
 
     }
 
@@ -26,7 +26,7 @@ class Warrior extends Fighter {
     public static void main(String[] args) {
         Fighter warrior = new Warrior();
         Fighter wizzard = new Wizzard();
-        ((Wizzard)wizzard).prepareSpell();
+        ((Wizzard) wizzard).prepareSpell();
         System.out.println(warrior.damagePoints(wizzard));
         System.out.println(wizzard.damagePoints(warrior));
         System.out.println("Dupa vraja ============ ");
@@ -54,7 +54,7 @@ class Wizzard extends Fighter {
             return 3;
         }
         spells--;
-        return  12;
+        return 12;
 
     }
 

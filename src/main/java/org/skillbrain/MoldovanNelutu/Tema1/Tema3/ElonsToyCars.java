@@ -13,30 +13,32 @@ public class ElonsToyCars {
         car1.drive();
         car1.drive();
         System.out.println("================");
-        for (int i = 0; i < 100 ; i++){
+        for (int i = 0; i < 100; i++) {
             car1.drive();
         }
         System.out.println(car1.distanceDisplay());
         System.out.println(car1.displayBattery());
     }
 
-    public static ElonsToyCars buy(){
+    public static ElonsToyCars buy() {
         return new ElonsToyCars();
     }
-    public String distanceDisplay(){
-        return "Driven " + totalDistance + " meters. ";
-}
 
-    public String displayBattery(){
-        if (battery <= 0){
+    public String distanceDisplay() {
+        return "Driven " + totalDistance + " meters. ";
+    }
+
+    public String displayBattery() {
+        if (battery <= 0) {
             return "Battery is empty ";
         }
-        return "Battery is at " +  battery + "%";
+        return "Battery is at " + battery + "%";
     }
-    public void drive(){
-        if (battery > 0){
+
+    public void drive() {
+        if (battery > 0) {
             totalDistance += 20;
-            battery --;
+            battery--;
             return;
         }
 

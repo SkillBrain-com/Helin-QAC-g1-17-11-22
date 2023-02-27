@@ -23,20 +23,23 @@ public class NeedForSpeed {
 //        System.out.println(monaco.canFinish(nitroCar));
 
 
-
-
     }
-    public static NeedForSpeed nitro;{
- //       return new NeedForSpeed(speed 50 , batteryDrain 4);
+
+    public static NeedForSpeed nitro;
+
+    {
+        //       return new NeedForSpeed(speed 50 , batteryDrain 4);
     }
-    boolean isDrained(){
-        if (battery <= 0){
+
+    boolean isDrained() {
+        if (battery <= 0) {
             return true;
         }
         return false;
     }
-    public void drive(){
-        if (battery < 0){
+
+    public void drive() {
+        if (battery < 0) {
             distanceCovered += speed;
             battery -= batteryDrain;
         }
@@ -48,15 +51,16 @@ public class NeedForSpeed {
         this.battery = 100;
     }
 
-    public class raceTrak{
+    public class raceTrak {
         public int distance;
 
         public raceTrak(int distance) {
             this.distance = distance;
         }
     }
-    public boolean canFinish(NeedForSpeed car){
-        while (!car.isDrained()){
+
+    public boolean canFinish(NeedForSpeed car) {
+        while (!car.isDrained()) {
             return true;
         }
         return false;

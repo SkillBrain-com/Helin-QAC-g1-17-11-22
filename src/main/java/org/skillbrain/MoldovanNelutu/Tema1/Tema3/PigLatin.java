@@ -14,8 +14,8 @@ public class PigLatin {
     public static String pigLatin(String input) {
         int size = input.length();
         String raspuns = " ";
-        for (int i = 0; i < size ; i++) {
-            if (isVowel(input.charAt(i))){
+        for (int i = 0; i < size; i++) {
+            if (isVowel(input.charAt(i))) {
                 raspuns = input.substring(i);
                 break;
 
@@ -23,10 +23,10 @@ public class PigLatin {
 
         }
         int i = 0;
-        if (i == size){
+        if (i == size) {
             return "";
         }
-        raspuns = raspuns + input.substring(0 , i) + "ay";
+        raspuns = raspuns + input.substring(0, i) + "ay";
         return raspuns;
     }
 }
