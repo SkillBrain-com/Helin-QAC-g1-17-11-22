@@ -39,8 +39,5 @@ public class AppTestDemoqa extends Utils {
         }finally {
             driver.quit();
         }
-
-
-
     }
 }
