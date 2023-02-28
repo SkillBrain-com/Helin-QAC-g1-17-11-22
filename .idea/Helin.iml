@@ -10,7 +10,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.testng:testng:7.4.0" level="project" />
+    <orderEntry type="library" name="Maven: com.beust:jcommander:1.78" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.webjars:jquery:3.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-java:4.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-api:4.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:4.7.2" level="project" />
@@ -36,7 +38,6 @@
     <orderEntry type="library" name="Maven: dev.failsafe:failsafe:3.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-ie-driver:4.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-remote-driver:4.7.2" level="project" />
-    <orderEntry type="library" name="Maven: com.beust:jcommander:1.82" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-buffer:4.1.84.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-codec-http:4.1.84.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-codec:4.1.84.Final" level="project" />
@@ -79,6 +80,5 @@
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-safari-driver:4.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-support:4.7.2" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.11.0" level="project" />
-    <orderEntry type="library" name="Maven: com.codingzero.utilities:ddd-utilities:1.1.1" level="project" />
   </component>
 </module>
