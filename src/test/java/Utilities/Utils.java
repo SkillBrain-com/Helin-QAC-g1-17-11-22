@@ -30,4 +30,10 @@ public class Utils {
 
 
     }*/
+  /* String DATE_FORMATTER= "yyyy-MM-dd-HHmmss";
+    // System.out.println("Current Date="+today_time);
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMATTER);
+    String formatDateTime = LocalDateTime.now().format(formatter);
+        System.out.println("Formatted Time :" +formatDateTime);
+FileUtils.copyFile(source, new File(System.getProperty("user.dir")+"\\Logs\\print-"+ formatDateTime + ".png"));*/
 }
