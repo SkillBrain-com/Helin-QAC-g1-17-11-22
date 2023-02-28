@@ -1,7 +1,7 @@
 package org.skillbrain;
 
 
-import Utilites.Utils;
+import Utilitis.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import PageObjects.DemoqaPage;
