@@ -23,7 +23,7 @@ public class Utils {
         WebDriver driver = new ChromeDriver();
         //driver.manage().window().maximize();
         //setam un wait global (implicit)
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         return driver;
     }
     public static void takeScreenshot(WebDriver driver) throws IOException {
