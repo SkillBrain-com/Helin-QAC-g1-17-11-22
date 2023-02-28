@@ -1,43 +1,61 @@
 package org.skillbrain;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
+
+import java.util.List;
 
 public class Selenium {
-    public static void main(String[] args) throws InterruptedException {
 
-
-        //Unde se afla chromedriver
-        System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        // acceseaza o pagina web
-        driver.get("https://demoqa.com/");
+    public static void main(String[] args) throws Exception {
+        // Unde se afla chromedriver?
+        System.setProperty("webdriver.chrome.driver" , "drivers/chromedriver");
+        ChromeDriver driver = new ChromeDriver();
+        // faceti fereastra mare
         driver.manage().window().maximize();
+        // WebDriver driver = new ChromeDriver();  legal
+        // accesare pagina web
+        driver.get("https://demoqa.com/");
         WebElement header = driver.findElement(By.tagName("header"));
         WebElement elements = driver.findElement(By.cssSelector(".card.mt-4.top-card"));
-        Thread.sleep(2000);
-        header.click();
-        Thread.sleep(2000);
-        WebElement textBox = driver.findElement(By.id("item-0"));
-        Thread.sleep(2000);
-        driver.findElement(By.id("UserName")).sendKeys("mircea vasian");
-        driver.findElement(By.id("userEmail")).sendKeys("mircea@yahoo.com");
-        driver.findElement(By.id("currentAdress")).sendKeys("home");
-        driver.findElement(By.id("permanentAdress")).sendKeys("donath29");
-        Actions actions = new Actions(driver);
+        elements.click();
+        WebElement textBox = driver.findElement(By.id("item-0"));  // FARA # !!!!!!!!!!!!
+        textBox.click();
+        driver.findElement(By.id("userName")).sendKeys("cristian sandu");
+        driver.findElement(By.id("userEmail")).sendKeys("email@email.com");
+        driver.findElement(By.id("currentAddress")).sendKeys("Home");
+        driver.findElement(By.id("permanentAddress")).sendKeys("Home");
+        // Optional
         WebElement submitButton = driver.findElement(By.cssSelector(".btn.btn-primary"));
-
-        driver.findElement(By.xpath("(//li[@id='item-1'])[1]")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.cssSelector(".rct-icon.rct-icon-expand-close")).click();
-        driver.findElement(By.xpath("//label[@for='tree-node-desktop']//span[@class='rct-checkbox']//*[name()='svg']")).click();
-        Thread.sleep(2000);
-        System.out.println(driver.findElement(By.id("result")).getText());
-
+        driver.executeScript("arguments[0].scrollIntoView(true);", submitButton);
         submitButton.click();
+        List<WebElement> mbElements = driver.findElements(By.tagName("p"));
+        for (int i= 0; i <mbElements.size(); i++) {
+            System.out.println(mbElements.get(i).getText());
+        }
+        driver.findElement(By.xpath("(//li[@id='item-1'])[1]")).click();
+        driver.findElement(By.cssSelector(".rct-icon.rct-icon-expand-close")).click();
+        driver.findElement(By.xpath("//label[@for='tree-node-desktop']" +
+                "//span[@class='rct-checkbox']//*[name()='svg']")).click();
+        System.out.println(driver.findElement(By.id("result")).getText());
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("(//li[@id='item-2'])[1]")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("(//label[@class='custom-control-label'])[1]")).click();
+        Thread.sleep(3000);
+        String radioButtonMessageResult = driver.findElement(By.tagName("p")).getText().trim();
+        System.out.println(radioButtonMessageResult);
+        // exemplu de validare simpla
+        boolean isYes = radioButtonMessageResult.equals("You have selected Yes");
+        System.out.println("Result is " + isYes);
+
+
+
+
+
+
+        driver.quit();
 
 
 
@@ -45,14 +63,45 @@ public class Selenium {
 
 
 
-        //selectori
-        //ID   #ID
-        //css   se cauta cu . si numele clasei (spatiile libere se inlocuiesc cu punct)
-       // WebElement forms = driver.findElement(By.xpath("//h5[normalize-space()='Forms']"));
-       // WebElement footer = driver.findElement(By.tagName("footer"));
-       // System.out.println(footer.getText());
-       // forms.click();
+//        driver.quit();
+
+
+
+//        header.click();
+        Thread.sleep(2000);
+
+
+
+
+
+
+
+        // selectori
+        // ID -> #id¯
+        // css -> .numeClasei (daca sunt spatii libere, le inlocuiti cu.
+        // ex css : .card mt-4 top-card -> .card.mt-4.top-card
+        // Xpath -> //tag[@atribut='valoare']
+        // ex xpath: //a[@target='_blank'],//div[@class='card mt-4 top-card'])[2]
+        // tagname  -> tagName
+//
+//
+//        WebElement forms = driver.findElement(By.xpath("(//div[@class='card mt-4 top-card'])[2]"));
+//        WebElement footer = driver.findElement(By.tagName("footer"));
+//        String footerMsg = footer.getText();
+//
+//        System.out.println(footerMsg);
+////        forms.click();
+//        driver.quit();
+
+
+
+
+
+
+
+
+
+
+
     }
-
-
 }
