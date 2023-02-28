@@ -1,9 +1,9 @@
 package org.skillbrain;
 
 import PageObjects.DemoqaPage;
-import Utilites.Utils;
+import Utilitis.Utils;
 import org.openqa.selenium.WebDriver;
-import Utilites.Utils;
+import Utilitis.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Iterator;

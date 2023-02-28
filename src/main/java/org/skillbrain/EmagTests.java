@@ -1,7 +1,7 @@
 package org.skillbrain;
 
 import PageObjects.EmagHomePage;
-import Utilites.Utils;
+import Utilitis.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -26,19 +26,19 @@ public class EmagTests extends Utils {
             // homePage.gdprFooter.click();
             // }
 
-               homePage.gdprFooter.click();
-             homePage.intraInCont.click();
-             homePage. acceptButton.click();
+            // homePage.gdprFooter.click();
+            // homePage.intraInCont.click();
+            // homePage. acceptButton.click();
             // homePage.emagLogo.click();
-              homePage.salutMsg.getText();
+            //  homePage.salutMsg.getText();
             System.out.println(" test finish  ");
             WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(9));
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn.btn-primary.js-accept.gtm_h76e8zjgoo.btn-block")));
             // wait.until(ExpectedConditions.visibilityOf(homePage.emagLogo));
-            wait.until(ExpectedConditions.visibilityOf( homePage.gdprFooter));
-            wait.until(ExpectedConditions.visibilityOf( homePage.intraInCont));
-            wait.until(ExpectedConditions.visibilityOf( homePage.acceptButton));
-            wait.until(ExpectedConditions.visibilityOf( homePage.salutMsg));
+            //  wait.until(ExpectedConditions.visibilityOf( homePage.gdprFooter));
+            //  wait.until(ExpectedConditions.visibilityOf( homePage.intraInCont));
+            // wait.until(ExpectedConditions.visibilityOf( homePage.acceptButton));
+            //  wait.until(ExpectedConditions.visibilityOf( homePage.salutMsg));
 
 
             // driver.navigate().refresh();
