@@ -12,4 +12,6 @@ public class LocatorExercises {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         return driver;
     }
+
+
 }
