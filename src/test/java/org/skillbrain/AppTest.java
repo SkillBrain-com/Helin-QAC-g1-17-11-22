@@ -30,10 +30,11 @@ public class AppTest extends Utils {
             demoqaPage.message.sendKeys("OK");
             demoqaPage.send.click();
 
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-          //  driver.quit();
+            driver.quit();
         }
 
 
