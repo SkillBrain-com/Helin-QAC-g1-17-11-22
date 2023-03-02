@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd%22%3E">
+<suite name="suitaTesteRemote">
+    <test verbose="2" preserve-order="true" parallel="true"
+          name="C:\Users\stelu\IdeaProjects\Helin-QAC-g1-17-11-22\src\test">
+        <classes>
+            <class name="org.skillbrain.danaCatavei.AT101_Remote"/>
+            <class name="org.skillbrain.danaCatavei.AT202_Remote"/>
+        </classes>
+    </test>
+</suite>
