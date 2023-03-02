@@ -6,9 +6,7 @@
         <classes>
             <class name="org.skillbrain.radulescuTeodor.EmagPageTest">
                 <methods>
-                    <include name="emagPageTest"/>
-                    <exclude name="emagSecondTest"/>
-                    <include name="DEMOQA"/>
+
                 </methods>
             </class>
         </classes>

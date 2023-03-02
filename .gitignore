@@ -1,4 +1,9 @@
+*.iml
 target/
 .DS_store
 Logs
-.idea/uiDesigner.xml
+.idea
+test-output/
+Grid/
+libraries/
+shelf/

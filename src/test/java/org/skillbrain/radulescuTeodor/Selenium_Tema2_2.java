@@ -1,16 +1,19 @@
 package org.skillbrain.radulescuTeodor;
 import java.io.IOException;
+import java.net.MalformedURLException;
 
+import Utilities.Utils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import static Utilities.Utils.takeScreenshot;
 
-public class Selenium_Tema2_2 {
+public class Selenium_Tema2_2 extends Utils {
 
-    public static void main(String[] args) {
-        WebDriver driver = new ChromeDriver();
+    public static void main(String[] args) throws MalformedURLException {
+        RemoteWebDriver driver = getRemoteWebDriver();
         Actions actions = new Actions(driver);
         driver.get("https://testpages.herokuapp.com/styled/index.html");
 
@@ -48,7 +51,7 @@ public class Selenium_Tema2_2 {
             driver.findElement(By.cssSelector("#back_to_form")).click();
 
             // încercăm să găsim un element care nu există pe pagină
-            driver.findElement(By.id("element-id"));
+//            driver.findElement(By.id("element-id"));
 
         } catch (Exception e) {
             // prindem eroarea și realizăm un screenshot
