@@ -17,11 +17,9 @@ import java.time.LocalDateTime;
 
 public class Utils {
 
-
     public static RemoteWebDriver getRemoteWebDriver() throws MalformedURLException {
         return new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
     }
-
 
     public static WebDriver getChromeDriver() {
         ChromeOptions options = new ChromeOptions();
@@ -43,6 +41,4 @@ public class Utils {
                 + "/Logs/printScreen-" + LocalDateTime.now() + ".png";
         FileUtils.copyFile(source, new File(destinationFile));
     }
-
-
 }
