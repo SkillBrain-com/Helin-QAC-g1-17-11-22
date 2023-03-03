@@ -1,20 +1,7 @@
 
 target/
 .DS_Store
-src/main/
+
 Logs/
- .idea/drivers/
- .idea/libraries/
- .idea/uiDesigner.xml
-  src/main/java/Alerts.java
-  src/main/java/PageObjects/EmagHomePage.java
-  src/main/java/Utilitis/
-  src/main/java/org/skillbrain/Notes.java
-  src/main/java/org/skillbrain/Tema 2/
-  src/main/java/org/skillbrain/Tema 3/
-  src/main/java/org/skillbrain/Tema4/Selenium2punct1.java
-  .idea/drivers/
-  .idea/libraries/
-   .idea/uiDesigner.xml
 
 
