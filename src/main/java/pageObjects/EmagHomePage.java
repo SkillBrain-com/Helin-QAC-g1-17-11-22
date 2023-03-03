@@ -17,12 +17,28 @@ public class EmagHomePage {
     private static final String EMAG_LOGO = "//a[@class='d-inline-block']";
     private static final String SALUT_MSG = "//div[@class='auth-panel-header']";
     private static final String ENTER_EMAIL = "//label[@class='required']";
-    private static final String EMAIL_BOX = "user_login_email";
+    public static final String EMAIL_BOX = "user_login_email";
     private static final String LOGIN_CONTINUE = "user_login_continue";
+    private static final String PASSWORD_MESSAGE = "//label[@for='user_login_password']";
+    private static final String PASSWORD = "user_login_password";
+    private static final String CONTINUE_LOGIN = "user_login_continue";
+    private static final String LOGIN_ERROR = "//*[contains(text(),'Ai introdus greșit parola sau adresa de email. Te rugăm completează din nou.')]";
     public EmagHomePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
+
+    @FindBy(xpath = PASSWORD_MESSAGE)
+    public WebElement passwordMessage;
+
+    @FindBy(xpath = LOGIN_ERROR)
+    public WebElement loginError;
+
+    @FindBy(id = CONTINUE_LOGIN)
+    public WebElement continueButton;
+
+    @FindBy(id = PASSWORD)
+    public WebElement password;
 
     @FindBy(id = LOGIN_CONTINUE)
     public WebElement loginContinue;

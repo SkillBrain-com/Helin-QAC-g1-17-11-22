@@ -26,7 +26,7 @@ public class Selenium extends Utils {
 //        driver.findElement(By.id("userEmail")).sendKeys("email@email.com");
 //        driver.findElement(By.id("currentAddress")).sendKeys("home");
 //        driver.findElement(By.id("permanentAddress")).sendKeys("Home");
-//        Actions action = new Actions(driver);
+        Actions action = new Actions(driver);
 //        WebElement submitBtn = driver.findElement(By.cssSelector(".btn.btn-primary"));
 //        driver.executeScript("arguments[0].scrollIntoView(true);", submitBtn);
 //        //action.moveToElement(submitBtn).build().perform();
