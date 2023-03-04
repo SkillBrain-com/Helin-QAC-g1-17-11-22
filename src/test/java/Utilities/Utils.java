@@ -20,7 +20,7 @@ public class Utils {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
 //        options.setHeadless(true);   browser invizibil
-        System.setProperty("webdriver.chrome.driver" , "drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver(options);  // initilizare
 //        driver.manage().window().maximize();
         // setam un wait global (implicit)

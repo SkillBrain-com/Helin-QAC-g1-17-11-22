@@ -18,7 +18,6 @@ public class DemoqaPage {
     private final static String SEND = "//button[normalize-space()='Send']";
 
 
-
     @FindBy(xpath = BANNER_IMAGE)
     public WebElement bannerImage;
     @FindBy(xpath = GO_TO_REGISTRATION)
@@ -39,7 +38,6 @@ public class DemoqaPage {
     public WebElement message;
     @FindBy(xpath = SEND)
     public WebElement send;
-
 
 
     public DemoqaPage(WebDriver driver) {

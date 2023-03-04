@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import pageObjects.DemoqaPage;
 import pageObjects.EmagHomePage;
 
 import java.io.IOException;
@@ -73,7 +74,7 @@ public class EmagPageTest extends Utils {
     @Test(groups = {"Grupa1"})
     public void demoQaFormPageTest() {
         driver.get("https://demoqa.com/");
-        demoqaPage demoqaPage = new demoqaPage(driver);
+        DemoqaPage demoqaPage = new DemoqaPage(driver);
         demoqaPage.bannerImage.click();
         Set<String> tabIDs = driver.getWindowHandles();
         System.out.println(tabIDs.size());

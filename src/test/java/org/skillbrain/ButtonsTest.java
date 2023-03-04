@@ -1,33 +1,59 @@
 package org.skillbrain;
 
+
+
+import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import pageObjects.EmagHomePage;
+
+import java.net.MalformedURLException;
+
+import static Utilities.Utils.getRemoteWebDriver;
 
 public class ButtonsTest {
-    public static void main(String[] args) throws Exception {
 
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
+
+    RemoteWebDriver driver;
+    EmagHomePage homePage;
+    WebDriverWait waitFor;
+
+    @BeforeTest
+    public void initializeDriver() throws MalformedURLException {
+        driver = getRemoteWebDriver();
+
+    }
+
+    @AfterTest
+    public void closeDriver(){
+        driver.quit();
+    }
+
+    @Test
+    public void buttonTest() {
+
         driver.get("https://demoqa.com/buttons");
-        //teste click me
-        driver.findElement(By.xpath("(//button[normalize-space()='Click Me'])[1]")).click();
-        //test doubleClickMe
-        WebElement doubleClickMe = driver.findElement(By.id("doubleClickBtn"));
-        //right Clickme
+        // test click me
+//        WebElement clickMe = driver.findElement(By.xpath("//button[normalize-space()='Click Me']"));
+//        clickMe.click();
+        // double click me
+//        WebElement doubleCLickMe = driver.findElement(By.id("doubleClickBtn"));
+//        Actions actions = new Actions(driver);
+//        actions.doubleClick().build().perform();
+        // right click me
         Actions actions = new Actions(driver);
         WebElement rightClickMe = driver.findElement(By.id("rightClickBtn"));
         actions.contextClick(rightClickMe).build().perform();
-
-
-        String messege = driver.findElement(By.tagName("p")).getText();
-        System.out.println(messege);
-
-
-//        Thread.sleep(3000);
-        driver.quit();
+        String message = driver.findElement(By.tagName("p")).getText();
+        System.out.println(message);
     }
+
+
+
+
 }
