@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.w3c.dom.html.HTMLInputElement;
 
 public class DemoqaPage {
     private final static String BANNER_IMAGE = "//img[@alt='Selenium Online Training']";
@@ -38,6 +39,7 @@ public class DemoqaPage {
     public WebElement message;
     @FindBy(xpath = SEND)
     public WebElement send;
+    public HTMLInputElement registrationButton;
 
 
     public DemoqaPage(WebDriver driver) {
