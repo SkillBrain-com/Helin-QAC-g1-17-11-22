@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment="Commit Selenium1punct3.java si Selenium1punctele1si2.java&#10;Commit Tema 1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomePage1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/EmagTema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/HerokuappTemaChromeOptins.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTemaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagTemaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/HerokuappTemaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilitis/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilitis/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema4/Selenium1punctele1si2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema4/Selenium1punctele1si2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/AT202GT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/AT202GT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagSecondTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagSecondTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/NewEmagPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/NewEmagPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/skillbrain/Tema4/Selenium1punctele1si2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/skillbrain/Tema4/Selenium1punctele1si2.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Record" />
+        <option value="Kotlin Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/PageObjects/DemoqaPage.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/skillbrain/Selenium.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2LCDYC0RuDTnEwn6bUZayPNqLu6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/gabri/IdeaProjects/Helin-QAC-g1-17-11-22/src/main/java/org/skillbrain&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gabri/IdeaProjects/Helin-QAC-g1-17-11-22/src/test/java/org/skillbrain&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Utilitis" />
+      <recent name="Utilites" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\src\test\java\org\skillbrain" />
+      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\Grid" />
+      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\.idea\Grid" />
+      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\.idea\drivers\Grid" />
+      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\src\main\java\org\skillbrain" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.skillbrain.Tema5.TestNG" />
+      <recent name="PageObjects" />
+      <recent name="org.skillbrain" />
+      <recent name="Utilitis" />
+      <recent name="TEST" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.HerokuappTemaTest.windowTest">
+    <configuration name="EmagTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.EmagTests" />
+      <module name="Helin-QAC-g1-17-11-22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skillbrain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmagTemaTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Helin-QAC-g1-17-11-22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skillbrain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.skillbrain" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.EmagTemaTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmagTemaTest.conectareUtilizatorCorectTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Helin-QAC-g1-17-11-22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skillbrain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.skillbrain" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.EmagTemaTest" />
+      <option name="METHOD_NAME" value="conectareUtilizatorCorectTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HerokuappTemaTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Helin-QAC-g1-17-11-22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skillbrain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.skillbrain" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.HerokuappTemaTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HerokuappTemaTest.windowTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Helin-QAC-g1-17-11-22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skillbrain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.skillbrain" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.HerokuappTemaTest" />
+      <option name="METHOD_NAME" value="windowTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.HerokuappTemaTest.windowTest" />
+        <item itemvalue="TestNG.HerokuappTemaTest" />
+        <item itemvalue="TestNG.EmagTemaTest.conectareUtilizatorCorectTest" />
+        <item itemvalue="Application.EmagTests" />
+        <item itemvalue="TestNG.EmagTemaTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment="" />
+      <created>1675366216880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675366216880</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Commit Selenium1punct3.java si Selenium1punctele1si2.java">
+      <created>1676565130888</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676565130888</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit Selenium1punct3.java si Selenium1punctele1si2.java">
+      <created>1676576640322</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676576640322</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit Selenium1punct3.java si Selenium1punctele1si2.java">
+      <created>1676576956050</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676576956053</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit Selenium1punct3.java si Selenium1punctele1si2.java">
+      <created>1676577067701</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676577067701</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commit Selenium1punct3.java si Selenium1punctele1si2.java&#10;Commit Tema 1">
+      <created>1676799049727</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676799049727</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commit Selenium1punct3.java si Selenium1punctele1si2.java&#10;Commit Tema 1">
+      <created>1677172786821</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677172786821</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Commit Selenium1punct3.java si Selenium1punctele1si2.java&#10;Commit Tema 1">
+      <created>1677173739853</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677173739853</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Commit Selenium1punct3.java si Selenium1punctele1si2.java&#10;Commit Tema 1">
+      <created>1677886367496</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677886367496</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit Selenium1punct3.java si Selenium1punctele1si2.java" />
+    <MESSAGE value="Commit Selenium1punct3.java si Selenium1punctele1si2.java&#10;Commit Tema 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Selenium1punct3.java si Selenium1punctele1si2.java&#10;Commit Tema 1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/skillbrain/HerokuappTemaTest.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/skillbrain/HerokuappTemaTest.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/skillbrain/HerokuappTemaTest.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Helin_QAC_g1_17_11_22$Selenium1punct3.ic" NAME="Selenium1punct3 Coverage Results" MODIFIED="1676202178166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.skillbrain.Tema4.*</FILTER>
+    </SUITE>
+  </component>
+</project>

@@ -1,0 +1,21 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+  }
+public class birdwatcher {
+    public static void main( string[] args)  {
+        int [] birdsThisWEEK= {0,2,5,3,7,8,4} ;
+
+        getLASTWEEK(birdsThisWEEK);
+        System.out.println(getToday(birdsThisWEEK));
+        System.out.println(incrementToday(birdsThisWEEK));
+}
+
+   [] static void getLASTWEEK(int []array) {
+        for (int i=o;i< array.length;i++) {
+            if (i==0) {
+                System.out.println(”[”+array[i]);
+            }
+            System.out.println(array[i]);
+
+}
