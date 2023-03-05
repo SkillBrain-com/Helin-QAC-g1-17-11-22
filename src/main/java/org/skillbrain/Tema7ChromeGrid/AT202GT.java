@@ -1,6 +1,6 @@
-package org.skillbrain;
-import PageObjects.DemoqaPage;
+package org.skillbrain.Tema7ChromeGrid;
 
+import PageObjects.DemoqaPage;
 import Utilitis.Utils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

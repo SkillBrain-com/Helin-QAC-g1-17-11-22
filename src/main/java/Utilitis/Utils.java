@@ -17,27 +17,27 @@ import java.time.LocalDateTime;
 
 
 public class Utils {
-    public static RemoteWebDriver getRemoteWebdriver() throws MalformedURLException {
-        return new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
+     public static RemoteWebDriver getRemoteWebdriver() throws MalformedURLException {
+       return new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
 
-    }
+     }
 
     // pentru print screen
     public static WebDriver getChromeDriver() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
-        options.addArguments("headless");
+        // options.addArguments("headless");
         // options.setHeadless(true);
         System.setProperty("Chromedriver.chrome.driver", " .idea/drivers/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(19));
         return driver;
     }
 
     //  public void takeScreenshot(WebDriver driver) throws IOException {
     public static void takeScreenshot(WebDriver driver) throws IOException {
-        try {
+          try {
             String destinationFile = null;
             TakesScreenshot screenshot = (TakesScreenshot) driver;
             File source = screenshot.getScreenshotAs(OutputType.FILE);
@@ -48,10 +48,10 @@ public class Utils {
             FileUtils.copyFile(source, new File(destinationFile));
 
 
-        } catch (IOException e) {
+         } catch (IOException e) {
             e.printStackTrace();
 
-        }
+         }
 
     }
 }

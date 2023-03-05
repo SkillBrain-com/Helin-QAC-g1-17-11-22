@@ -25,8 +25,10 @@ EmagHomePage homePage;
 WebDriverWait waitFor;
     @BeforeTest
     public void initializeDriver() throws MalformedURLException {
-        driver =getRemoteWebdriver();
-    }
+      driver =getRemoteWebdriver();
+     }
+
+
 
 
     @Test

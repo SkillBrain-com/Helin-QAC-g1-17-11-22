@@ -1,6 +1,8 @@
 package PageObjects;
+
 import PageObjects.EmagHomePage;
 
+import Utilitis.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,7 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
- public class EmagHomeTest {
+ public class EmagHomeTest extends Utils {
 
      private static final String ACCEPT_BUTTON = "btn.btn-primary.js-accept.gtm_h76e8zjgoo.btn-block";
      private static final String GDPR_FOOTER = ".gdpr-cookie-banner.js-gdpr-cookie-banner.pad-sep-xs.pad-hrz-none.show";

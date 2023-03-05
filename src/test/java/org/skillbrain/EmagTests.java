@@ -7,12 +7,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.net.MalformedURLException;
 import java.time.Duration;
 
 public class EmagTests extends Utils {
 
-    public static void main(String[] args) {
-        WebDriver driver = getChromeDriver();
+    public static void main(String[] args) throws MalformedURLException {
+        //  WebDriver driver = getChromeDriver();
+        WebDriver driver=getRemoteWebdriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
         driver.navigate().refresh();
         System.out.println("test finish ");

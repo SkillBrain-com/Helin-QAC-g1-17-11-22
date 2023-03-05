@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class Selenium1punctele1si2 {
-
     public static void main(String[] args) {
 
         System.setProperty("Chromedriver.chrome.driver"," .idea/drivers/chromedriver.exe");

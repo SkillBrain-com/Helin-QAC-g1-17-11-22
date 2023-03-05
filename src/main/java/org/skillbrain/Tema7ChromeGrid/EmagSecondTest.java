@@ -1,4 +1,6 @@
-package org.skillbrain;
+package org.skillbrain.Tema7ChromeGrid;
+
+import PageObjects.EmagHomePage;
 import Utilitis.Utils;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -6,10 +8,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import PageObjects.EmagHomePage;
 
 import java.net.MalformedURLException;
 import java.time.Duration;
+
 public class EmagSecondTest extends Utils{
     RemoteWebDriver driver;
     EmagHomePage homePage;
