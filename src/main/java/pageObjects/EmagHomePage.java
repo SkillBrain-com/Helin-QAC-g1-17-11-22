@@ -67,13 +67,7 @@ public class EmagHomePage {
     @FindBy(css = INTRARE_IN_CONT)
     public WebElement intraInCont;
 
-
-
     public EmagHomePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
-
-
-
-
 }
