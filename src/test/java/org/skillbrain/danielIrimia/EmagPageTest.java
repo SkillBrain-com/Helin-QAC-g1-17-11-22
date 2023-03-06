@@ -24,7 +24,6 @@ public class EmagPageTest extends Utils {
     @BeforeSuite
     public void initializeDriver() {
         driver = getChromeDriver();
-
     }
 
     @AfterSuite
@@ -86,8 +85,6 @@ public class EmagPageTest extends Utils {
         String abc ="abc";
     }
 
-
-
     @DataProvider(name ="endpointList")
     public Object[][] myEndpointProvider() {
         return new Object[][] {
@@ -99,7 +96,6 @@ public class EmagPageTest extends Utils {
         };
 
     }
-
 
     @Test(dataProvider = "endpointList")
     public void parameterTest(String endpoint) throws IOException {
