@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Utils {
-//    public static void main(String[] args) {
+    //    public static void main(String[] args) {
 //        System.out.println(System.getProperty("user.dir"));
 //    }
 //
@@ -30,10 +30,10 @@ public class Utils {
         TakesScreenshot screenshot = (TakesScreenshot) driver;
 
         File source = screenshot.getScreenshotAs(OutputType.FILE);
-       // LocalDate today = LocalDate.now();
+        // LocalDate today = LocalDate.now();
         //LocalDateTime today_time = LocalDateTime.now();
         String DATE_FORMATTER= "yyyy-MM-dd-HHmmss";
-       // System.out.println("Current Date="+today_time);
+        // System.out.println("Current Date="+today_time);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMATTER);
         String formatDateTime = LocalDateTime.now().format(formatter);
         System.out.println("Formatted Time :" +formatDateTime);
