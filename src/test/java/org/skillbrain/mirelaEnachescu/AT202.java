@@ -2,14 +2,11 @@ package org.skillbrain.mirelaEnachescu;
 
 import PageObjects.DemoqaPage;
 import Utilities.Utils;
-import junit.framework.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.DemoqaPage;
 
 import java.util.Iterator;
 import java.util.Set;
