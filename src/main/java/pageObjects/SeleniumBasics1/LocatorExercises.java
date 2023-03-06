@@ -1,4 +1,4 @@
-package org.skillbrain.danielIrimia.SeleniumBasics1;
+package pageObjects.SeleniumBasics1;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
