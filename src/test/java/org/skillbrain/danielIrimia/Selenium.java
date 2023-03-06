@@ -22,7 +22,7 @@ public class Selenium {
         elements.click();
         WebElement textBox = driver.findElement(By.id("item-0"));  // FARA # !!!!!!!!!!!!
         textBox.click();
-        driver.findElement(By.id("userName")).sendKeys("daniel test");
+        driver.findElement(By.id("userName")).sendKeys("cristian sandu");
         driver.findElement(By.id("userEmail")).sendKeys("email@email.com");
         driver.findElement(By.id("currentAddress")).sendKeys("Home");
         driver.findElement(By.id("permanentAddress")).sendKeys("Home");
