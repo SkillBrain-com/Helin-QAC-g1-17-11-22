@@ -1,6 +1,8 @@
 package org.skillbrain.mirelaEnachescu;
 
+import PageObjects.DemoqaPage;
 import Utilities.Utils;
+import junit.framework.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;

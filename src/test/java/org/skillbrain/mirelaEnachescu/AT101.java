@@ -1,5 +1,6 @@
 package org.skillbrain.mirelaEnachescu;
 
+import PageObjects.DemoqaPage;
 import Utilities.Utils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;

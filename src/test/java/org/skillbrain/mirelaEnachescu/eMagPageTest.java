@@ -1,6 +1,8 @@
 package org.skillbrain.mirelaEnachescu;
 
+import PageObjects.EmagHomePage;
 import Utilities.Utils;
+import com.google.common.annotations.VisibleForTesting;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
