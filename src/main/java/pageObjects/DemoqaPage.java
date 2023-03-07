@@ -20,10 +20,13 @@ public class DemoqaPage {
     private final static String  CLICK_ME_1 = "alertButton";
 
    // private final static String WINDOW_PANEL = "(//div[contains(@class,'header-text')][normalize-space()='Alerts, Frame & Windows'])[1]";
-   private final static String WINDOW_BUTTON= "//div[contains(@class,'header-text')][normalize-space()='Alerts, Frame & Windows']";
+   private final static String WINDOW_BUTTON= "(//div[@class='card mt-4 top-card'])[3]";
     private final static String  BROWSER_WINDOW_BUTTON = "(//li[@id='item-0'])[3]";
     private final static String NEWTAB = "tabButton";
     private final static String MESSAGE = "sampleHeading";
+
+    private final static String NEW_TAB_MESSAGE = "messageWindowButton";
+
     @FindBy(css=BANNER_IMAGE)
     public WebElement bannerImage;
 
@@ -56,4 +59,6 @@ public class DemoqaPage {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(id=NEW_TAB_MESSAGE)
+    public WebElement newTabMessageButton;
 }
