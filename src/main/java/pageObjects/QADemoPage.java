@@ -17,11 +17,26 @@ public class QADemoPage {
     private static final String GENDER = "(//div[@class='custom-control custom-radio custom-control-inline'])[2]";
     private static final String HOBBY = "(//div[@class='custom-control custom-checkbox custom-control-inline'])[3]";
     private static final String SUBMIT = "submit";
+    private static final String BANNER_IMAGE = ".banner-image";
+    private static final String GO_TO_REGISTRATION = "//a[@class='btn btn-primary-shadow btn-block']";
+    private static final String OPTION_ROMANIA = "option[value='70']";
+
 
 
     public QADemoPage (WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
+
+
+
+    @FindBy(css = OPTION_ROMANIA)
+    public WebElement optionRO;
+
+    @FindBy(xpath = GO_TO_REGISTRATION)
+    public WebElement goToRegistrationButton;
+
+    @FindBy(css = BANNER_IMAGE)
+    public WebElement bannerImg;
 
     @FindBy(id = SUBMIT)
     public WebElement submit;

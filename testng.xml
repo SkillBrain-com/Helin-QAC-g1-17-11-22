@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/user/IdeaProjects/Helin-QAC-g1-17-11-22">
+        <classes><class name="ExercitiiDemo.AlertsDemoTest">
+            <methods>
+                <include name="secondAlertTest"/>
+            </methods></class><class name="ExercitiiDemo.SwagDemoTest">
+            <methods><include name="addToCardFunctionalityTest"/>
+            </methods>
+        </class>
+            <class name="org.skillbrain.EmagAndQADemoTest">
+                <methods>
+                    <include name="emagPageTest"/>
+                    <include name="qademoTest"/>
+                </methods>
+            </class>
+            <class name="org.skillbrain.SeleniumPageTest">
+                <methods>
+                    <include name="basicWebPageTest"/>
+                    <include name="elementAndLocatorsTest"/>
+                    <include name="tableContent"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
