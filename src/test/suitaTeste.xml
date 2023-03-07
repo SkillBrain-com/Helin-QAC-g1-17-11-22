@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testnd.org/testng-1.0.dtd" >
+
+
+
+<suite name ="EmagSuite" verbose = "1" parallel="false" >
+    <test name ="org.skillbrain" >
+            <class name="org.skillbrain.EmagPageTest"></class>
+    </test>
+
+    </suite>
+
+</suite>
+
