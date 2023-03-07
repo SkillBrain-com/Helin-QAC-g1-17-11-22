@@ -7,7 +7,7 @@ import pageObjects.DemoqaPage;
 import java.util.Iterator;
 import java.util.Set;
 
-public class AppTestDemoqa extends Utils {
+public class AppTestDemoQA extends Utils {
 
     public static void main(String[] args) {
 
@@ -43,5 +43,4 @@ public class AppTestDemoqa extends Utils {
 
 
     }
-}
 }
