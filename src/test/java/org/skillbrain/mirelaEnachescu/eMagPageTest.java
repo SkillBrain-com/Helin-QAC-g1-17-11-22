@@ -4,6 +4,7 @@ import Utilities.Utils;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -46,8 +47,7 @@ public class eMagPageTest extends Utils {
             System.out.println("Test finished.");
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            driver.quit();
+
         }
 
     }
@@ -59,8 +59,11 @@ public class eMagPageTest extends Utils {
     }
 
 
-    @BeforeTest
-    public void altDriver(){}
+    @AfterTest
+    public void altDriver(){
+
+        driver.quit();
+    }
 
     @DataProvider(name = "endpointList")
     public Object[][] myEndpointProvider(){
