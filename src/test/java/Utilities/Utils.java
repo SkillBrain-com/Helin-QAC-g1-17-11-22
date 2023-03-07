@@ -6,12 +6,21 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 
 public class Utils {
+
+    public static RemoteWebDriver getRemoteWebDriver() throws MalformedURLException {
+        return new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
+
+    }
+
 
     public static void main(String[] args) {
 
@@ -45,9 +54,9 @@ public class Utils {
             System.out.println("Started chrome driver with version:" +options.getBrowserVersion());
             System.setProperty("webdriver.chrome.driver ", "drivers/chromedriver.exe ");
             WebDriver driver =new ChromeDriver();// initializare
-            // driver.manage().window().maximize();
+             driver.manage().window().maximize();
             // setam un wait global(implicit)
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             return driver;
         }
 

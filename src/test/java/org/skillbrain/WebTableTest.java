@@ -1,11 +1,17 @@
+package org.skillbrain;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class WebTableTest {
 
      public static void main(String[] args) {
             accessWebTables();
        }
        public static void accessWebTables() {
-           WebdriverManager BrowserManager = null;
-           ChromeDriver driver = BrowserManager.createChromeDriver();
+         WebDriver driver= new ChromeDriver() ;
            driver.get("https://demoqa.com/webtables");
            WebElement addNewRecordButton = driver.findElement(By.id("addNewRecordButton"));
             addNewRecordButton.click();

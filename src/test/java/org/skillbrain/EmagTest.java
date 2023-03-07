@@ -21,7 +21,7 @@ public class EmagTest extends Utils {
             // alerts, file uploads, modals - de gasit exemple
             driver.get("https://www.emag.ro/");
             EmagHomePage homePage = new EmagHomePage(driver);
-            //   homePage.closeOfertaZileiButton.click();
+            homePage.closeOfertaZileiButton.click();
             homePage.gdprFooter.click();
             homePage.acceptButton.click();
             driver.navigate().refresh();
@@ -33,8 +33,6 @@ public class EmagTest extends Utils {
             wait.until(ExpectedConditions.visibilityOf(homePage.emagLogo));
             System.out.println(homePage.salutMsg.getText());
             //  Thread.sleep(6000);
-
-
             System.out.println("Test finished.");
             //   if (homePage.loginBanner.isDisplayed()){
             //       homePage.bannerCloseButton.click();

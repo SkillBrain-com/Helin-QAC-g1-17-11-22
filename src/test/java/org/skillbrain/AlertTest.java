@@ -9,7 +9,7 @@ import static Utilities.Utils.takeScreenshot;
 
 public class AlertTest {
 
-    private static ChromeDriver driver;
+    public static ChromeDriver driver;
 
 
     public static void main(String[] args) {

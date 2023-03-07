@@ -17,7 +17,7 @@ import java.time.Duration;
 public class Utilitati {
     public static RemoteWebDriver getRemoteWebDriver() throws MalformedURLException{
             // define URL Capabilities
-//           URL url =  new URL("https://localhost:444");
+//           URL -ul =  new URL("https://localhost:444");
 //        ChromeOptions chromeOptions = new ChromeOptions();
         return new RemoteWebDriver(new URL("https://localhost:444"), new ChromeOptions());
 

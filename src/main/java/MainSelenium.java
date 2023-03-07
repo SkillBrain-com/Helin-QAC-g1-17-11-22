@@ -10,7 +10,7 @@ public class MainSelenium {
         WebDriverManager.chromedriver().driverVersion("110.0").setup();
         ChromeDriver driver = new ChromeDriver();
 
-       // driver.get("https://demoqa.com");
+          driver.get("https://demoqa.com");
 
         //  WebElement element1 = driver.findElement(By.xpath("//div[@class='home-banner']//a)"));
         //  WebElement element2 = driver.findElement(By.cssSelector("div.home-banner a"));
@@ -26,17 +26,23 @@ public class MainSelenium {
       //  button.click();
 
                        // indentificare prin linkText
-          //driver.get("https://demoqa.com/links");
-          //WebElement link = driver.findElement(By.linkText("Home"));
-          //link.click();
+        //  driver.get("https://demoqa.com/links");
+       //   WebElement link = driver.findElement(By.linkText("Home"));
+       //   link.click();
+                      // Partial link-text
+      //  WebElement link1 = driver.findElement(By.partialLinkText("Content"));
+      //   link1.click();
+                       //indentificare dupa nume(By.name)
+       // driver.get("https://demoqa.com");
+       // WebElement meta = driver.findElement(By.name("viewport"));
+       // System.out.println( meta.getAttribute("content"));// ne va printa in consola valoarea atributului content adica"width=device-width,initial-scale=1"
 
-               //indentificare dupa nume(By.name)
-        driver.get("https://demoqa.com");
-        WebElement meta = driver.findElement(By.name("viewport"));
-        System.out.println( meta.getAttribute("content"));// ne va printa in consola valoarea atributului content adica"width=device-width,initial-scale=1"
+                       // indentificare dupa className
+            WebElement homeBanner =  driver.findElement(By.className("home-banner"));
+            homeBanner.click();
 
 
-       driver.close();// inchide doar tabul pe care are focusul driverul nostru
+      // driver.close();// inchide doar tabul pe care are focusul driverul nostru
         driver.quit();//inchide toate taburile si omoara sesiunea de chromedrive
 
         System.out.println("Finish");
