@@ -2,29 +2,31 @@ package org.skillbrain;
 
 import Utilities.Utils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 import pageObjects.DemoqaPage;
 import pageObjects.EmagHomePage;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
 public class EmagPageTest extends Utils {
 
-    RemoteWebDriver driver;
+    WebDriver driver;
     EmagHomePage homePage;
     WebDriverWait waitFor;
 
     @BeforeTest
-    public void initializeDriver() throws MalformedURLException {
-        driver = getRemoteWebDriver();
+    public void initializeDriver() {
+        driver = getChromeDriver();
 
     }
 
