@@ -1,6 +1,6 @@
 package org.skillbrain.mirelaEnachescu;
 
-import PageObjects.EmagHomePage;
+import pageObjects.EmagHomePage;
 import Utilities.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;

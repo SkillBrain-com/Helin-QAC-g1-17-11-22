@@ -1,6 +1,6 @@
 package org.skillbrain.mirelaEnachescu;
 
-import PageObjects.DemoqaPage;
+import pageObjects.DemoqaPage;
 import Utilities.Utils;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
