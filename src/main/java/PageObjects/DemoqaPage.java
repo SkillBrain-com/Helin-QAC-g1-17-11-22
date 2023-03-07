@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.w3c.dom.html.HTMLInputElement;
 
 public class DemoqaPage {
 
@@ -15,14 +16,21 @@ public class DemoqaPage {
 
       private final static String OPTION_ROMANIA ="option[value='70']";
     // private final static String GO_TO_REGISTRATION =".btn.btn-primary.shadow.btn.block";
-    private final static String WINDOW_PANEL="//h5[normalize-space()='Alerts, Frame & Windows']";
-    private final static String WINDOW_BUTTON=" //span[normalize-space()='Browser Windows']";
+     private final static String WINDOW_PANEL="//h5[normalize-space()='Alerts, Frame & Windows']";
+     private final static String WINDOW_BUTTON=" //span[normalize-space()='Browser Windows']";
     private  final static String NEW_TAB_BUTTON="//button[@id='tabButton']";
     private final static String PAGE_MESAGE="sampleHeading";
 
     private final static String ALERT_PANEL_BUTTON="(//div)[27]";
     private final static String  ALERT_BUTTON="(//li[@id='item-1'])[2]";
     private final static String  CLICKME_BUTTON_1="alertButton";
+
+    // private final static String WINDOW_BUTTON= "//div[contains(@class,'header-text')][normalize-space()='Alerts, Frame & Windows']";
+    // private final static String WINDOW_BUTTON= "(//div[@class='card mt-4 top-card'])[3]";
+    private final static String  BROWSER_WINDOW_BUTTON = "(//li[@id='item-0'])[3]";
+    private final static String NEWTAB = "tabButton";
+
+
     @FindBy(xpath =ALERT_PANEL_BUTTON)
     public WebElement alertpanelbutton;
     @FindBy(xpath =ALERT_BUTTON)
@@ -46,6 +54,12 @@ public class DemoqaPage {
      public   WebElement gotoregistrationButton;
       @FindBy(xpath = "OPTION_ROMANIA")
     public   WebElement optionRo;
+    public HTMLInputElement clickwindowButton;
+    public HTMLInputElement clickBrowserWindowButton;
+    public HTMLInputElement newTabMessageButton;
+
+    //  @FindBy(css=BANNER_IMAGE)
+    //  public WebElement bannerImage;
       public DemoqaPage(WebDriver driver ){
 
         PageFactory.initElements(driver,this);
