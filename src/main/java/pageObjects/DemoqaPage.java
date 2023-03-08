@@ -21,12 +21,8 @@ public class DemoqaPage {
     @FindBy(xpath =GO_TO_REGISTRATION )
     public WebElement goToRegistrationButton;
 
-
     public DemoqaPage(WebDriver driver) {
         PageFactory.initElements(driver, this );
     }
-
-
-
 
 }
