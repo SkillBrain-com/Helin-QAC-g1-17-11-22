@@ -6,14 +6,20 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
 public class Utils {
 
+    public static RemoteWebDriver getRemoteWebDriver() throws MalformedURLException {
+        return new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
+    }
 
     public static WebDriver getChromeDriver() {
         ChromeOptions options = new ChromeOptions();
@@ -35,6 +41,4 @@ public class Utils {
                 + "/Logs/printScreen-" + LocalDateTime.now() + ".png";
         FileUtils.copyFile(source, new File(destinationFile));
     }
-
-
 }
