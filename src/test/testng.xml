@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Teste">
+    <test verbose="2" preserve-order="true" parallel="true"
+          name="/Users/cristiansandu/IdeaProjects/Test/Helin-QAC-g1-17-11-22/src/test">
+        <classes>
+            <class name="org.skillbrain.EmagPageTest" />
+            <class name="org.skillbrain.ButtonsTest"/>
+            <class name="org.skillbrain.EmagSecondTest"/>
+        </classes>
+    </test>
+</suite>
