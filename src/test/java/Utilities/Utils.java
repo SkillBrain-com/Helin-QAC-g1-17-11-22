@@ -25,8 +25,11 @@ public class Utils {
         return new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
     }
     public static WebDriver getChromeDriver(){
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("start-maximized");
+        options.addArguments("--remote-allow-origins=*");
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(options);
         //driver.manage().window().maximize();
         //setam un wait global (implicit)
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
