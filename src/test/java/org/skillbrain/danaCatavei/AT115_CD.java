@@ -54,5 +54,12 @@ public class AT115_CD extends Utils {
         Assert.assertEquals(impressiveMessage,"You have selected Impressive");
         System.out.println(impressiveMessage);
         takeScreenshot(driver);
+
+
+        page.radioButtonNo.isDisplayed();
+        takeScreenshot(driver);
+        System.out.println(page.radioButtonNo.isDisplayed());
+
+
     }
 }

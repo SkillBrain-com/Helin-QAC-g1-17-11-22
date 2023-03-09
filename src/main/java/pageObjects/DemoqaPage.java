@@ -30,7 +30,7 @@ public class DemoqaPage {
 
     private final static String RADIO_BUTTON_YES = "label[for='yesRadio']";
     private final static String RADIO_BUTTON_IMPRESSIVE = "label[for='impressiveRadio']";
-
+    private final static  String RADIO_BUTTON_NO = "label[for='noRadio']";
 
     @FindBy(css=BANNER_IMAGE)
     public WebElement bannerImage;
@@ -70,7 +70,8 @@ public class DemoqaPage {
 
     @FindBy(css = RADIO_BUTTON_IMPRESSIVE)
     public WebElement radioButtonImpressive;
-
+    @FindBy(css = RADIO_BUTTON_NO)
+    public WebElement radioButtonNo;
     public DemoqaPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
