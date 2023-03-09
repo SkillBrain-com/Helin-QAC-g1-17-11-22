@@ -40,7 +40,7 @@ public class Utils {
             System.out.println("Screenshot taken");
 
         }
-        driver.quit();
+
         }
 
 
