@@ -26,6 +26,25 @@ public class DemoqaPage {
     private final static String MESSAGE = "sampleHeading";
 
     private final static String NEW_TAB_MESSAGE = "messageWindowButton";
+    private final static String ELEMENT_CARD = "(//div[@class='card mt-4 top-card'])[1]";
+    private final static String RADIO_BUTTON = "(//li[@id='item-2'])[1]";
+    private final static String HEADER_RADIO_BUTTON = "(//div[@class='main-header'])[1]";
+    private final static String YES_BUTTON = "//label[normalize-space()='Yes']";
+    private final static String IMPRESSIVE_BUTTON ="//label[normalize-space()='Impressive']";
+
+    @FindBy (xpath = IMPRESSIVE_BUTTON)
+    public WebElement impressiveButton;
+    @FindBy (xpath = YES_BUTTON)
+    public WebElement yesButton;
+
+    @FindBy (xpath = HEADER_RADIO_BUTTON)
+    public WebElement headerRadioButton;
+
+    @FindBy (xpath = RADIO_BUTTON)
+    public  WebElement radioButton;
+
+    @FindBy(xpath = ELEMENT_CARD)
+    public WebElement elementCard;
 
     @FindBy(css = BANNER_IMAGE)
     public WebElement bannerImage;
