@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment="Adaugare AT205GT">
+    <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment="Adaugare modificari">
       <change afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/AT115GT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TEST/BaseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilitis/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilitis/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/DemoqaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/DemoqaPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Lasania" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Lasania" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/skillbrain/Tema4/Selenium1punct3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/skillbrain/Tema4/Selenium1punct3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/skillbrain/Tema4/Selenium1punctele1si2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/skillbrain/Tema4/Selenium1punctele1si2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/DemoqaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/DemoqaPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,8 +91,8 @@
       <recent name="PageObjects" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.EmagTemaTest.conectareUtilizatorCorectTest">
-    <configuration name="AT202GT.windowTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AT115GT.windowTest">
+    <configuration name="AT115GT.windowTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Helin-QAC-g1-17-11-22" />
       <extension name="coverage">
         <pattern>
@@ -106,7 +101,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.skillbrain" />
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.AT202GT" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.AT115GT" />
       <option name="METHOD_NAME" value="windowTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -187,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AT115GT.windowTest" />
         <item itemvalue="TestNG.EmagTemaTest.conectareUtilizatorCorectTest" />
         <item itemvalue="TestNG.EmagTemaTest" />
         <item itemvalue="TestNG.AT205GT" />
         <item itemvalue="TestNG.AT205GT.newWindowTabMessageTest" />
-        <item itemvalue="TestNG.AT202GT.windowTest" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678379240241</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Adaugare modificari">
+      <created>1678385517063</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678385517063</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,7 +324,8 @@
     <MESSAGE value="Commit Selenium1punct3.java si Selenium1punctele1si2.java&#10;Commit Tema 1&#10;Commit Tema4,Tema5,Tema6,Tema7" />
     <MESSAGE value="Commit Selenium1punct3.java si Selenium1punctele1si2.java&#10;Commit Tema 1&#10;Commit Tema4,Tema5,Tema6,Tema7&#10;Commit Tema2,Tema3,Tema4Selenium2punct1.java" />
     <MESSAGE value="Adaugare AT205GT" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adaugare AT205GT" />
+    <MESSAGE value="Adaugare modificari" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaugare modificari" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

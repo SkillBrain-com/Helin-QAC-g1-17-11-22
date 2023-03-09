@@ -22,6 +22,20 @@ public class DemoqaPage {
     private final static String ALERT_PANEL_BUTTON="(//div)[27]";
     private final static String  ALERT_BUTTON="(//li[@id='item-1'])[2]";
     private final static String  CLICKME_BUTTON_1="alertButton";
+    private final static String ELEMENTS="//div[@class='category-cards']//div[1]//div[1]//div[2]//*[name()='svg']";
+    private final static String RADIO_BUTON="//span[normalize-space()='Radio Button']";
+
+
+
+
+
+@FindBy(xpath =ELEMENTS )
+public WebElement elemements;
+@FindBy(xpath = RADIO_BUTON)
+public WebElement radioButton;
+
+
+
     @FindBy(xpath =ALERT_PANEL_BUTTON)
     public WebElement alertpanelbutton;
     @FindBy(xpath =ALERT_BUTTON)

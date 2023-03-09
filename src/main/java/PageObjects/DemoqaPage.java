@@ -30,6 +30,22 @@ public class DemoqaPage {
     private final static String  BROWSER_WINDOW_BUTTON = "(//li[@id='item-0'])[3]";
     private final static String NEWTAB = "tabButton";
 
+    private final static String ELEMENTS_CARD="//div[@class='category-cards']//div[1]//div[1]//div[2]//*[name()='svg']";
+    private final static String RADIO_BUTON="//span[normalize-space()='Radio Button']";
+    private final static String  YES="//label[@for='yesRadio']";
+    private final static String IMPRESIVE="//label[@for='impressiveRadio']";
+    private final static String NO="//label[@for='noRadio']";
+
+    @FindBy(xpath =ELEMENTS_CARD)
+    public WebElement elemementsCard;
+    @FindBy(xpath = RADIO_BUTON)
+    public WebElement radioButton;
+    @FindBy(xpath =YES)
+    public WebElement yes;
+    @FindBy(xpath =IMPRESIVE)
+    public WebElement impresive;
+    @FindBy(xpath =NO)
+    public WebElement no;
 
     @FindBy(xpath =ALERT_PANEL_BUTTON)
     public WebElement alertpanelbutton;
@@ -57,6 +73,7 @@ public class DemoqaPage {
     public HTMLInputElement clickwindowButton;
     public HTMLInputElement clickBrowserWindowButton;
     public HTMLInputElement newTabMessageButton;
+    public HTMLInputElement elements;
 
     //  @FindBy(css=BANNER_IMAGE)
     //  public WebElement bannerImage;
