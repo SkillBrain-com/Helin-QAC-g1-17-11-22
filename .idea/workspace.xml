@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment="Adaugare modificari">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/AT115GT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/DemoqaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/DemoqaPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/DemoqaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/DemoqaPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,24 @@
       <recent name="PageObjects" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AT115GT.windowTest">
+  <component name="RunManager" selected="TestNG.AT115GT">
+    <configuration name="AT115GT" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Helin-QAC-g1-17-11-22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skillbrain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.skillbrain" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.AT115GT" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AT115GT.windowTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Helin-QAC-g1-17-11-22" />
       <extension name="coverage">
@@ -121,24 +134,6 @@
       <option name="PACKAGE_NAME" value="org.skillbrain" />
       <option name="MAIN_CLASS_NAME" value="org.skillbrain.AT205GT" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AT205GT.newWindowTabMessageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Helin-QAC-g1-17-11-22" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.skillbrain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.skillbrain" />
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.AT205GT" />
-      <option name="METHOD_NAME" value="newWindowTabMessageTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -182,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AT115GT" />
         <item itemvalue="TestNG.AT115GT.windowTest" />
         <item itemvalue="TestNG.EmagTemaTest.conectareUtilizatorCorectTest" />
         <item itemvalue="TestNG.EmagTemaTest" />
         <item itemvalue="TestNG.AT205GT" />
-        <item itemvalue="TestNG.AT205GT.newWindowTabMessageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678385517063</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Adaugare modificari">
+      <created>1678387642051</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1678387642051</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

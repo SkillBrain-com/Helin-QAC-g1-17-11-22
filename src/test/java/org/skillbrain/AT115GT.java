@@ -21,7 +21,7 @@ public class AT115GT extends Utils {
     }
 
     @Test
-    public void windowTest() {
+    public void RadioButtonTest() {
         driver.get("https://demoqa.com/");
         PageObjects.DemoqaPage page = new DemoqaPage(driver);
          page.elemementsCard.click();
