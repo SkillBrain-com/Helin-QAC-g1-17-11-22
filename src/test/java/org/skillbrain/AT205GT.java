@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import PageObjects.DemoqaPage;
 
-import java.io.IOException;
+import java.io.IOException; 
 import java.net.MalformedURLException;
 import java.time.Duration;
 import Utilitis.Utils;

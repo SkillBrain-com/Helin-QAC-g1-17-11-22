@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment="Commit Selenium1punct3.java si Selenium1punctele1si2.java&#10;Commit Tema 1&#10;Commit Tema4,Tema5,Tema6,Tema7&#10;Commit Tema2,Tema3,Tema4Selenium2punct1.java">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/AT205GT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/DemoqaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/DemoqaPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/AT205GT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/AT205GT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +89,7 @@
       <recent name="PageObjects" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AT205GT.newWindowTabMessageTest">
+  <component name="RunManager" selected="TestNG.AT205GT">
     <configuration name="AT202GT.windowTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Helin-QAC-g1-17-11-22" />
       <extension name="coverage">
@@ -109,6 +108,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AT205GT" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Helin-QAC-g1-17-11-22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skillbrain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.skillbrain" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.AT205GT" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AT205GT.newWindowTabMessageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Helin-QAC-g1-17-11-22" />
       <extension name="coverage">
@@ -120,24 +136,6 @@
       <option name="PACKAGE_NAME" value="org.skillbrain" />
       <option name="MAIN_CLASS_NAME" value="org.skillbrain.AT205GT" />
       <option name="METHOD_NAME" value="newWindowTabMessageTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmagTemaTest.conectareUtilizatorCorectTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Helin-QAC-g1-17-11-22" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.skillbrain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.skillbrain" />
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.EmagTemaTest" />
-      <option name="METHOD_NAME" value="conectareUtilizatorCorectTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -182,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AT205GT" />
         <item itemvalue="TestNG.AT205GT.newWindowTabMessageTest" />
         <item itemvalue="TestNG.AT202GT.windowTest" />
         <item itemvalue="TestNG.HerokuappTemaTest.windowTest" />
         <item itemvalue="TestNG.HerokuappTemaTest" />
-        <item itemvalue="TestNG.EmagTemaTest.conectareUtilizatorCorectTest" />
       </list>
     </recent_temporary>
   </component>
