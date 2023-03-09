@@ -15,6 +15,7 @@ public class DemoqaPage {
 
     private final static String ALERT_PANEL = "(//div[@class='card mt-4 top-card'])[3]";
 
+    private final static String ELEMENTS_CARD = "(//div[@class='card mt-4 top-card'])[1]";
     private final static String ALERT_BUTTON = "(//li[@id='item-1'])[2]";
 
     private final static String  CLICK_ME_1 = "alertButton";
@@ -24,6 +25,13 @@ public class DemoqaPage {
     private final static String  BROWSER_WINDOW_BUTTON = "(//li[@id='item-0'])[3]";
     private final static String NEWTAB = "tabButton";
     private final static String MESSAGE = "sampleHeading";
+
+    private final static String RADIO_BUTTON = "(//li[@id='item-2'])[1]";
+
+    private final static String RADIO_BUTTON_YES = "label[for='yesRadio']";
+    private final static String RADIO_BUTTON_IMPRESSIVE = "label[for='impressiveRadio']";
+
+
     @FindBy(css=BANNER_IMAGE)
     public WebElement bannerImage;
 
@@ -52,6 +60,17 @@ public class DemoqaPage {
 
     @FindBy(id = MESSAGE)
     public WebElement messageBrowser;
+
+    @FindBy(xpath = ELEMENTS_CARD)
+    public WebElement elementsCard;
+    @FindBy(xpath = RADIO_BUTTON)
+    public WebElement radioButton;
+    @FindBy(css=RADIO_BUTTON_YES)
+    public WebElement radioButtonYes;
+
+    @FindBy(css = RADIO_BUTTON_IMPRESSIVE)
+    public WebElement radioButtonImpressive;
+
     public DemoqaPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }

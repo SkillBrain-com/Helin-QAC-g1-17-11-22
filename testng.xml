@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/stelu/IdeaProjects/Helin-QAC-g1-17-11-22/src/test/java">
+    <test verbose="2" preserve-order="true" name="C:/Users/stelu/IdeaProjects/Helin-QAC-g1-17-11-22">
         <classes>
+            <class name="org.skillbrain.danaCatavei.AT101">
+                <methods>
+                    <include name="alertTest"/>
+                </methods>
+            </class>
+            <class name="org.skillbrain.danaCatavei.AT101_Remote">
+                <methods>
+                    <include name="alertTest"/>
+                </methods>
+            </class>
+            <class name="org.skillbrain.danaCatavei.AT202">
+                <methods>
+                    <include name="windowTest"/>
+                </methods>
+            </class>
+            <class name="org.skillbrain.danaCatavei.AT202_Remote">
+                <methods>
+                    <include name="alertTest"/>
+                </methods>
+            </class>
             <class name="org.skillbrain.danaCatavei.eMagPageTest">
                 <methods>
                     <include name="emagPageTest"/>
                     <include name="secondTest"/>
+                    <include name="parameterTest"/>
                 </methods>
             </class>
         </classes>

@@ -5,9 +5,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -18,9 +22,18 @@ public class Utils {
 //        System.out.println(System.getProperty("user.dir"));
 //    }
 //
+    public static RemoteWebDriver getRemoteWebDriver() throws MalformedURLException {
+         return new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
+
+
+    }
     public static WebDriver getChromeDriver(){
+        ChromeOptions options = new ChromeOptions();
+        //options.addArguments("start-maximized");
+        options.addArguments("--remote-allow-origins=*");
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(options);
+
         //driver.manage().window().maximize();
         //setam un wait global (implicit)
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
