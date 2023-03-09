@@ -4,9 +4,9 @@
     <test verbose="2" preserve-order="true" parallel="true"
           name="/Users/cristiansandu/IdeaProjects/Test/Helin-QAC-g1-17-11-22/src/test">
         <classes>
-            <class name="org.skillbrain.EmagPageTest" />
-            <class name="org.skillbrain.ButtonsTest"/>
-            <class name="org.skillbrain.EmagSecondTest"/>
+            <class name="org.skillbrain.danielIrimia.EmagPageTest" />
+            <class name="org.skillbrain.danielIrimia.ButtonsTest"/>
+            <class name="org.skillbrain.danielIrimia.EmagSecondTest"/>
         </classes>
     </test>
 </suite>
