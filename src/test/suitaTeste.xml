@@ -4,7 +4,7 @@
 <suite name="EmagSuite" verbose="1" parallel="false" >
     <test name="org.skillbrain" >
         <classes>
-            <class name="org.skillbrain.EmagPageTest"></class>
+            <class name="org.skillbrain.danielIrimia.EmagPageTest"></class>
         </classes>
     </test>
 
