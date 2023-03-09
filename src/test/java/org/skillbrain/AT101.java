@@ -35,7 +35,7 @@ public class AT101 extends Utils {
         page.alertPanelButton.click();
         page.alertButton.click();
         page.clickMeButton_1.click();
-        //takeScreenshot(driver);
+        takeScreenshot(driver);
         Alert alert = driver.switchTo().alert();// switch pe tereastre de alert
         alert.accept();  //OK din pagina de alert
         System.out.println("Test finished!");

@@ -48,6 +48,7 @@ public class Utils {
         public static WebDriver getChromeDriver(){
             ChromeOptions options = new ChromeOptions();
              options.addArguments("start-maximized");
+       //      options.addArguments("--remote-allow-origins==*");
         //     options.addArguments("--headless");
         //     options.setHeadless(true); browser invizibil
 
