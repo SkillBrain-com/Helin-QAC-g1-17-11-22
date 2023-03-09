@@ -19,13 +19,16 @@ import java.time.format.DateTimeFormatter;
 
 public class Utils {
 
-public static RemoteWebDriver getRemoteWebDriver() throws MalformedURLException {
+    public static RemoteWebDriver getRemoteWebDriver() throws MalformedURLException {
 
-    return new RemoteWebDriver(new URL("http://192.168.1.6:4444"), new ChromeOptions());
-}
-    public static WebDriver getChromeDriver(){
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-        ChromeDriver driver = new ChromeDriver();
+        return new RemoteWebDriver(new URL("http://192.168.1.6:4444"), new ChromeOptions());
+    }
+
+    public static WebDriver getChromeDriver() {
+        System.setProperty("webdriver.chrome", "drivers/chromedriver.exe");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        ChromeDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         return driver;
 
@@ -36,20 +39,19 @@ public static RemoteWebDriver getRemoteWebDriver() throws MalformedURLException 
         TakesScreenshot screenshot = (TakesScreenshot) driver;
 
 
-
         File source = screenshot.getScreenshotAs(OutputType.FILE);
         // LocalDate today = LocalDate.now();
         //LocalDateTime today_time = LocalDateTime.now();
-        String DATE_FORMATTER= "yyyy-MM-dd-HHmmss";
+        String DATE_FORMATTER = "yyyy-MM-dd-HHmmss";
         // System.out.println("Current Date="+today_time);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMATTER);
         String formatDateTime = LocalDateTime.now().format(formatter);
-        System.out.println("Formatted Time :" +formatDateTime);
+        System.out.println("Formatted Time :" + formatDateTime);
 
 
-        int i=1;
-        FileUtils.copyFile(source, new File(System.getProperty("user.dir")+"\\Logs\\print-"+ formatDateTime + ".png"));
-        i+=1;
+        int i = 1;
+        FileUtils.copyFile(source, new File(System.getProperty("user.dir") + "\\Logs\\print-" + formatDateTime + ".png"));
+        i += 1;
     }
 
 
