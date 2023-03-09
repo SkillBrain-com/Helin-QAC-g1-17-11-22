@@ -26,7 +26,7 @@ public class Utils {
         options.addArguments("start-maximized");
         options.addArguments("--remote-allow-origins=*");
 //        options.setHeadless(true);   browser invizibil
-        System.setProperty("webdriver.chrome.driver" , "drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver" , "/usr/local/bin/chromedriver");
         WebDriver driver = new ChromeDriver(options);  // initilizare
 //        driver.manage().window().maximize();
         // setam un wait global (implicit)
