@@ -33,7 +33,9 @@ public class DemoqaPage {
     private final static String ELEMENTS_CARD="//div[@class='category-cards']//div[1]//div[1]//div[2]//*[name()='svg']";
     private final static String RADIO_BUTON="//span[normalize-space()='Radio Button']";
     private final static String  YES="//label[@for='yesRadio']";
+    private final static String MESSAGE="//p[@class='mt-3']";
     private final static String IMPRESIVE="//label[@for='impressiveRadio']";
+    private final static String MESSAGE1="//p[@class='mt-3']";
     private final static String NO="//label[@for='noRadio']";
 
     @FindBy(xpath =ELEMENTS_CARD)
@@ -42,8 +44,12 @@ public class DemoqaPage {
     public WebElement radioButton;
     @FindBy(xpath =YES)
     public WebElement yes;
+    @FindBy(xpath = MESSAGE)
+    public WebElement message;
     @FindBy(xpath =IMPRESIVE)
     public WebElement impresive;
+    @FindBy(xpath =MESSAGE1 )
+    public WebElement message1;
     @FindBy(xpath =NO)
     public WebElement no;
 

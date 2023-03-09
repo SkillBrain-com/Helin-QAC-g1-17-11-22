@@ -27,8 +27,10 @@ public class AT115GT extends Utils {
          page.elemementsCard.click();
          page.radioButton.click();
          page.yes.click();
+         page.message.click();
         System.out.println("You have selected Yes");
         page.impresive.click();
+        page.message1.click();
         System.out.println("You have selected Impressive");
         page.no.click();
     }
