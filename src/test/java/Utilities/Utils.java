@@ -24,6 +24,7 @@ public class Utils {
     public static WebDriver getChromeDriver() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
+        options.addArguments("--remote-allow-origins=*");
 //        options.setHeadless(true);   browser invizibil
         System.setProperty("webdriver.chrome.driver" , "drivers/chromedriver");
         WebDriver driver = new ChromeDriver(options);  // initilizare
