@@ -6,7 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 import pageObjects.DemoqaPage;
 import pageObjects.EmagHomePage;
 
@@ -21,12 +24,13 @@ public class EmagPageTest extends Utils {
     EmagHomePage homePage;
     WebDriverWait waitFor;
 
-    @BeforeSuite
+    @BeforeTest
     public void initializeDriver() {
         driver = getChromeDriver();
+
     }
 
-    @AfterSuite
+    @AfterTest
     public void closeDriver(){
         driver.quit();
     }
@@ -85,6 +89,8 @@ public class EmagPageTest extends Utils {
         String abc ="abc";
     }
 
+
+
     @DataProvider(name ="endpointList")
     public Object[][] myEndpointProvider() {
         return new Object[][] {
@@ -96,6 +102,7 @@ public class EmagPageTest extends Utils {
         };
 
     }
+
 
     @Test(dataProvider = "endpointList")
     public void parameterTest(String endpoint) throws IOException {
