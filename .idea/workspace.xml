@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment="Adaugare modificari">
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/DemoqaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/DemoqaPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tema1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_3_2023_6_28_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_3_2023_6_28_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomePage1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomePage1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/AT115GT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/AT115GT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTemaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagSecondTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagSecondTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +96,22 @@
       <recent name="PageObjects" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AT115GT.RadioButtonTest">
-    <configuration name="AT115GT" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Tema1">
+    <configuration name="Tema1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tema1" />
+      <module name="Helin-QAC-g1-17-11-22" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="xxxx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xxxx" />
+      <module name="Helin-QAC-g1-17-11-22" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmagSecondTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Helin-QAC-g1-17-11-22" />
       <extension name="coverage">
         <pattern>
@@ -99,44 +120,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.skillbrain" />
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.AT115GT" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.EmagSecondTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AT115GT.RadioButtonTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Helin-QAC-g1-17-11-22" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.skillbrain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.skillbrain" />
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.AT115GT" />
-      <option name="METHOD_NAME" value="RadioButtonTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AT115GT.windowTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Helin-QAC-g1-17-11-22" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.skillbrain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.skillbrain" />
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.AT115GT" />
-      <option name="METHOD_NAME" value="windowTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -180,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AT115GT.RadioButtonTest" />
-        <item itemvalue="TestNG.AT115GT" />
-        <item itemvalue="TestNG.AT115GT.windowTest" />
+        <item itemvalue="Application.Tema1" />
+        <item itemvalue="Application.xxxx" />
         <item itemvalue="TestNG.EmagTemaTest.conectareUtilizatorCorectTest" />
         <item itemvalue="TestNG.EmagTemaTest" />
+        <item itemvalue="TestNG.EmagSecondTest" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678388103191</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Adaugare modificari">
+      <created>1678388496948</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1678388496948</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

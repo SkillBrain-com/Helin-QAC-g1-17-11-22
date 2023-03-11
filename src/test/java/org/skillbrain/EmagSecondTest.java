@@ -1,4 +1,5 @@
 package org.skillbrain;
+
 import Utilitis.Utils;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,18 +11,20 @@ import PageObjects.EmagHomePage;
 
 import java.net.MalformedURLException;
 import java.time.Duration;
-public class EmagSecondTest extends Utils{
+
+public class EmagSecondTest extends Utils {
     RemoteWebDriver driver;
     EmagHomePage homePage;
     WebDriverWait waitFor;
-    @BeforeTest
-     public void initializeDriver() throws MalformedURLException {
-     driver =getRemoteWebdriver();
 
-     }
+    @BeforeTest
+    public void initializeDriver() throws MalformedURLException {
+        driver = getRemoteWebdriver();
+
+    }
 
     @AfterTest
-    public void closeDriver(){
+    public void closeDriver() {
         driver.quit();
     }
 
@@ -29,7 +32,7 @@ public class EmagSecondTest extends Utils{
     public void emagSecondTest() {
         driver.get("https://www.emag.ro/");
         EmagHomePage homePage = new EmagHomePage(driver);
-        //homePage.closeOfertaZileiButton.click();
+        homePage.closeOfertaZileiButton.click();
         homePage.gdprFooter.click();
         homePage.acceptButton.click();
         driver.navigate().refresh();
@@ -39,6 +42,7 @@ public class EmagSecondTest extends Utils{
         wait.until(ExpectedConditions.visibilityOf(homePage.loginBanner));
         homePage.intraInContButton.click();
         wait.until(ExpectedConditions.visibilityOf(homePage.emagLogo));
+
         System.out.println(homePage.salutMsg.getText());
         // alerts, file uploads, modals - de gasit exemple
         System.out.println("Skillbrain va saluta!");

@@ -2,6 +2,7 @@ package org.skillbrain.Tema5.TestNG;
 
 import PageObjects.EmagTema;
 import Utilitis.Utils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -13,7 +14,7 @@ import java.util.Set;
 
 public class EmagTemaTest extends Utils{
 
-    RemoteWebDriver driver;
+     RemoteWebDriver driver;
      EmagTema page;
     //  WebDriverWait waitFor;
     @BeforeTest
@@ -31,8 +32,8 @@ public class EmagTemaTest extends Utils{
         driver.get("https://www.emag.ro/");
         EmagTema page=new EmagTema(driver);
         // ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", page.email);
-        page.acceptButton.click();
-        page.gdprFooter.click();
+        // page.acceptButton.click();
+        //  page.gdprFooter.click();
         page.email.click();
         page. introduAdresaDeEmail.click();
         System.out.println("gabrielajitea77@gmail.com");

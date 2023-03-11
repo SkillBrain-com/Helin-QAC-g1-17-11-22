@@ -53,14 +53,7 @@ public class Notes {
 
     //git pull --rebase origin master pt actualizare git
 
-    //</dependency>
-    //    <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-    //    <dependency>
-    //      <groupId>commons-io</groupId>
-    //      <artifactId>commons-io</artifactId>
-    //      <version>2.11.0</version>
-    //    </dependency>
-
+    //
     //   String DATE_FORMATTER= "yyyy-MM-dd-HHmmss";
     //       // System.out.println("Current Date="+today_time);
     //        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMATTER);
