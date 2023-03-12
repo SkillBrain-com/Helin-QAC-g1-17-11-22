@@ -10,7 +10,6 @@ public class DemoqaPage {
     private final static String BANNER_IMAGE = ".banner-image";
     private final static String GO_TO_REGISTRATION = "//a[normalize-space()='Go To Registration']";
 
-
     private final static String OPTION_ROMANIA = "option[value='70']";
 
     private final static String ALERT_PANEL = "(//div[@class='card mt-4 top-card'])[3]";
@@ -30,7 +29,32 @@ public class DemoqaPage {
     private final static String RADIO_BUTTON = "(//li[@id='item-2'])[1]";
     private final static String HEADER_RADIO_BUTTON = "(//div[@class='main-header'])[1]";
     private final static String YES_BUTTON = "//label[normalize-space()='Yes']";
-    private final static String IMPRESSIVE_BUTTON ="//label[normalize-space()='Impressive']";
+    private final static String IMPRESSIVE_BUTTON = "//label[normalize-space()='Impressive']";
+
+    // TEXT BOX variables declaration and initialization
+    private final static String TEXT_BOX = "(//li[@id='item-0'])[1]";
+    @FindBy(xpath = TEXT_BOX)
+    public WebElement textBox;
+    private final static String FULL_NAME = "userName";
+    @FindBy(id = FULL_NAME)
+    public WebElement fullName;
+    private final static String EMAIL = "userEmail";
+    @FindBy(id = EMAIL)
+    public WebElement email;
+    private final static String CURRENT_ADDRESS = "currentAddress";
+    @FindBy(id = CURRENT_ADDRESS)
+    public WebElement currentAddress;
+    private final static String PERMANENT_ADDRESS = "//textarea[@id='permanentAddress']";
+    @FindBy(xpath = PERMANENT_ADDRESS)
+    public WebElement permanentAddress;
+    private final static String SUBMIT_BUTTON = "#submit";
+    @FindBy(css = SUBMIT_BUTTON)
+    public WebElement submitButton;
+    private final static String OUTPUT_AFTER_SUMMIT = ".border.col-md-12.col-sm-12";
+    @FindBy(css = OUTPUT_AFTER_SUMMIT)
+    public WebElement outputAfterSummit;
+
+
 
     @FindBy (xpath = IMPRESSIVE_BUTTON)
     public WebElement impressiveButton;
@@ -75,10 +99,10 @@ public class DemoqaPage {
     @FindBy(id = MESSAGE)
     public WebElement messageBrowser;
 
+    @FindBy(id = NEW_TAB_MESSAGE)
+    public WebElement newTabMessageButton;
+
     public DemoqaPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
-
-    @FindBy(id = NEW_TAB_MESSAGE)
-    public WebElement newTabMessageButton;
 }
