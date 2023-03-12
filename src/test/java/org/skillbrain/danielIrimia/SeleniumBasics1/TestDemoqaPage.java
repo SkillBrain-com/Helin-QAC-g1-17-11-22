@@ -1,7 +1,9 @@
 package org.skillbrain.danielIrimia.SeleniumBasics1;
 
 import Utilities.Utils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -54,6 +56,21 @@ public class TestDemoqaPage extends Utils {
         System.out.println(messageResult);
         takeScreenshot(driver);
         System.out.println("Test passed ===================");
+    }
+
+    @Test
+    public void testRadioButton() throws IOException {
+        page.radioButton.click();
+        page.headerRadioButton.getText();
+        System.out.println(page.headerRadioButton.getText());
+        page.yesButton.click();
+        String yesMessage = driver.findElement(By.xpath("(//p[@class='mt-3'])[1]")).getText();
+        Assert.assertEquals(yesMessage, "You have selected Yes");
+        takeScreenshot(driver);
+        page.impressiveButton.click();
+        String impressiveMessage = driver.findElement(By.cssSelector(".mt-3")).getText();
+        Assert.assertEquals(impressiveMessage, "You have selected Impressive");
+        takeScreenshot(driver);
     }
 
     @AfterTest
