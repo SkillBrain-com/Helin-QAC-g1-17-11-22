@@ -28,14 +28,30 @@ public class TestpagesHerokuapp extends Utils {
         page.basicWebPageExample.click();
         System.out.println(page.basicWebPageExampleHeader.getText());
         System.out.println(page.basicWebPageExampleParagraph2.getText());
+        System.out.println("====================================");
     }
     @Test
-    public void testElementAttributes() {
+    public void testElementAttributesPage() {
         driver.get(APP_URL);
         LocatorExercises page = new LocatorExercises(driver);
         page.elementAttributesExample.click();
+        page.styledClickButton.click();
+        System.out.println(page.paragraphDynamicAttribute.getText());
+        String customValue = page.paragraphDynamicAttribute.getAttribute("nextid");
+        System.out.println("Custom value of attribute nextid  " + customValue);
+        System.out.println("====================================");
     }
 
+    @Test
+    public void testLocatorsTestPage() {
+        driver.get(APP_URL);
+        LocatorExercises page = new LocatorExercises(driver);
+        page.locatorsTestPage.click();
+        System.out.println(page.oParagraphText.getText());
+        System.out.println(page.paragraphName38.getText());
+        page.jumpToP15.click();
+        System.out.println("====================================");
+    }
 
     @AfterTest
     public void stopTest() {
