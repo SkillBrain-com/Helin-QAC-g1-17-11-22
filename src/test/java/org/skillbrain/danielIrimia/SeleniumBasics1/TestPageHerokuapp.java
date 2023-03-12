@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.SeleniumBasics1.LocatorExercises;
 
-public class TestpPgesHerokuapp extends Utils {
+public class TestPageHerokuapp extends Utils {
 
     WebDriver driver;
     LocatorExercises page;
