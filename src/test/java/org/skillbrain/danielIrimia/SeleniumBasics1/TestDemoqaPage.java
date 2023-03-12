@@ -38,7 +38,6 @@ public class TestDemoqaPage extends Utils {
         page.currentAddress.sendKeys("Copenhagen");
         page.permanentAddress.sendKeys("Copenhagen");
         page.submitButton.click();
-
         System.out.println(page.outputAfterSummit.getText());
     }
 
