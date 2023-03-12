@@ -1,3 +1,4 @@
+package org.skillbrain;
 
 import java.util.Scanner;
 
