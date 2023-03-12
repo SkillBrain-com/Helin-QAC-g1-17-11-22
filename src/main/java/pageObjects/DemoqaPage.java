@@ -47,12 +47,15 @@ public class DemoqaPage {
     private final static String PERMANENT_ADDRESS = "//textarea[@id='permanentAddress']";
     @FindBy(xpath = PERMANENT_ADDRESS)
     public WebElement permanentAddress;
-    private final static String SUBMIT_BUTTON = "#submit";
-    @FindBy(css = SUBMIT_BUTTON)
+    private final static String SUBMIT_BUTTON = "//button[@id='submit']";
+    @FindBy(xpath = SUBMIT_BUTTON)
     public WebElement submitButton;
-    private final static String OUTPUT_AFTER_SUMMIT = ".border.col-md-12.col-sm-12";
-    @FindBy(css = OUTPUT_AFTER_SUMMIT)
+    private final static String OUTPUT_AFTER_SUMMIT = "//div[@id='output']";
+    @FindBy(xpath = OUTPUT_AFTER_SUMMIT)
     public WebElement outputAfterSummit;
+
+
+    // CHECK BOX variables declaration and initialization
 
 
 
