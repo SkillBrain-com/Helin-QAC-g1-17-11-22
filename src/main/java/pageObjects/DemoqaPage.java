@@ -70,6 +70,69 @@ public class DemoqaPage {
     public WebElement displayResult;
     // ================================
 
+    // WEB TABLES variables declaration and initialization
+    private final static String WEB_TABLES = "(//li[@id='item-3'])[1]";
+    @FindBy(xpath = WEB_TABLES)
+    public WebElement webTables;
+    private final static String ADD_BUTTON = "addNewRecordButton";
+    @FindBy(id = ADD_BUTTON)
+    public WebElement addButton;
+    // ================================
+
+    // Buttons variables declaration and initialization
+    private final static String BUTTONS = "(//li[@id='item-4'])[1]";
+    @FindBy(xpath = BUTTONS)
+    public WebElement buttons;
+    private final static String DOUBLE_CLICK_BUTTON = "doubleClickBtn";
+    @FindBy(id = DOUBLE_CLICK_BUTTON)
+    public WebElement doubleClickButton;
+    private final static String RIGHT_CLICK_BUTTON = "rightClickBtn";
+    @FindBy(id = RIGHT_CLICK_BUTTON)
+    public WebElement rightClickButton;
+    private final static String CLICK_ME_BUTTON = "(//button[normalize-space()='Click Me'])[1]";
+    @FindBy(xpath = CLICK_ME_BUTTON)
+    public WebElement clickMeButton;
+    private final static String DOUBLE_CLICK_MESSAGE = "doubleClickMessage";
+    @FindBy(id = DOUBLE_CLICK_MESSAGE)
+    public WebElement doubleClickMessage;
+    private final static String RIGHT_CLICK_MESSAGE = "rightClickMessage";
+    @FindBy(id = RIGHT_CLICK_MESSAGE)
+    public WebElement rightClickMessage;
+    private final static String CLICK_ME_MESSAGE = "dynamicClickMessage";
+    @FindBy(id = CLICK_ME_MESSAGE)
+    public WebElement clickMeMessage;
+    // ================================
+
+    // LINKS variables declaration and initialization
+    private final static String LINKS = "(//li[@id='item-5'])[1]";
+    @FindBy(xpath = LINKS)
+    public WebElement links;
+    private final static String HOME_LINK = "simpleLink";
+    @FindBy(id = HOME_LINK)
+    public WebElement homeLink;
+    private final static String CREATED_LINK = "(//a[normalize-space()='Created'])[1]";
+    @FindBy(xpath = CREATED_LINK)
+    public WebElement createdLink;
+    private final static String NO_CONTENT_LINK = "no-content";
+    @FindBy(id = NO_CONTENT_LINK)
+    public WebElement noContentLink;
+    private final static String MOVED_LINK = "moved";
+    @FindBy(id = MOVED_LINK)
+    public WebElement movedLink;
+    private final static String BAD_REQUEST_LINK = "bad-request";
+    @FindBy(id = BAD_REQUEST_LINK)
+    public WebElement badRequestLink;
+    private final static String UNAUTHORIZED_LINK = "unauthorized";
+    @FindBy(id = UNAUTHORIZED_LINK)
+    public WebElement unauthorizedLink;
+    private final static String FORBIDDEN_LINK = "forbidden";
+    @FindBy(id = FORBIDDEN_LINK)
+    public WebElement forbiddenLink;
+    private final static String INVALID_LINK = "invalid-url";
+    @FindBy(id = INVALID_LINK)
+    public WebElement invalidLink;
+    // ================================
+
     @FindBy(xpath = IMPRESSIVE_BUTTON)
     public WebElement impressiveButton;
     @FindBy(xpath = YES_BUTTON)

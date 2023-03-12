@@ -3,6 +3,8 @@ package org.skillbrain.danielIrimia.SeleniumBasics1;
 import Utilities.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -71,6 +73,66 @@ public class TestDemoqaPage extends Utils {
         String impressiveMessage = driver.findElement(By.cssSelector(".mt-3")).getText();
         Assert.assertEquals(impressiveMessage, "You have selected Impressive");
         takeScreenshot(driver);
+    }
+
+    @Test
+    public void testWebTables() throws IOException {
+        page.webTables.click();
+        page.addButton.click();
+        WebElement firstName = driver.findElement(By.id("firstName"));
+        firstName.sendKeys( "Daniel");
+        WebElement lastName = driver.findElement(By.id("lastName"));
+        lastName.sendKeys("Dan");
+        WebElement email = driver.findElement(By.id("userEmail"));
+        email.sendKeys("test@yahoo.com");
+        WebElement age = driver.findElement(By.id("age"));
+        age.sendKeys("35");
+        WebElement salary = driver.findElement(By.id("salary"));
+        salary.sendKeys("16000");
+        WebElement departmentName = driver.findElement(By.id("department"));
+        departmentName.sendKeys("IT");
+        WebElement submitButton = driver.findElement(By.id("submit"));
+        submitButton.click();
+        takeScreenshot(driver);
+        System.out.println("All information was successfully submitted!");
+    }
+
+    @Test
+    public void buttonsTest() throws IOException {
+        Actions actions = new Actions(driver);
+        page.buttons.click();
+        actions.doubleClick(page.doubleClickButton).build().perform();
+        actions.contextClick(page.rightClickButton).build().perform();
+        actions.click(page.clickMeButton).build().perform();
+        String doubleClickMessage = page.doubleClickMessage.getText();
+        Assert.assertEquals(doubleClickMessage, "You have done a double click");
+        String rightClickMessage = page.rightClickMessage.getText();
+        Assert.assertEquals(rightClickMessage, "You have done a right click");
+        String clickMeMessage = page.clickMeMessage.getText();
+        Assert.assertEquals(clickMeMessage, "You have done a dynamic click");
+        takeScreenshot(driver);
+    }
+
+    @Test
+    public void testLinks(){
+        page.links.click();
+        page.homeLink.click();
+        page.createdLink.click();
+        WebElement linkResponse = driver.findElement(By.id("linkResponse"));
+        System.out.println(linkResponse.getText());
+        page.noContentLink.click();
+        System.out.println(linkResponse.getText());
+        page.movedLink.click();
+        System.out.println(linkResponse.getText());
+        page.badRequestLink.click();
+        System.out.println(linkResponse.getText());
+        page.unauthorizedLink.click();
+        System.out.println(linkResponse.getText());
+        page.forbiddenLink.click();
+        System.out.println(linkResponse.getText());
+        page.invalidLink.click();
+        System.out.println(linkResponse.getText());
+        System.out.println("All links were successfully tested!");
     }
 
     @AfterTest
