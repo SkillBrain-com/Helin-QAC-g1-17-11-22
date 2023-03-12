@@ -8,6 +8,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.DemoqaPage;
 
+import java.io.IOException;
+
 public class TestDemoqaPage extends Utils {
 
     //3. Localizați cât mai multe elemente de pe pagina https://demoqa.com/elements,
@@ -31,7 +33,7 @@ public class TestDemoqaPage extends Utils {
     }
 
     @Test
-    public void testTextBox() {
+    public void testTextBox() throws IOException {
         page.textBox.click();
         page.fullName.sendKeys("Daniel Irimia");
         page.email.sendKeys("textbox@yahoo.com");
@@ -39,6 +41,19 @@ public class TestDemoqaPage extends Utils {
         page.permanentAddress.sendKeys("Copenhagen");
         page.submitButton.click();
         System.out.println(page.outputAfterSummit.getText());
+        takeScreenshot(driver);
+        System.out.println("Test passed ===================");
+    }
+
+    @Test
+    public void testCheckBox() throws IOException {
+        page.checkBox.click();
+        page.toogleButton.click();
+        page.downloadsCheckBox.click();
+        String messageResult = page.displayResult.getText();
+        System.out.println(messageResult);
+        takeScreenshot(driver);
+        System.out.println("Test passed ===================");
     }
 
     @AfterTest

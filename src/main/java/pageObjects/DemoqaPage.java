@@ -53,22 +53,33 @@ public class DemoqaPage {
     private final static String OUTPUT_AFTER_SUMMIT = "//div[@id='output']";
     @FindBy(xpath = OUTPUT_AFTER_SUMMIT)
     public WebElement outputAfterSummit;
-
-
+    // ================================
     // CHECK BOX variables declaration and initialization
+    private final static String CHECK_BOX = "(//li[@id='item-1'])[1]";
+    @FindBy(xpath = CHECK_BOX)
+    public WebElement checkBox;
+    private final static String TOOGLE_BUTTON = "(//button[@title='Toggle'])[1]";
+    @FindBy(xpath = TOOGLE_BUTTON)
+    public WebElement toogleButton;
+    private final static String DOWNLOADS_CHECK_BOX = "//label[@for='tree-node-downloads']" +
+            "//span[@class='rct-checkbox']//*[name()='svg']";
+    @FindBy(xpath = DOWNLOADS_CHECK_BOX)
+    public WebElement downloadsCheckBox;
+    private final static String DISPLAY_RESULT = "//div[@id='result']";
+    @FindBy(xpath = DISPLAY_RESULT)
+    public WebElement displayResult;
+    // ================================
 
-
-
-    @FindBy (xpath = IMPRESSIVE_BUTTON)
+    @FindBy(xpath = IMPRESSIVE_BUTTON)
     public WebElement impressiveButton;
-    @FindBy (xpath = YES_BUTTON)
+    @FindBy(xpath = YES_BUTTON)
     public WebElement yesButton;
 
-    @FindBy (xpath = HEADER_RADIO_BUTTON)
+    @FindBy(xpath = HEADER_RADIO_BUTTON)
     public WebElement headerRadioButton;
 
-    @FindBy (xpath = RADIO_BUTTON)
-    public  WebElement radioButton;
+    @FindBy(xpath = RADIO_BUTTON)
+    public WebElement radioButton;
 
     @FindBy(xpath = ELEMENT_CARD)
     public WebElement elementCard;
