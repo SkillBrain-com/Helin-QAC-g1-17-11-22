@@ -23,6 +23,47 @@ public class LocatorExercises {
     private final static String PARAGRAPH_NAME38 = "p38";
     private final static String JUMP_TO_P15 = "(//a[normalize-space()='jump to para 15'])[1]";
 
+    // variable for HTML Tag Examples
+    private final static String HTML_TAG_EXAMPLES = "//body/div[@class='page-body']/ul[1]/li[4]";
+    private final static String TABLE_TEST_PAGE = "#tablestest";
+    private final static String TABLE_TEST_INFORMATION = "//div[@class='centered']";
+
+    // variable for Dynamic HTML TABLE Tag
+    private final static String DYNAMIC_TABLE_Page= "dynamictablestest";
+    private final static String TABLE_CAPTION = "#tablehere table caption";
+    private final static String TABLE = "#tablehere table";
+    private final static String SUMMARY = "summary";
+    private final static String CAPTION = "caption";
+    private final static String TABLE_ID = "//input[@id='tableid']";
+    private final static String JSON_DATA = "//textarea[@id='jsondata']";
+    private final static String REFRESH_TABLE = "//button[@id='refreshtable']";
+
+    @FindBy(xpath = REFRESH_TABLE)
+    public WebElement refreshTable;
+    @FindBy(xpath = JSON_DATA)
+    public WebElement jsonData;
+
+    @FindBy(xpath = TABLE_ID)
+    public WebElement tableId;
+    @FindBy(id = CAPTION)
+    public WebElement caption;
+    @FindBy(tagName = SUMMARY)
+    public WebElement summary;
+    @FindBy(css = TABLE)
+    public WebElement table;
+    @FindBy(css = TABLE_CAPTION)
+    public WebElement tableCaption;
+
+    @FindBy(id = DYNAMIC_TABLE_Page)
+    public WebElement dynamicTablePage;
+    @FindBy(xpath = TABLE_TEST_INFORMATION)
+    public WebElement tableTestInformation;
+
+    @FindBy(css = TABLE_TEST_PAGE)
+    public WebElement tableTestPage;
+    @FindBy(xpath = HTML_TAG_EXAMPLES)
+    public WebElement htmlTagExamples;
+
     @FindBy(xpath = JUMP_TO_P15)
     public WebElement jumpToP15;
 
@@ -53,4 +94,5 @@ public class LocatorExercises {
     public LocatorExercises (WebDriver driver) {
         PageFactory.initElements(driver,this);
     }
+
 }
