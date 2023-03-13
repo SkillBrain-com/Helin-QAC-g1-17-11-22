@@ -8,11 +8,13 @@ import org.testng.annotations.Test;
 import pageObjects.DemoqaPage;
 
 import java.io.IOException;
+
 public class DemoqaWindowsTest extends Utils {
     WebDriver driver;
     DemoqaPage page;
 
     private final static String APP_URL = "https://demoqa.com/browser-windows";
+
     @BeforeTest
     public void startTest() {
         driver = getChromeDriver();
@@ -20,9 +22,8 @@ public class DemoqaWindowsTest extends Utils {
         driver.get(APP_URL);
     }
 
-
     @Test
-    public void windowsLinkTest () {
+    public void windowsLinkTest() {
         try {
             page.windowsNewTab.click();
             Utils.switchToWindow(driver, "sample");
@@ -53,5 +54,4 @@ public class DemoqaWindowsTest extends Utils {
             driver.quit();
         }
     }
-
 }
