@@ -6,12 +6,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.SeleniumBasics1.LocatorExercises;
+import pageObjects.SeleniumBasics1.HerokuApp;
 
 public class TestPageHerokuapp extends Utils {
 
     WebDriver driver;
-    LocatorExercises page;
+    HerokuApp page;
     private final static String APP_URL = "https://testpages.herokuapp.com/styled/index.html";
 
     @BeforeTest
@@ -21,7 +21,7 @@ public class TestPageHerokuapp extends Utils {
 
     @BeforeMethod
     public void setupObject() {
-        page = new LocatorExercises(driver);
+        page = new HerokuApp(driver);
         driver.get(APP_URL);
     }
 
