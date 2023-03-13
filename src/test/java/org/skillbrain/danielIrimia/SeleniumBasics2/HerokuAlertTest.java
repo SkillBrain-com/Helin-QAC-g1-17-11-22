@@ -24,7 +24,7 @@ public class HerokuAlertTest extends Utils {
     }
 
     @Test
-    public void buttonsAlertTest() throws IOException {
+    public void buttonsAlertTest()  {
         Actions actions = new Actions(driver);
         try {
             page.alertTestPage.click();
@@ -43,9 +43,12 @@ public class HerokuAlertTest extends Utils {
             System.out.println(driver.findElement(By.id("promptexplanation")).getText());
             // element do not exist on the alert page
             System.out.println(driver.findElement(By.id("fakealert")).getText());
-        } catch (Exception error) {
-            System.out.println(error.getMessage());
-            takeScreenshot(driver);
+        } catch (Exception exception) {
+            try {
+                takeScreenshot(driver);
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
         } finally {
             driver.quit();
         }

@@ -27,6 +27,7 @@ public class HerokuApp {
     private final static String HTML_TAG_EXAMPLES = "//body/div[@class='page-body']/ul[1]/li[4]";
     private final static String TABLE_TEST_PAGE = "#tablestest";
     private final static String TABLE_TEST_INFORMATION = "//div[@class='centered']";
+    // END OF HTML TAG EXAMPLES VARIABLES
 
     // variable for Dynamic HTML TABLE Tag
     private final static String DYNAMIC_TABLE_Page= "dynamictablestest";
@@ -37,6 +38,7 @@ public class HerokuApp {
     private final static String TABLE_ID = "//input[@id='tableid']";
     private final static String JSON_DATA = "//textarea[@id='jsondata']";
     private final static String REFRESH_TABLE = "//button[@id='refreshtable']";
+    // END OF DYNAMIC HTML TABLE TAG VARIABLES
 
     // varaible for alert test page
     private final static String ALERT_TEST_PAGE = "//a[@id='alerttest']";
@@ -51,7 +53,49 @@ public class HerokuApp {
     private final static String ALERT_BUTTON_PROMPT = "promptexample";
     @FindBy(id = ALERT_BUTTON_PROMPT)
     public WebElement alertButtonPrompt;
+    // END OF ALERT TEST PAGE VARIABLES
 
+    // variable for form test page
+    private final static String FORM_TEST_PAGE =" //a[@id='htmlformtest']";
+    @FindBy(xpath = FORM_TEST_PAGE)
+    public WebElement formTestPage;
+    private final static String INPUT_USERNAME_FORM = "//input[@name='username']";
+    @FindBy(xpath = INPUT_USERNAME_FORM)
+    public WebElement inputUsernameForm;
+    private final static String INPUT_PASSWORD_FORM = "//input[@name='password']";
+    @FindBy(xpath = INPUT_PASSWORD_FORM)
+    public WebElement inputPasswordForm;
+    private final static String INPUT_TEXTAREA_FORM = "//textarea[@name='comments']";
+    @FindBy(xpath = INPUT_TEXTAREA_FORM)
+    public WebElement inputTextareaForm;
+    private final static String INPUT_CHECKBOX_CD1 = "//input[@value='cb1']";
+    @FindBy(xpath = INPUT_CHECKBOX_CD1)
+    public WebElement inputCheckboxCd1;
+    private final static String RADIO_BUTTON_RD3 = "input[value='rd3']";
+    @FindBy(css = RADIO_BUTTON_RD3)
+    public WebElement radioButtonRd3;
+    private final static String OPTION_MS2 = "//option[@value='ms2']";
+    @FindBy(xpath = OPTION_MS2)
+    public WebElement optionMs2;
+    private final static String DROPDOWN_OPTIONS = "//select[@name='dropdown']";
+    @FindBy(xpath = DROPDOWN_OPTIONS)
+    public WebElement dropdownOptions;
+    private final static String DROPDOWN_DD4 = "//option[@value='dd4']";
+    @FindBy(xpath = DROPDOWN_DD4)
+    public WebElement dropdownDd4;
+    private final static String SUBMIT_BUTTON_FORM = "//input[@type='submit']";
+    @FindBy(xpath = SUBMIT_BUTTON_FORM)
+    public WebElement submitButtonForm;
+    private final static String RESET_BUTTON_FORM = "//input[@value='cancel']";
+    @FindBy(xpath = RESET_BUTTON_FORM)
+    public WebElement resetButtonForm;
+    private final static String FORM_RESULT = "//div[@class='centered form-results']";
+    @FindBy(xpath = FORM_RESULT)
+    public WebElement formResult;
+    private final static String BACK_TO_FORM_BUTTON = "back_to_form";
+    @FindBy(id = BACK_TO_FORM_BUTTON)
+    public WebElement backToFormButton;
+    // END OF FORM TEST PAGE VARIABLES
 
     @FindBy(xpath = REFRESH_TABLE)
     public WebElement refreshTable;
