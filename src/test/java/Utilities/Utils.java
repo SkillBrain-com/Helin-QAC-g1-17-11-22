@@ -14,6 +14,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.Set;
 
 public class Utils {
 
@@ -41,5 +42,15 @@ public class Utils {
         destinationFile = System.getProperty("user.dir")
                 + "/Logs/printScreen-" + LocalDateTime.now() + ".png";
         FileUtils.copyFile(source, new File(destinationFile));
+    }
+
+    public static void switchToWindow(WebDriver driver, String windowTitle) {
+        Set<String> windowHandles = driver.getWindowHandles();
+        for (String windowHandle : windowHandles) {
+            driver.switchTo().window(windowHandle);
+            if (driver.getTitle().equals(windowTitle)) {
+                break;
+            }
+        }
     }
 }

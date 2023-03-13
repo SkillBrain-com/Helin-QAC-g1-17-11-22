@@ -22,7 +22,7 @@ public class DemoqaPage {
     private final static String WINDOW_BUTTON = "(//div[@class='card mt-4 top-card'])[3]";
     private final static String BROWSER_WINDOW_BUTTON = "(//li[@id='item-0'])[3]";
     private final static String NEWTAB = "tabButton";
-    private final static String MESSAGE = "sampleHeading";
+    private final static String MESSAGE = "//h1[@id='sampleHeading']";
 
     private final static String NEW_TAB_MESSAGE = "messageWindowButton";
     private final static String ELEMENT_CARD = "(//div[@class='card mt-4 top-card'])[1]";
@@ -53,7 +53,8 @@ public class DemoqaPage {
     private final static String OUTPUT_AFTER_SUMMIT = "//div[@id='output']";
     @FindBy(xpath = OUTPUT_AFTER_SUMMIT)
     public WebElement outputAfterSummit;
-    // ================================
+    // end of TEXT BOX variables declaration and initialization
+
     // CHECK BOX variables declaration and initialization
     private final static String CHECK_BOX = "(//li[@id='item-1'])[1]";
     @FindBy(xpath = CHECK_BOX)
@@ -68,7 +69,7 @@ public class DemoqaPage {
     private final static String DISPLAY_RESULT = "//div[@id='result']";
     @FindBy(xpath = DISPLAY_RESULT)
     public WebElement displayResult;
-    // ================================
+    // end of CHECK BOX variables declaration and initialization
 
     // WEB TABLES variables declaration and initialization
     private final static String WEB_TABLES = "(//li[@id='item-3'])[1]";
@@ -77,7 +78,7 @@ public class DemoqaPage {
     private final static String ADD_BUTTON = "addNewRecordButton";
     @FindBy(id = ADD_BUTTON)
     public WebElement addButton;
-    // ================================
+    // end of WEB TABLES variables declaration and initialization
 
     // Buttons variables declaration and initialization
     private final static String BUTTONS = "(//li[@id='item-4'])[1]";
@@ -101,7 +102,7 @@ public class DemoqaPage {
     private final static String CLICK_ME_MESSAGE = "dynamicClickMessage";
     @FindBy(id = CLICK_ME_MESSAGE)
     public WebElement clickMeMessage;
-    // ================================
+    // end of Buttons variables declaration and initialization
 
     // LINKS variables declaration and initialization
     private final static String LINKS = "(//li[@id='item-5'])[1]";
@@ -131,7 +132,23 @@ public class DemoqaPage {
     private final static String INVALID_LINK = "invalid-url";
     @FindBy(id = INVALID_LINK)
     public WebElement invalidLink;
-    // ================================
+    // end of LINKS variables declaration and initialization
+
+    // Windos link variables declaration and initialization
+    private final static String WINDOWS_NEW_TAB= "tabButton";
+    @FindBy(id = WINDOWS_NEW_TAB)
+    public WebElement windowsNewTab;
+    private final static String WINDOWS_NEW_WINDOW = "windowButton";
+    @FindBy(id = WINDOWS_NEW_WINDOW)
+    public WebElement windowsNewWindow;
+    private final static String WINDOW_MESSAGE_BUTTON = "messageWindowButton";
+    @FindBy(id = WINDOW_MESSAGE_BUTTON)
+    public WebElement windowMessageButton;
+    private final static String MESSAGE_FROM_WINDOW_MS_BT = "body";
+    @FindBy(tagName = MESSAGE_FROM_WINDOW_MS_BT)
+    public WebElement messageFromWindowMsBt;
+    // end of Windos link variables declaration and initialization
+
 
     @FindBy(xpath = IMPRESSIVE_BUTTON)
     public WebElement impressiveButton;
@@ -173,7 +190,7 @@ public class DemoqaPage {
     @FindBy(id = NEWTAB)
     public WebElement newTabButton;
 
-    @FindBy(id = MESSAGE)
+    @FindBy(xpath = MESSAGE)
     public WebElement messageBrowser;
 
     @FindBy(id = NEW_TAB_MESSAGE)
