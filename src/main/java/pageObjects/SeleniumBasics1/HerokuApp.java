@@ -38,6 +38,21 @@ public class HerokuApp {
     private final static String JSON_DATA = "//textarea[@id='jsondata']";
     private final static String REFRESH_TABLE = "//button[@id='refreshtable']";
 
+    // varaible for alert test page
+    private final static String ALERT_TEST_PAGE = "//a[@id='alerttest']";
+    @FindBy(xpath = ALERT_TEST_PAGE)
+    public WebElement alertTestPage;
+    private final static String ALERT_BUTTON = "#alertexamples";
+    @FindBy(css = ALERT_BUTTON)
+    public WebElement alertButton;
+    private final static String ALERT_BUTTON_CONFIRM = "confirmexample";
+    @FindBy(id = ALERT_BUTTON_CONFIRM)
+    public WebElement alertButtonConfirm;
+    private final static String ALERT_BUTTON_PROMPT = "promptexample";
+    @FindBy(id = ALERT_BUTTON_PROMPT)
+    public WebElement alertButtonPrompt;
+
+
     @FindBy(xpath = REFRESH_TABLE)
     public WebElement refreshTable;
     @FindBy(xpath = JSON_DATA)
