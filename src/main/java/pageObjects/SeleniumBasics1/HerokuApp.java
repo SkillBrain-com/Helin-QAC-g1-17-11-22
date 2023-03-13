@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LocatorExercises {
+public class HerokuApp {
 
     // variable for basic web page
     private final static String BASIC_WEB_PAGE_EXAMPLE = "#basicpagetest";
@@ -91,7 +91,7 @@ public class LocatorExercises {
     @FindBy(css = BASIC_WEB_PAGE_EXAMPLE)
     public WebElement basicWebPageExample;
 
-    public LocatorExercises (WebDriver driver) {
+    public HerokuApp(WebDriver driver) {
         PageFactory.initElements(driver,this);
     }
 
