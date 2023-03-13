@@ -1,6 +1,6 @@
 package org.skillbrain.Tema5.Demoqa;
 
-import Utilities.Utils;
+import org.skillbrain.Tema7.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;

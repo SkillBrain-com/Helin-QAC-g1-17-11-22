@@ -1,9 +1,9 @@
 package org.skillbrain.lucianSimon;
 
-import Utilities.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.skillbrain.Tema7.Utils;
 import pageObjects.EmagHomePage;
 
 import java.time.Duration;

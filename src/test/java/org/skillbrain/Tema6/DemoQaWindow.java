@@ -1,60 +1,73 @@
 package org.skillbrain.Tema6;
 
-import Utilities.Utils;
+import org.skillbrain.Tema7.Utils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
-import java.util.Set;
+import java.io.IOException;
 
-//Ex3
 public class DemoQaWindow extends Utils {
-
-    static ChromeDriver driver = null;
 
     public static void main(String[] args) throws Exception {
 
-
-        navigateToDemoQAWindowPage();
-        clickOnNewTabButton();
-        closeBrowser();
-    }
-
-    public static void navigateToDemoQAWindowPage() {
-
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-        ChromeDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        WebDriver driver = new ChromeDriver();
+        Actions actions = new Actions(driver);
+        String mainWindowHandle = driver.getWindowHandle();
         driver.get("https://demoqa.com/browser-windows");
-        System.out.println("Am deschis Demo QA window page!");
-    }
 
-    public static void clickOnNewTabButton() {
-        //get parent tab id
-        String parentTab = driver.getWindowHandle();
-        WebElement newTabButton = driver.findElement(By.id("tabButton"));
-        //open new tab
-        newTabButton.click();
-        //get tab list ids
-        Set<String> tabs = driver.getWindowHandles();
-        for (String tab : tabs) {
-            //switch focus to new tab, get heading text and close the tab
-            if(!tab.equals(parentTab)) {
-                //switch focus to new tab
-                driver.switchTo().window(tab);
-                WebElement newTabHeading = driver.findElement(By.id("sampleHeading"));
-                System.out.println("Text de pe noul tab " + newTabHeading.getText());
-                driver.close();
+
+        try {
+
+
+            driver.findElement(By.id("tabButton")).click();
+
+            for (String windowHandle : driver.getWindowHandles()) {
+                if (!windowHandle.equals(mainWindowHandle)) {
+                    driver.switchTo().window(windowHandle);
+                    break;
+                }
             }
+
+            System.out.println(driver.findElement(By.id("sampleHeading")).getText());
+            driver.close();
+            driver.switchTo().window(mainWindowHandle);
+
+
+            driver.findElement(By.id("windowButton")).click();
+
+            for (String windowHandle : driver.getWindowHandles()) {
+                if (!windowHandle.equals(mainWindowHandle)) {
+                    driver.switchTo().window(windowHandle);
+                    break;
+                }
+            }
+            System.out.println(driver.findElement(By.xpath("//h1[@id='sampleHeading']")).getText());
+            driver.close();
+            driver.switchTo().window(mainWindowHandle);
+
+
+
+
+            driver.findElement(By.cssSelector("#messageWindowButton")).click();
+
+            for (String windowHandle : driver.getWindowHandles()) {
+                if (!windowHandle.equals(mainWindowHandle)) {
+                    driver.switchTo().window(windowHandle);
+                    break;
+                }
+            }
+            driver.close();
+
+        } catch (Exception e) {
+            try {
+                takeScreenshot(driver);
+            } catch (IOException io) {
+                System.out.println(io.getMessage());
+            }
+        } finally {
+            driver.quit();
         }
-        //switch back to parent tab to be able to make other actions
-        driver.switchTo().window(parentTab);
-        System.out.println("Am facut click pe new tab button");
     }
-
-    public static void closeBrowser() {
-        driver.quit();
-        System.out.println("Am inchis browserul!");
-    }
-
 }

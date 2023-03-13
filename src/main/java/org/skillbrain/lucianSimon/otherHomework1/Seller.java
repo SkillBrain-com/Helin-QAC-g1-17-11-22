@@ -1,4 +1,4 @@
-package org.skillbrain.lucianSimon.otherHomework;
+package org.skillbrain.lucianSimon.otherHomework1;
 
 public class Seller extends Employee {
 public double fixPart=0.2*150;

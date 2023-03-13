@@ -1,4 +1,4 @@
-package org.skillbrain.lucianSimon.otherHomework;
+package org.skillbrain.lucianSimon.otherHomework1;
 
 public class Warehouseman extends Employee {
 
