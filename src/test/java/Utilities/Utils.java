@@ -55,17 +55,12 @@ public class Utils {
         }
     }
 
-//  handle windows with Iterator
-//    public static void switchToWindow(WebDriver driver, String windowTitle) {
+//    handle windows with Iterator
+//    public static void switchToWindow(WebDriver driver) {
 //        Set<String> windowHandles = driver.getWindowHandles();
 //        Iterator<String> iterator = windowHandles.iterator();
-//        while (iterator.hasNext()) {
-//            String windowHandle = iterator.next();
-//            driver.switchTo().window(windowHandle);
-//            if (driver.getTitle().equals(windowTitle)) {
-//                break;
-//            }
-//        }
+//        String windowHandle = iterator.next();
+//        driver.switchTo().window(windowHandle);
 //    }
 }
 
