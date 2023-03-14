@@ -7,7 +7,9 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObject.DemoqaPage;
+import pageObjects.DemoqaPage;
+
+import java.io.IOException;
 
 public class AT115 extends Utils {
 
@@ -25,7 +27,7 @@ public class AT115 extends Utils {
     }
 
     @Test
-    public void RadiobuttonTest(){
+    public void RadiobuttonTest() throws IOException {
         driver.get("https://demoqa.com/");
         DemoqaPage page = new DemoqaPage(driver);
         page.elementCard.click();
