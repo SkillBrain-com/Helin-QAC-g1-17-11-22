@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment=" modificari Tema2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Annallis" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Birds" beforeDir="false" />
@@ -53,20 +52,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/gabri/IdeaProjects/Helin-QAC-g1-17-11-22/src/main/java/org/skillbrain&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gabri/IdeaProjects/Helin-QAC-g1-17-11-22/src/test/java/org/skillbrain&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "C:/Users/gabri/IdeaProjects/Helin-QAC-g1-17-11-22/src/main/java/org/skillbrain",
+    "last_opened_file_path": "C:/Users/gabri/IdeaProjects/Helin-QAC-g1-17-11-22/src/test/java/org/skillbrain",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.skillbrain" />
@@ -92,22 +90,25 @@
       <recent name="org.skillbrain.Tema5.TestNG" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="ElonToysCAR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.ElonToysCAR" />
+  <component name="RunManager" selected="TestNG.EmagTemaTest">
+    <configuration name="AT101GT" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Helin-QAC-g1-17-11-22" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.skillbrain.*" />
+          <option name="PATTERN" value="org.skillbrain.Tema7ChromeGrid.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.skillbrain.Tema7ChromeGrid" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.Tema7ChromeGrid.AT101GT" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmagTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.EmagTests" />
+    <configuration name="AT115GT" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Helin-QAC-g1-17-11-22" />
       <extension name="coverage">
         <pattern>
@@ -115,6 +116,28 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.skillbrain" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.AT115GT" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AT202GT" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Helin-QAC-g1-17-11-22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skillbrain.Tema7ChromeGrid.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.skillbrain.Tema7ChromeGrid" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.Tema7ChromeGrid.AT202GT" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,24 +153,6 @@
       <option name="PACKAGE_NAME" value="org.skillbrain.Tema5.TestNG" />
       <option name="MAIN_CLASS_NAME" value="org.skillbrain.Tema5.TestNG.EmagTemaTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmagTemaTest.conectareUtilizatorCorectTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Helin-QAC-g1-17-11-22" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.skillbrain.Tema5.TestNG.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.skillbrain.Tema5.TestNG" />
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.Tema5.TestNG.EmagTemaTest" />
-      <option name="METHOD_NAME" value="conectareUtilizatorCorectTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -174,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.EmagTemaTest.conectareUtilizatorGresitTest" />
-        <item itemvalue="TestNG.EmagTemaTest.conectareUtilizatorCorectTest" />
         <item itemvalue="TestNG.EmagTemaTest" />
-        <item itemvalue="Application.EmagTests" />
-        <item itemvalue="Application.ElonToysCAR" />
+        <item itemvalue="TestNG.AT101GT" />
+        <item itemvalue="TestNG.AT202GT" />
+        <item itemvalue="TestNG.AT115GT" />
+        <item itemvalue="TestNG.EmagTemaTest.conectareUtilizatorGresitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -338,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678811100312</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary=" modificari Tema2">
+      <created>1678819704727</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1678819704727</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
