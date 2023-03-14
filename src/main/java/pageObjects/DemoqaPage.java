@@ -24,21 +24,6 @@ public class DemoqaPage {
     private final static String  BROWSER_WINDOW_BUTTON = "(//li[@id='item-0'])[3]";
     private final static String NEWTAB = "tabButton";
     private final static String MESSAGE = "sampleHeading";
-
-    private static final String ELEMENTS_CARD = "(//div[@class='card mt-4 top-card'])[1]";
-    private static final String RADIO_BUTTON = "(//span[normalize-space()='Radio Button'])[1]";
-    private static final String YES_BUTTON = "label[for='yesRadio']";
-    private static final String IMPRESSIVE_BUTTON = "//label[normalize-space()='Impressive']";
-
-
-    @FindBy(xpath = IMPRESSIVE_BUTTON)
-    public WebElement impressiveButton;
-    @FindBy(css = YES_BUTTON)
-    public WebElement yesButton;
-    @FindBy(xpath = RADIO_BUTTON)
-    public WebElement radioButton;
-    @FindBy(xpath = ELEMENTS_CARD)
-    public WebElement elementCard;
     @FindBy(css=BANNER_IMAGE)
     public WebElement bannerImage;
 
