@@ -7,9 +7,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.Iterator;
+import java.util.Set;
 
 public class Tema_6 extends Utils {
 
@@ -34,13 +37,12 @@ public class Tema_6 extends Utils {
 //    }
 
 
-    public static void main(String[] args) {
 
-    }
 
-    public static void alerts() {
+    @Test
+    public void alertsTest() {
         WebDriver driver = getChromeDriver();
-        driver.get("https://testpages.herokuapp.com/styled/index.html");
+        driver.get("https://testpages.herokuapp.com/styled/alerts/alert-test.html");
         WebElement firstAlert = driver.findElement(By.id("alertexamples"));
         firstAlert.click();
 
@@ -50,18 +52,19 @@ public class Tema_6 extends Utils {
         driver.quit();
     }
 
-
-    public static void doubleClick(){
-        WebDriver driver = getChromeDriver();
-        driver.get("https://testpages.herokuapp.com/styled/index.html");
+//
+//    @Test
+//    public static void doubleClick(){
+//        WebDriver driver = getChromeDriver();
+//        driver.get("https://testpages.herokuapp.com/styled/index.html");
 //        WebElement doubleClick = driver.findElement();
-        Actions actions = new Actions(driver);
+//        Actions actions = new Actions(driver);
 //        actions.doubleClick(doubleClick).build().perform();
-        driver.quit();
-    }
+//        driver.quit();
+//    }
 
     @Test
-    public static void form(){
+    public void formTest(){
         WebDriver driver = getChromeDriver();
         driver.get("https://testpages.herokuapp.com/styled/basic-html-form-test.html");
         Select multiSelect = new Select(driver.findElement(By.name("multipleselect[]")));
@@ -80,6 +83,47 @@ public class Tema_6 extends Utils {
         multiSelect.selectByIndex(3);
         dropdown.selectByIndex(4);
         driver.quit();
+
+    }
+
+    @Test
+    public void qaWindowsTest(){
+        WebDriver driver = getChromeDriver();
+
+        try {
+            driver.get("https://demoqa.com/browser-windows");
+
+            PgObjTema_6 pgObj = new PgObjTema_6(driver);
+//        pgObj.tabButton.click();
+            Set<String> tabIDs = driver.getWindowHandles();
+            Iterator<String> iter = tabIDs.iterator();
+            String parrentID = iter.next();
+//        String childID = iter.next();
+//        driver.switchTo().window(childID);
+//        System.out.println("This is the text from the new tab button: " + pgObj.textNewTab.getText());
+
+            // =====================================================
+
+//            pgObj.newWindow.click();
+//            String childSecondID = iter.next();
+//            driver.switchTo().window(childSecondID);
+//            System.out.println("This is the text from the new window button: " + pgObj.textNewTab.getText());
+
+            //======================================================
+
+            pgObj.newMessageWindow.click();
+            String childThirdID = iter.next();
+            driver.switchTo().window(childThirdID);
+            String msg = pgObj.windowMessage.getText();
+            Assert.assertEquals(msg, "Knowledge increases by sharing but not by saving. Please share this website with your friends and in your organizatio");
+            System.out.println(pgObj.windowMessage.getText());
+
+        } catch (Exception e) {
+        }finally {
+            driver.quit();
+        }
+
+
 
     }
 

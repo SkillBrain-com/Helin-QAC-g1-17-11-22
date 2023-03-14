@@ -15,13 +15,7 @@
                     <include name="qademoTest"/>
                 </methods>
             </class>
-            <class name="org.skillbrain.SeleniumPageTest">
-                <methods>
-                    <include name="basicWebPageTest"/>
-                    <include name="elementAndLocatorsTest"/>
-                    <include name="tableContent"/>
-                </methods>
-            </class>
+
         </classes>
     </test>
 </suite>

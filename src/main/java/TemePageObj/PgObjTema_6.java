@@ -20,6 +20,14 @@ public class PgObjTema_6 {
 
     private static final String CHECK_BUTTONS = "checkboxes[]";
     private static final String RADIO_BUTTONS = "radioval";
+    // ========================================================================================================
+
+    private static final String NEW_WINDOW_BUTTON = "windowButton";
+    private static final String TAB_BUTTON = "tabButton";
+    private static final String TEXT_NEW_TAB = "sampleHeading";
+    private static final String NEW_MESSAGE_WINDOW_BUTTON = "messageWindowButton";
+    private static final String WINDOW_MESSAGE = "(//body)[1]";
+
 
 //    private static final String DROPDOWN = "dropdown";
 //    private static final String MULTI_SELECT = "multipleselect[]";
@@ -29,7 +37,18 @@ public class PgObjTema_6 {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(xpath = WINDOW_MESSAGE)
+    public WebElement windowMessage;
+    @FindBy(id = NEW_MESSAGE_WINDOW_BUTTON)
+    public WebElement newMessageWindow;
+    @FindBy(id = NEW_WINDOW_BUTTON)
+    public WebElement newWindow;
+    @FindBy(id = TEXT_NEW_TAB)
+    public WebElement textNewTab;
+    @FindBy(id = TAB_BUTTON)
+    public WebElement tabButton;
 
+//================================================================================================================
     @FindBy(id = FIRST_ALLERT_BUTTON)
     public WebElement firstAllertButton;
     @FindBy(id = ALLERT_WEB_PAGE)

@@ -30,10 +30,13 @@ public class Utils {
     }
 
     public static WebDriver getChromeDriver() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("start-maximized");
+        options.addArguments("--remote-allow-origins=*");
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        WebDriver driver = new ChromeDriver(options);
+//        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         return driver;
     }
 

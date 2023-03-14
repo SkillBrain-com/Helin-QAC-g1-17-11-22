@@ -44,6 +44,7 @@ public class EmagAndQADemoTest extends Utils {
         String msg = homePage.salutMsg.getText();
         Assert.assertEquals(msg, "Salut!");
 
+
         homePage.emailField.sendKeys("abc@email.com");
         homePage.loginContinue.click();
         wait.until(ExpectedConditions.visibilityOf(homePage.passwordMessage));
