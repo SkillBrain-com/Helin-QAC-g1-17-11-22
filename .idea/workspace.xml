@@ -4,17 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment="Adaugare modificari">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tema1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_3_2023_6_28_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_3_2023_6_28_PM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment=" modificari Tema2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomePage1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomePage1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Annallis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Birds" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Lasania" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTema.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTemaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema7ChromeGrid/EmagPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema7ChromeGrid/EmagPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema7ChromeGrid/EmagSecondTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema7ChromeGrid/EmagSecondTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagSecondTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagSecondTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/NewEmagPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/NewEmagPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +80,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.skillbrain" />
       <recent name="Utilitis" />
       <recent name="Utilites" />
       <recent name="" />
@@ -89,29 +96,16 @@
       <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\src\main\java\org\skillbrain" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.skillbrain.Tema7ChromeGrid" />
+      <recent name="org.skillbrain.Tema2" />
       <recent name="org.skillbrain" />
+      <recent name="org.skillbrain.Tema7ChromeGrid" />
       <recent name="org.skillbrain.Tema6ChromeOptions" />
       <recent name="org.skillbrain.Tema5.TestNG" />
-      <recent name="PageObjects" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Tema1">
-    <configuration name="Tema1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tema1" />
-      <module name="Helin-QAC-g1-17-11-22" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="xxxx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xxxx" />
-      <module name="Helin-QAC-g1-17-11-22" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmagSecondTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.EmagTemaTest.conectareUtilizatorGresitTest">
+    <configuration name="ElonToysCAR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.ElonToysCAR" />
       <module name="Helin-QAC-g1-17-11-22" />
       <extension name="coverage">
         <pattern>
@@ -119,11 +113,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.skillbrain" />
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.EmagSecondTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmagTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.EmagTests" />
+      <module name="Helin-QAC-g1-17-11-22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skillbrain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -163,13 +165,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EmagTemaTest.conectareUtilizatorGresitTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Helin-QAC-g1-17-11-22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skillbrain.Tema5.TestNG.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.skillbrain.Tema5.TestNG" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.Tema5.TestNG.EmagTemaTest" />
+      <option name="METHOD_NAME" value="conectareUtilizatorGresitTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Tema1" />
-        <item itemvalue="Application.xxxx" />
+        <item itemvalue="TestNG.EmagTemaTest.conectareUtilizatorGresitTest" />
         <item itemvalue="TestNG.EmagTemaTest.conectareUtilizatorCorectTest" />
         <item itemvalue="TestNG.EmagTemaTest" />
-        <item itemvalue="TestNG.EmagSecondTest" />
+        <item itemvalue="Application.EmagTests" />
+        <item itemvalue="Application.ElonToysCAR" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +328,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678388496948</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary=" modificari Tema1">
+      <created>1678572736948</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1678572736948</updated>
+    </task>
+    <task id="LOCAL-00020" summary=" modificari Tema2">
+      <created>1678621887017</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1678621887017</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,7 +363,9 @@
     <MESSAGE value="Commit Selenium1punct3.java si Selenium1punctele1si2.java&#10;Commit Tema 1&#10;Commit Tema4,Tema5,Tema6,Tema7&#10;Commit Tema2,Tema3,Tema4Selenium2punct1.java" />
     <MESSAGE value="Adaugare AT205GT" />
     <MESSAGE value="Adaugare modificari" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adaugare modificari" />
+    <MESSAGE value=" modificari Tema1" />
+    <MESSAGE value=" modificari Tema2" />
+    <option name="LAST_COMMIT_MESSAGE" value=" modificari Tema2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

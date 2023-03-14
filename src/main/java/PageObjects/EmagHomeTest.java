@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
  public class EmagHomeTest extends Utils {
 
-     private static final String ACCEPT_BUTTON = "btn.btn-primary.js-accept.gtm_h76e8zjgoo.btn-block";
+     // private static final String ACCEPT_BUTTON = "btn.btn-primary.js-accept.gtm_h76e8zjgoo.btn-block";
      private static final String GDPR_FOOTER = ".gdpr-cookie-banner.js-gdpr-cookie-banner.pad-sep-xs.pad-hrz-none.show";
      private static final String CLOSE_OFERTA_ZILEI = "//button[@class='close']";
 
@@ -34,8 +34,8 @@ import java.time.Duration;
 
      @FindBy(css=INTRARE_CONT_BANNER)
      public WebElement loginBanner;
-     @FindBy(css=ACCEPT_BUTTON)
-     public WebElement acceptButton;
+     // @FindBy(css=ACCEPT_BUTTON)
+     // public WebElement acceptButton;
 
      @FindBy(css = GDPR_FOOTER)
      public WebElement gdprFooter;

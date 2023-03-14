@@ -31,7 +31,7 @@ public class EmagTests extends Utils {
             homePage.gdprFooter.click();
 
             homePage.intraInContButton.click();
-            homePage.acceptButton.click();
+            // homePage.acceptButton.click();
             homePage.emagLogo.click();
             homePage.salutMsg.getText();
             System.out.println(" test finish  ");
@@ -40,7 +40,7 @@ public class EmagTests extends Utils {
             wait.until(ExpectedConditions.visibilityOf(homePage.emagLogo));
             wait.until(ExpectedConditions.visibilityOf(homePage.gdprFooter));
             wait.until(ExpectedConditions.visibilityOf(homePage.intraInCont));
-            wait.until(ExpectedConditions.visibilityOf(homePage.acceptButton));
+            // wait.until(ExpectedConditions.visibilityOf(homePage.acceptButton));
             wait.until(ExpectedConditions.visibilityOf(homePage.salutMsg));
 
 

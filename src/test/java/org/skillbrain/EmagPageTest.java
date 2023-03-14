@@ -32,11 +32,11 @@ public class EmagPageTest extends Utils {
             EmagHomePage homePage = new EmagHomePage(driver);
 
             homePage.gdprFooter.click();
-            homePage.acceptButton.click();
+            // homePage.acceptButton.click();
             driver.navigate().refresh();
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
             wait.until(ExpectedConditions.visibilityOf(homePage.gdprFooter)); // 2 s
-            homePage.acceptButton.click();
+            //  homePage.acceptButton.click();
             wait.until(ExpectedConditions.visibilityOf(homePage.loginBanner));
 
             System.out.println("Test finished.");

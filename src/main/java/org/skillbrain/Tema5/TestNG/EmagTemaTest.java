@@ -32,13 +32,13 @@ public class EmagTemaTest extends Utils{
         driver.get("https://www.emag.ro/");
         EmagTema page=new EmagTema(driver);
         // ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", page.email);
-        // page.acceptButton.click();
+        //  page.acceptButton.click();
         //  page.gdprFooter.click();
         page.email.click();
         page. introduAdresaDeEmail.click();
         System.out.println("gabrielajitea77@gmail.com");
         Thread.sleep(8000);
-        page.parola.click();
+        //page.parola.click();
 
         Set<String> listaId = driver.getWindowHandles();
         Iterator<String> iterator = listaId.iterator();
@@ -63,10 +63,10 @@ public class EmagTemaTest extends Utils{
     public void conectareUtilizatorGresitTest() throws InterruptedException {
         driver.get("https://www.emag.ro/");
         EmagTema page=new EmagTema(driver);
-        page.acceptButton.click();
-        page.gdprFooter.click();
+        // page.acceptButton.click();
+        // page.gdprFooter.click();
         page.intraInContDinNou.click();
-        page. introduAdresaDeEmail.click();
+        page. introduAdresaDeEmailDinNou.click();
         System.out.println("gabrielajitea7@gmail.com");
         Thread.sleep(8000);
         Set<String> listaId = driver.getWindowHandles();
