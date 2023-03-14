@@ -7,20 +7,9 @@
     <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment=" modificari Tema2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomePage1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomePage1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/EmagHomeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Annallis" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Birds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Lasania" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema5/TestNG/EmagTemaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema7ChromeGrid/EmagPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema7ChromeGrid/EmagPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema7ChromeGrid/EmagSecondTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema7ChromeGrid/EmagSecondTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagSecondTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagSecondTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/EmagTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/NewEmagPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/NewEmagPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +92,7 @@
       <recent name="org.skillbrain.Tema5.TestNG" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.EmagTemaTest.conectareUtilizatorGresitTest">
+  <component name="RunManager">
     <configuration name="ElonToysCAR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.skillbrain.ElonToysCAR" />
       <module name="Helin-QAC-g1-17-11-22" />
@@ -342,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678621887017</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary=" modificari Tema2">
+      <created>1678811100312</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1678811100312</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
