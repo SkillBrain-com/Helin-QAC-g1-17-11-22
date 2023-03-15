@@ -31,6 +31,7 @@ public class TestKatalonDemoPage extends Utils{
 
 
     // 2.1. Login from the menu in the upper right corner, with a valid username and password
+    // 2.2. Login from the menu in the upper right corner, with an invalid username and password
     @Test(dataProvider = "loginData")
     public void loginTest(String username, String password,String credentialType) throws IOException {
         driver.get(APP_URL);
@@ -61,25 +62,6 @@ public class TestKatalonDemoPage extends Utils{
         }
 
     }
-
-    // 2.2. Login from the menu in the upper right corner, with an invalid username and password
-//    @Test(dataProvider = "loginData")
-//    public void loginWithInvalidCredentialTest(String username, String password,String credentialType){
-//        driver.get(APP_URL);
-//        page.menuToggle.click();
-//        page.loginMenu.click();
-//        Assert.assertTrue(page.form.isDisplayed());
-//        page.userName.sendKeys(username);
-//        page.password.sendKeys(password);
-//        page.loginButtonForm.submit();
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//        if(credentialType.equals("invalidCredential")){
-//            page.loginErrorMessage.isDisplayed();
-//            Assert.assertEquals(driver.getCurrentUrl(),"https://katalon-demo-cura.herokuapp.com/#login");
-//            Assert.assertTrue(page.loginButtonForm.isDisplayed());
-//            System.out.println("Login with invalid credential Test passed");
-//        }
-//    }
 
 
     @AfterTest
