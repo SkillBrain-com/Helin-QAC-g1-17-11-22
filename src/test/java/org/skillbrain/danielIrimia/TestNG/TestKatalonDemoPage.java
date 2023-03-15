@@ -44,11 +44,11 @@ public class TestKatalonDemoPage extends Utils{
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         if(credentialType.equals("validCredential")){
             Assert.assertEquals(driver.getCurrentUrl(),"https://katalon-demo-cura.herokuapp.com/#appointment");
-            Assert.assertTrue(page.btnMakeAppointment.isDisplayed());
+            Assert.assertTrue(page.makeAppointmentBtn.isDisplayed());
+            takeScreenshot(driver);
             page.menuToggle.click();
             page.logoutMenu.click();
             Assert.assertEquals(driver.getCurrentUrl(),"https://katalon-demo-cura.herokuapp.com/");
-            takeScreenshot(driver);
             System.out.println("Login with valid credential Test passed");
         } else if (credentialType.equals("invalidCredential")) {
             page.userName.sendKeys(username);
@@ -60,9 +60,20 @@ public class TestKatalonDemoPage extends Utils{
             takeScreenshot(driver);
             System.out.println("Login with invalid credential Test passed");
         }
-
     }
 
+    // 2.3. The Make Appointment button will redirect the user to the login step,
+    // if he is not logged in when he clicks the button
+    // verifyAppointBtnWhenUserNotLoggedIn
+    @Test
+    public void verifyAppointBtnWhenUserNotLoggedIn () throws IOException {
+        driver.get(APP_URL);
+        page.makeAppointmentBtn.click();
+        Assert.assertEquals(driver.getCurrentUrl(),"https://katalon-demo-cura.herokuapp.com/profile.php#login");
+        Assert.assertTrue(page.form.isDisplayed());
+        takeScreenshot(driver);
+        System.out.println("Make Appointment Test passed");
+    }
 
     @AfterTest
     public void endTest(){

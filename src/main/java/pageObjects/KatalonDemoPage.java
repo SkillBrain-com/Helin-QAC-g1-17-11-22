@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class KatalonDemoPage {
 
 
-    private final static String BTN_MAKE_APPOINTMENT = "btn-make-appointment";
+    private final static String MAKE_APPOINTMENT_BTN = "btn-make-appointment";
     private final static String MENU_TOGGLE = "menu-toggle";
     private final static String HEALTHCARE_LINK ="//a[normalize-space()='CURA Healthcare']";
     private final static String HOME = "//a[normalize-space()='Home']";
@@ -87,8 +87,8 @@ public class KatalonDemoPage {
     public WebElement home;
     @FindBy(id = MENU_TOGGLE)
     public WebElement menuToggle;
-    @FindBy(id = BTN_MAKE_APPOINTMENT)
-    public WebElement btnMakeAppointment;
+    @FindBy(id = MAKE_APPOINTMENT_BTN)
+    public WebElement makeAppointmentBtn;
 
     public KatalonDemoPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
