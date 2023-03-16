@@ -38,9 +38,7 @@ public class LoginTest extends Utils {
         page.menuToggle.click();
         page.loginMenu.click();
         Assert.assertTrue(page.form.isDisplayed());
-        page.userName.sendKeys(username);
-        page.password.sendKeys(password);
-        page.loginButtonForm.submit();
+        page.login(username,password);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         if(credentialType.equals("validCredential")){
             Assert.assertEquals(driver.getCurrentUrl(),"https://katalon-demo-cura.herokuapp.com/#appointment");
@@ -51,14 +49,15 @@ public class LoginTest extends Utils {
             Assert.assertEquals(driver.getCurrentUrl(),"https://katalon-demo-cura.herokuapp.com/");
             System.out.println("Login with valid credential Test passed");
         } else if (credentialType.equals("invalidCredential")) {
-            page.userName.sendKeys(username);
-            page.password.sendKeys(password);
+            page.login(username,password);
             Assert.assertTrue(page.loginErrorMessage.isDisplayed());
             System.out.println(page.loginErrorMessage.getText());
             Assert.assertEquals(driver.getCurrentUrl(),"https://katalon-demo-cura.herokuapp.com/profile.php#login");
             Assert.assertTrue(page.loginButtonForm.isDisplayed());
             takeScreenshot(driver);
             System.out.println("Login with invalid credential Test passed");
+        } else {
+            System.out.println("Invalid credential type");
         }
     }
 
