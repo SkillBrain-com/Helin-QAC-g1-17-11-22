@@ -22,12 +22,12 @@ public class VerifyAppointBtnWhenUserNotLoggedIn extends Utils {
     }
 
     @Test
-    public void verifyAppointBtnWhenUserNotLoggedIn () throws IOException {
+    public void verifyMakeAppointBtnWhenUserNotLoggedIn () throws IOException {
         page.makeAppointmentBtn.click();
         Assert.assertEquals(driver.getCurrentUrl(),"https://katalon-demo-cura.herokuapp.com/profile.php#login");
         Assert.assertTrue(page.form.isDisplayed());
         takeScreenshot(driver);
-        System.out.println("Make Appointment Test passed");
+        System.out.println("Verify make appointment button when user is not logged in: Test passed");
     }
 
     @AfterTest
