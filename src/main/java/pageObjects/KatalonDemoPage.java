@@ -87,6 +87,14 @@ public class KatalonDemoPage {
     public WebElement menuToggle;
     @FindBy(id = MAKE_APPOINTMENT_BTN)
     public WebElement makeAppointmentBtn;
+    // login method for login page object
+    public void login (String username, String password) {
+        this.userName.sendKeys(username);
+        this.password.sendKeys(password);
+        loginButtonForm.click();
+    }
+
+
 
     public KatalonDemoPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
