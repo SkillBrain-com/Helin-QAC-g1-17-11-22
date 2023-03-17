@@ -34,7 +34,10 @@ public class KatalonDemoPage {
     private final static String GO_TO_HOMEPAGE = "//a[normalize-space()='Go to Homepage']";
     private final static String LOGOUT_MENU = "//a[@href='authenticate.php?logout']";
     private final static String LOGOUT_BTN = "(//a[@class='btn btn-default'])[1]";
+    private final static String SUMMARY = "summary";
 
+    @FindBy(id = SUMMARY)
+    public WebElement summary;
     @FindBy(xpath = LOGOUT_BTN)
     public WebElement logoutBtn;
     @FindBy(xpath = LOGOUT_MENU)
@@ -87,6 +90,8 @@ public class KatalonDemoPage {
     public WebElement menuToggle;
     @FindBy(id = MAKE_APPOINTMENT_BTN)
     public WebElement makeAppointmentBtn;
+
+
     // login method for login page object
     public void login (String username, String password) {
         this.userName.sendKeys(username);
