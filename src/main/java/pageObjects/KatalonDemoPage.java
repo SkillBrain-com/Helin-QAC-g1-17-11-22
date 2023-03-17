@@ -35,7 +35,10 @@ public class KatalonDemoPage {
     private final static String LOGOUT_MENU = "//a[@href='authenticate.php?logout']";
     private final static String LOGOUT_BTN = "(//a[@class='btn btn-default'])[1]";
     private final static String SUMMARY = "summary";
+    private final static String HISTORY_APPOINTMENT = "//a[normalize-space()='History']";
 
+    @FindBy(xpath = HISTORY_APPOINTMENT)
+    public WebElement historyAppointment;
     @FindBy(id = SUMMARY)
     public WebElement summary;
     @FindBy(xpath = LOGOUT_BTN)
