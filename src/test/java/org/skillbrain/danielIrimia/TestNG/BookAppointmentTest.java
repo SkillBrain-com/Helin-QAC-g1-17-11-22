@@ -2,11 +2,8 @@ package org.skillbrain.danielIrimia.TestNG;
 
 import Utilities.Utils;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pageObjects.KatalonDemoPage;
 
 import java.io.IOException;
@@ -17,44 +14,45 @@ public class BookAppointmentTest extends Utils {
     KatalonDemoPage page;
 
     @BeforeTest
-    public void startTest(){
+    public void startTest() {
         driver = getChromeDriver();
         page = new KatalonDemoPage(driver);
         driver.get(page.APP_URL);
     }
+
     // 2.4. Different positive and negative booking scenarios will be tested
     // (at least 1 positive scenario and one negative scenario)
-    @Test
-    public void verifyBooking() throws IOException {
-        Actions action = new Actions(driver);
-        page.menuToggle.click();
-        page.loginMenu.click();
-        Assert.assertTrue(page.form.isDisplayed());
-        page.userName.sendKeys("John Doe");
-        page.password.sendKeys("ThisIsNotAPassword");
-        page.loginButtonForm.submit();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        Assert.assertEquals(driver.getCurrentUrl(),"https://katalon-demo-cura.herokuapp.com/#appointment");
-        Assert.assertTrue(page.makeAppointmentBtn.isDisplayed());
+    // 2.4.1. Positive scenario: Booking an appointment with valid data
+    // 2.4.2. Negative scenario: Booking an appointment with invalid data
+    @DataProvider(name = "bookAppointmentData")
+    public Object[][] bookAppointmentData() {
+        return new Object[][]{
+                {"28/03/2023", "Test comment"},
+        };
+    }
+
+    @Test(dataProvider = "bookAppointmentData")
+    public void validBookAppointment(String date, String comment) throws IOException {
         page.makeAppointmentBtn.click();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://katalon-demo-cura.herokuapp.com/#appointment");
-        Assert.assertTrue(page.makeAppointmentBtn.isDisplayed());
-        action.moveToElement(page.facilityDropdown).click().perform();
-        action.scrollToElement(page.selectComboFacilitySeoul).click();
+        page.login("John Doe", "ThisIsNotAPassword");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        page.facilityDropdown.click();
+        page.facilityDropdown.sendKeys("Tokyo CURA Healthcare Center");
         page.checkboxHospitalReadmission.click();
-        page.radioProgramMedicare.click();
+        page.radioProgramMedicaid.click();
         page.datePickerVisitDate.click();
-        page.datePickerVisitDate.sendKeys("12/12/2020");
-        page.appointmentTxtComment.sendKeys("This is a comment");
+        page.datePickerVisitDate.sendKeys(date);
+        page.appointmentTxtComment.sendKeys(comment);
         page.bookAppointmentBtn.click();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://katalon-demo-cura.herokuapp.com/appointment.php#summary");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        Assert.assertEquals(driver.getCurrentUrl(), "https://katalon-demo-cura.herokuapp.com/appointment.php#summary");
         Assert.assertTrue(page.goToHomepage.isDisplayed());
         takeScreenshot(driver);
-        System.out.println("Booking Test passed");
+        System.out.println("Book appointment with valid data Test passed");
     }
 
     @AfterTest
-    public void endTest(){
+    public void endTest() {
         driver.quit();
     }
 }
