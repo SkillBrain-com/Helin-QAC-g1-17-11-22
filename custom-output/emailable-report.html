@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Desktop</th></tr>
+<tr><td><a href="#t0">Test desktop</a></td><td class="num">0</td><td class="num attn">5</td><td class="num">0</td><td class="num">0</td><td class="num">66,356</td><td></td><td>Mobile</td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Desktop</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test desktop &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">bogdanSandu.tests.tema8.tests.BasicAjaxPageTest</td><td><a href="#m0">beforeMethodWithLogin</a></td><td rowspan="1">1678786633755</td><td rowspan="1">15722</td></tr><tr class="failedodd"><td rowspan="1">bogdanSandu.tests.tema8.tests.DynamicButtonsDisabledPageTest</td><td><a href="#m1">beforeMethodWithLogin</a></td><td rowspan="1">1678786690240</td><td rowspan="1">9779</td></tr><tr class="failedeven"><td rowspan="1">bogdanSandu.tests.tema8.tests.DynamicButtonsSimplePageTest</td><td><a href="#m2">beforeMethodWithLogin</a></td><td rowspan="1">1678786670048</td><td rowspan="1">20186</td></tr><tr class="failedodd"><td rowspan="1">bogdanSandu.tests.tema8.tests.RedirectTest</td><td><a href="#m3">beforeMethodWithLogin</a></td><td rowspan="1">1678786649510</td><td rowspan="1">9170</td></tr><tr class="failedeven"><td rowspan="1">bogdanSandu.tests.tema8.tests.RefreshTest</td><td><a href="#m4">beforeMethodWithLogin</a></td><td rowspan="1">1678786658687</td><td rowspan="1">11353</td></tr><tr><th colspan="4">Test desktop &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">bogdanSandu.tests.tema8.tests.BasicAjaxPageTest</td><td><a href="#m5">codeItInTestForDesktop</a></td><td rowspan="1">1678786649497</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">bogdanSandu.tests.tema8.tests.DynamicButtonsDisabledPageTest</td><td><a href="#m6">dynamicButtonDisabledTestForDesktop</a></td><td rowspan="1">1678786700022</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">bogdanSandu.tests.tema8.tests.DynamicButtonsSimplePageTest</td><td><a href="#m7">dynamicButtonsTestForDesktop</a></td><td rowspan="1">1678786690237</td><td rowspan="1">1</td></tr><tr class="skippedodd"><td rowspan="1">bogdanSandu.tests.tema8.tests.RedirectTest</td><td><a href="#m8">redirectButtonsTestForDesktop</a></td><td rowspan="1">1678786658683</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">bogdanSandu.tests.tema8.tests.RefreshTest</td><td><a href="#m9">refreshTestForDesktop</a></td><td rowspan="1">1678786670043</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Test desktop</h2><h3 id="m0">bogdanSandu.tests.tema8.tests.BasicAjaxPageTest#beforeMethodWithLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:57949/devtools/browser/6a0a4f0d-7d36-4468-b9f7-cca31f4da1b4
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:71)
+	at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+	at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">bogdanSandu.tests.tema8.tests.DynamicButtonsDisabledPageTest#beforeMethodWithLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:58036/devtools/browser/818468d4-cbd5-4fd7-ad55-e969a0f0dd7c
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:71)
+	at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+	at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">bogdanSandu.tests.tema8.tests.DynamicButtonsSimplePageTest#beforeMethodWithLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:58015/devtools/browser/c470d30a-dd87-48a6-b12b-f579abd3701b
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:71)
+	at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+	at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">bogdanSandu.tests.tema8.tests.RedirectTest#beforeMethodWithLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:57970/devtools/browser/37ffb221-62f5-43d3-afce-cf76a23bccb4
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:71)
+	at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+	at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">bogdanSandu.tests.tema8.tests.RefreshTest#beforeMethodWithLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:57989/devtools/browser/43f8b26a-6c8e-4250-87e7-32e6af7099b5
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:71)
+	at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+	at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">bogdanSandu.tests.tema8.tests.BasicAjaxPageTest#codeItInTestForDesktop</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:57949/devtools/browser/6a0a4f0d-7d36-4468-b9f7-cca31f4da1b4
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:71)
+	at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+	at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">bogdanSandu.tests.tema8.tests.DynamicButtonsDisabledPageTest#dynamicButtonDisabledTestForDesktop</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:58036/devtools/browser/818468d4-cbd5-4fd7-ad55-e969a0f0dd7c
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:71)
+	at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+	at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">bogdanSandu.tests.tema8.tests.DynamicButtonsSimplePageTest#dynamicButtonsTestForDesktop</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:58015/devtools/browser/c470d30a-dd87-48a6-b12b-f579abd3701b
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:71)
+	at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+	at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">bogdanSandu.tests.tema8.tests.RedirectTest#redirectButtonsTestForDesktop</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:57970/devtools/browser/37ffb221-62f5-43d3-afce-cf76a23bccb4
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:71)
+	at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+	at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">bogdanSandu.tests.tema8.tests.RefreshTest#refreshTestForDesktop</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:57989/devtools/browser/43f8b26a-6c8e-4250-87e7-32e6af7099b5
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:71)
+	at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+	at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

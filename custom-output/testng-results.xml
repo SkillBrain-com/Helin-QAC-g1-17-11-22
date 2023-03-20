@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="10" passed="0" failed="0" skipped="5">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-14T11:37:13 EET" name="Desktop" finished-at="2023-03-14T11:38:20 EET" duration-ms="66356">
+    <groups>
+      <group name="Desktop">
+        <method signature="BasicAjaxPageTest.codeItInTestForDesktop()[pri:0, instance:bogdanSandu.tests.tema8.tests.BasicAjaxPageTest@1622f1b]" name="codeItInTestForDesktop" class="bogdanSandu.tests.tema8.tests.BasicAjaxPageTest"/>
+        <method signature="DynamicButtonsDisabledPageTest.dynamicButtonDisabledTestForDesktop()[pri:0, instance:bogdanSandu.tests.tema8.tests.DynamicButtonsDisabledPageTest@647e447]" name="dynamicButtonDisabledTestForDesktop" class="bogdanSandu.tests.tema8.tests.DynamicButtonsDisabledPageTest"/>
+        <method signature="DynamicButtonsSimplePageTest.dynamicButtonsTestForDesktop()[pri:0, instance:bogdanSandu.tests.tema8.tests.DynamicButtonsSimplePageTest@3427b02d]" name="dynamicButtonsTestForDesktop" class="bogdanSandu.tests.tema8.tests.DynamicButtonsSimplePageTest"/>
+        <method signature="RedirectTest.redirectButtonsTestForDesktop()[pri:0, instance:bogdanSandu.tests.tema8.tests.RedirectTest@7ed7259e]" name="redirectButtonsTestForDesktop" class="bogdanSandu.tests.tema8.tests.RedirectTest"/>
+        <method signature="RefreshTest.refreshTestForDesktop()[pri:0, instance:bogdanSandu.tests.tema8.tests.RefreshTest@28eaa59a]" name="refreshTestForDesktop" class="bogdanSandu.tests.tema8.tests.RefreshTest"/>
+      </group> <!-- Desktop -->
+    </groups>
+    <test started-at="2023-03-14T11:37:13 EET" name="Test desktop" finished-at="2023-03-14T11:38:20 EET" duration-ms="66356">
+      <class name="bogdanSandu.tests.tema8.tests.RefreshTest">
+        <test-method is-config="true" signature="beforeMethodWithLogin()[pri:0, instance:bogdanSandu.tests.tema8.tests.RefreshTest@28eaa59a]" started-at="2023-03-14T11:37:38 EET" name="beforeMethodWithLogin" finished-at="2023-03-14T11:37:50 EET" duration-ms="11353" status="FAIL">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:57989/devtools/browser/43f8b26a-6c8e-4250-87e7-32e6af7099b5
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:57989/devtools/browser/43f8b26a-6c8e-4250-87e7-32e6af7099b5
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodWithLogin -->
+        <test-method signature="refreshTestForDesktop()[pri:0, instance:bogdanSandu.tests.tema8.tests.RefreshTest@28eaa59a]" started-at="2023-03-14T11:37:50 EET" name="refreshTestForDesktop" finished-at="2023-03-14T11:37:50 EET" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:57989/devtools/browser/43f8b26a-6c8e-4250-87e7-32e6af7099b5
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:57989/devtools/browser/43f8b26a-6c8e-4250-87e7-32e6af7099b5
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshTestForDesktop -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:bogdanSandu.tests.tema8.tests.RefreshTest@28eaa59a]" started-at="2023-03-14T11:37:50 EET" name="afterMethod" finished-at="2023-03-14T11:37:50 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- bogdanSandu.tests.tema8.tests.RefreshTest -->
+      <class name="bogdanSandu.tests.tema8.tests.DynamicButtonsSimplePageTest">
+        <test-method is-config="true" signature="beforeMethodWithLogin()[pri:0, instance:bogdanSandu.tests.tema8.tests.DynamicButtonsSimplePageTest@3427b02d]" started-at="2023-03-14T11:37:50 EET" name="beforeMethodWithLogin" finished-at="2023-03-14T11:38:10 EET" duration-ms="20186" status="FAIL">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:58015/devtools/browser/c470d30a-dd87-48a6-b12b-f579abd3701b
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:58015/devtools/browser/c470d30a-dd87-48a6-b12b-f579abd3701b
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodWithLogin -->
+        <test-method signature="dynamicButtonsTestForDesktop()[pri:0, instance:bogdanSandu.tests.tema8.tests.DynamicButtonsSimplePageTest@3427b02d]" started-at="2023-03-14T11:38:10 EET" name="dynamicButtonsTestForDesktop" finished-at="2023-03-14T11:38:10 EET" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:58015/devtools/browser/c470d30a-dd87-48a6-b12b-f579abd3701b
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:58015/devtools/browser/c470d30a-dd87-48a6-b12b-f579abd3701b
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicButtonsTestForDesktop -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:bogdanSandu.tests.tema8.tests.DynamicButtonsSimplePageTest@3427b02d]" started-at="2023-03-14T11:38:10 EET" name="afterMethod" finished-at="2023-03-14T11:38:10 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- bogdanSandu.tests.tema8.tests.DynamicButtonsSimplePageTest -->
+      <class name="bogdanSandu.tests.tema8.tests.BasicAjaxPageTest">
+        <test-method is-config="true" signature="beforeMethodWithLogin()[pri:0, instance:bogdanSandu.tests.tema8.tests.BasicAjaxPageTest@1622f1b]" started-at="2023-03-14T11:37:13 EET" name="beforeMethodWithLogin" finished-at="2023-03-14T11:37:29 EET" duration-ms="15722" status="FAIL">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:57949/devtools/browser/6a0a4f0d-7d36-4468-b9f7-cca31f4da1b4
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:57949/devtools/browser/6a0a4f0d-7d36-4468-b9f7-cca31f4da1b4
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodWithLogin -->
+        <test-method signature="codeItInTestForDesktop()[pri:0, instance:bogdanSandu.tests.tema8.tests.BasicAjaxPageTest@1622f1b]" started-at="2023-03-14T11:37:29 EET" name="codeItInTestForDesktop" finished-at="2023-03-14T11:37:29 EET" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:57949/devtools/browser/6a0a4f0d-7d36-4468-b9f7-cca31f4da1b4
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:57949/devtools/browser/6a0a4f0d-7d36-4468-b9f7-cca31f4da1b4
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- codeItInTestForDesktop -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:bogdanSandu.tests.tema8.tests.BasicAjaxPageTest@1622f1b]" started-at="2023-03-14T11:37:29 EET" name="afterMethod" finished-at="2023-03-14T11:37:29 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- bogdanSandu.tests.tema8.tests.BasicAjaxPageTest -->
+      <class name="bogdanSandu.tests.tema8.tests.DynamicButtonsDisabledPageTest">
+        <test-method is-config="true" signature="beforeMethodWithLogin()[pri:0, instance:bogdanSandu.tests.tema8.tests.DynamicButtonsDisabledPageTest@647e447]" started-at="2023-03-14T11:38:10 EET" name="beforeMethodWithLogin" finished-at="2023-03-14T11:38:20 EET" duration-ms="9779" status="FAIL">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:58036/devtools/browser/818468d4-cbd5-4fd7-ad55-e969a0f0dd7c
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:58036/devtools/browser/818468d4-cbd5-4fd7-ad55-e969a0f0dd7c
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodWithLogin -->
+        <test-method signature="dynamicButtonDisabledTestForDesktop()[pri:0, instance:bogdanSandu.tests.tema8.tests.DynamicButtonsDisabledPageTest@647e447]" started-at="2023-03-14T11:38:20 EET" name="dynamicButtonDisabledTestForDesktop" finished-at="2023-03-14T11:38:20 EET" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:58036/devtools/browser/818468d4-cbd5-4fd7-ad55-e969a0f0dd7c
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:58036/devtools/browser/818468d4-cbd5-4fd7-ad55-e969a0f0dd7c
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicButtonDisabledTestForDesktop -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:bogdanSandu.tests.tema8.tests.DynamicButtonsDisabledPageTest@647e447]" started-at="2023-03-14T11:38:20 EET" name="afterMethod" finished-at="2023-03-14T11:38:20 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- bogdanSandu.tests.tema8.tests.DynamicButtonsDisabledPageTest -->
+      <class name="bogdanSandu.tests.tema8.tests.RedirectTest">
+        <test-method is-config="true" signature="beforeMethodWithLogin()[pri:0, instance:bogdanSandu.tests.tema8.tests.RedirectTest@7ed7259e]" started-at="2023-03-14T11:37:29 EET" name="beforeMethodWithLogin" finished-at="2023-03-14T11:37:38 EET" duration-ms="9170" status="FAIL">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:57970/devtools/browser/37ffb221-62f5-43d3-afce-cf76a23bccb4
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:57970/devtools/browser/37ffb221-62f5-43d3-afce-cf76a23bccb4
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodWithLogin -->
+        <test-method signature="redirectButtonsTestForDesktop()[pri:0, instance:bogdanSandu.tests.tema8.tests.RedirectTest@7ed7259e]" started-at="2023-03-14T11:37:38 EET" name="redirectButtonsTestForDesktop" finished-at="2023-03-14T11:37:38 EET" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:57970/devtools/browser/37ffb221-62f5-43d3-afce-cf76a23bccb4
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:57970/devtools/browser/37ffb221-62f5-43d3-afce-cf76a23bccb4
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+at bogdanSandu.driver.BrowserManager.getChromeDriverForDesktop(BrowserManager.java:23)
+at bogdanSandu.tests.tema8.tests.BaseTest.beforeMethodWithLogin(BaseTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirectButtonsTestForDesktop -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:bogdanSandu.tests.tema8.tests.RedirectTest@7ed7259e]" started-at="2023-03-14T11:37:38 EET" name="afterMethod" finished-at="2023-03-14T11:37:38 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- bogdanSandu.tests.tema8.tests.RedirectTest -->
+    </test> <!-- Test desktop -->
+  </suite> <!-- Desktop -->
+</testng-results>
