@@ -1,21 +1,21 @@
 package org.skillbrain.Tema8.tests;
 
 
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.skillbrain.lucianSimon.driver.WebdriverSet;
+import driver.WebdriverSet;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public abstract class BaseTest {
    // for tema 8
-    //protected ChromeDriver driver = null;
+    protected ChromeDriver driver = null;
 // for tema9
-    RemoteWebDriver driver;
+ //   RemoteWebDriver driver;
     @BeforeMethod
     public void AccesareURL(){
         //tema8
-      //  driver = WebdriverSet.getChromedriver();
-        driver= WebdriverSet.createRemoteWebDriver();
+        driver = WebdriverSet.getChromedriver();
+    //    driver= WebdriverSet.createRemoteWebDriver();
         driver.get("https://testpages.herokuapp.com/styled/index.html");
     }
 
