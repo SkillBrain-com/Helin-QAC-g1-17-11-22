@@ -26,6 +26,7 @@ public class AppTest extends Utils{
             driver.switchTo().window(childId);
             demoqaPage.goToRegistrationButton.click();
             demoqaPage.optionRomania.click();
+           takeScreenshot(driver);
             Thread.sleep(4000);
 
 

@@ -11,7 +11,7 @@ public class EmagHomePage {
        // WebDriver driver;
        private static final String CLOSE_OFERTA_ZILEI ="//button[@class='close']";
        private static final String INTRARE_IN_CONT =".js-dismiss-login-notice-btn.dismiss-btn.btn.btn-link.pad-sep-none.pad-hrz-none";
-       private static  final  String INTRARE_CONT_BANNER = ".gdpr-cookie-banner.js-gdpr-cookie-banner.pad-sep-xs.pad-hrz-none.login-view.login-view-ro.show";
+       private static  final  String INTRARE_CONT_BANNER = "//a[@class='font-size-ms strong login-btn btn btn-primary js-login-btn']";
        private static final String BANNER_INTRARE_BUTTON =".js-dismiss-login-notice-btn.dismiss-btn.btn.btn-link.pad-sep-none.pad-hrz-none";
        private static final String INTRARE_IN_CONT_BUTTON ="//a[@class ='font-size-ms strong login-btn btn btn-primary js-login-btn']";
        private static final String EMAG_LOGO ="//img[@alt='eMAG']";

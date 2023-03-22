@@ -10,7 +10,7 @@ public class Buttons extends Utils {
 
     public static void main(String[] args) {
         WebDriver driver = getChromeDriver();
-        try {
+
         System.setProperty("webdriver.chrome.driver ", "drivers/chromedriver.exe ");
         WebDriver driver1 = new ChromeDriver();
         driver.get("https://demoqa.com/buttons");
@@ -22,15 +22,12 @@ public class Buttons extends Utils {
         System.out.println("Clicked on Right Click me button the text shows: " +rightClickMe.getText());
         WebElement clickMeClickMe =driver.findElement(By.xpath("//div[3]/button"));
         clickMeClickMe.click();
-        // this is absolute path -WebElement clickMeClickMe = driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[3]/button"));
-        //clickMeClickMe.click();
         System.out.println("Clicked on  Click me button and text shown is: " +clickMeClickMe.getText());
-        driver.quit();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
+
+
             driver.quit();
-        }
+
+
 
     }
 }

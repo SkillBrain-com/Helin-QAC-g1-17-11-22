@@ -11,7 +11,7 @@ import java.time.Duration;
 public class EmagTest extends Utils {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         WebDriver driver = getChromeDriver();//sau
         // WebDriver driver = null;
 
@@ -25,22 +25,22 @@ public class EmagTest extends Utils {
             homePage.gdprFooter.click();
             homePage.acceptButton.click();
             driver.navigate().refresh();
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
             wait.until(ExpectedConditions.visibilityOf(homePage.gdprFooter));
             homePage.acceptButton.click();
             wait.until(ExpectedConditions.visibilityOf(homePage.loginBanner));
             homePage.intraInContButton.click();
             wait.until(ExpectedConditions.visibilityOf(homePage.emagLogo));
             System.out.println(homePage.salutMsg.getText());
-            //  Thread.sleep(6000);
+            Thread.sleep(9000);
             System.out.println("Test finished.");
-            //   if (homePage.loginBanner.isDisplayed()){
-            //       homePage.bannerCloseButton.click();
-            //   }
+               if (homePage.loginBanner.isDisplayed()){
+                   homePage.bannerCloseButton.click();
+               }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            driver.quit();
+           driver.quit();
         }
 
 

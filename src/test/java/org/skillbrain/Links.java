@@ -40,6 +40,7 @@ public class Links extends Utils {
             WebElement notFoundLink = driver.findElement(By.id("invalid-url"));
             System.out.println("Not found link displays:  " + notFoundLink.getText());
             notFoundLink.click();
+            takeScreenshot(driver);
             driver.close();
             driver.quit();
 

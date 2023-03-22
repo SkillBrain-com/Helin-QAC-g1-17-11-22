@@ -51,9 +51,9 @@ public class EmagPageTest  extends Utils {
         homePage.intraInContButton.click();
         wait.until(ExpectedConditions.visibilityOf(homePage.emagLogo));
         String text = homePage.salutMsg.getText();
-        //Assert.assertEquals(text,"Salut!");
+        Assert.assertEquals(text,"Salut!");
         System.out.println(homePage.salutMsg.getText());
-        //  Thread.sleep(6000);
+          //Thread.sleep(6000);
         System.out.println("Test finished.");
         driver.quit();
         }

@@ -24,14 +24,14 @@ public class Utilitati {
     }
 
       public static ChromeDriver getChromeImplicitwait(int duration){
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         ChromeDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(duration));
         return driver;
       }
 
       public static ChromeDriver getChromeDriver() {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver" );
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe" );
         // creez un obiect de tip  chrome driver
           return new ChromeDriver();
      }

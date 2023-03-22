@@ -6,8 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.List;
-
 public class Selenium {
 
 
@@ -36,26 +34,26 @@ public class Selenium {
                header.click();
 
         // testul2 accesam pagina:https://demoqa.com/Elements/Text Box
-       WebElement elements = driver.findElement(By.cssSelector(".card.mt-4.top-card"));
+     //  WebElement elements = driver.findElement(By.cssSelector(".card.mt-4.top-card"));
 //        Thread.sleep(2000);
-        elements.click();
-       WebElement textBox = driver.findElement(By.id("item-0")); // FARA #!!!
-        textBox.click();
+       // elements.click();
+      // WebElement textBox = driver.findElement(By.id("item-0")); // FARA #!!!
+        //textBox.click();
 //        Thread.sleep(2000);//este o metoda statica
 
         //testul3 completam campurile
         // sendKeys este metoda pentru a completa un camp
-       driver.findElement(By.id("userName")).sendKeys("panait stelian");
-        driver.findElement(By.id("userEmail")).sendKeys("email@email.com");
-        driver.findElement(By.id("currentAddress")).sendKeys("Home");
-        driver.findElement(By.id("permanentAddress")).sendKeys("Home");
+      // driver.findElement(By.id("userName")).sendKeys("panait stelian");
+      //  driver.findElement(By.id("userEmail")).sendKeys("email@email.com");
+      //  driver.findElement(By.id("currentAddress")).sendKeys("Home");
+      //  driver.findElement(By.id("permanentAddress")).sendKeys("Home");
 
 
         //test3 Verificam ca printeaza in consola datele introduce
-         List<WebElement>mbElement = driver.findElements(By.tagName("p"));
-         for(int i = 0;i < mbElement.size();i++){
-             System.out.println(mbElement.get(i).getText());
-         }
+       //  List<WebElement>mbElement = driver.findElements(By.tagName("p"));
+         //for(int i = 0;i < mbElement.size();i++){
+           //  System.out.println(mbElement.get(i).getText());
+         //}
 
              // test 4 accesam Check Box
         driver.findElement(By.xpath("(//li[@id='item-1'])[1]"));

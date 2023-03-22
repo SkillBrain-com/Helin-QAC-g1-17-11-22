@@ -22,7 +22,7 @@ public class Utils {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         System.out.println(System.getProperty("user.dir"));
     }
@@ -30,6 +30,7 @@ public class Utils {
 
 
         try {
+
             TakesScreenshot screenshot = (TakesScreenshot) driver;
             File sourse = screenshot.getScreenshotAs(OutputType.FILE);
             String destinationFile = System.getProperty("user.dir")
@@ -48,8 +49,8 @@ public class Utils {
         public static WebDriver getChromeDriver(){
             ChromeOptions options = new ChromeOptions();
              options.addArguments("start-maximized");
-       //      options.addArguments("--remote-allow-origins==*");
-        //     options.addArguments("--headless");
+            options.addArguments("--remote-allow-origins=*");
+        //    options.addArguments("--headless");
         //     options.setHeadless(true); browser invizibil
 
             System.out.println("Started chrome driver with version:" +options.getBrowserVersion());
@@ -57,7 +58,7 @@ public class Utils {
             WebDriver driver =new ChromeDriver();// initializare
              driver.manage().window().maximize();
             // setam un wait global(implicit)
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
             return driver;
         }
 

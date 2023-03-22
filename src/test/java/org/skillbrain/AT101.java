@@ -38,6 +38,7 @@ public class AT101 extends Utils {
         takeScreenshot(driver);
         Alert alert = driver.switchTo().alert();// switch pe tereastre de alert
         alert.accept();  //OK din pagina de alert
+           takeScreenshot(driver);
         System.out.println("Test finished!");
 
 
