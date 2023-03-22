@@ -6,7 +6,7 @@
       <class name="org.skillbrain.EmagPageTest">
         <methods>
           <include name="initializedriver"/>
-          <include name="parameterTest" invocation-numbers="0 1 2 3 4"/>
+          <include name="parameterTest"/>
           <include name="emagPageTest"/>
           <include name="emagSecondTest"/>
           <include name="closeDriver"/>
