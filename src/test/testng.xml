@@ -7,6 +7,7 @@
             <class name="org.skillbrain.danielIrimia.EmagPageTest" />
             <class name="org.skillbrain.danielIrimia.ButtonsTest"/>
             <class name="org.skillbrain.danielIrimia.EmagSecondTest"/>
+            <class name="org.skillbrain.danielIrimia.TestNG.LoginTest"/>
         </classes>
     </test>
 </suite>

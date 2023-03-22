@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class DemoqaPage {
 
+    public final static String APP_URL = "https://demoqa.com/";
     private final static String BANNER_IMAGE = ".banner-image";
     private final static String GO_TO_REGISTRATION = "//a[normalize-space()='Go To Registration']";
 
@@ -148,7 +149,6 @@ public class DemoqaPage {
     @FindBy(tagName = MESSAGE_FROM_WINDOW_MS_BT)
     public WebElement messageFromWindowMsBt;
     // end of Windos link variables declaration and initialization
-
 
     @FindBy(xpath = IMPRESSIVE_BUTTON)
     public WebElement impressiveButton;

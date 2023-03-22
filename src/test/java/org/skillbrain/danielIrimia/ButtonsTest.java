@@ -1,5 +1,6 @@
 package org.skillbrain.danielIrimia;
 
+import Utilities.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -8,28 +9,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.EmagHomePage;
 
 import java.net.MalformedURLException;
 
-import static Utilities.Utils.getRemoteWebDriver;
 
-public class ButtonsTest {
+public class ButtonsTest extends Utils {
 
 
     RemoteWebDriver driver;
-    EmagHomePage homePage;
-    WebDriverWait waitFor;
+    WebDriverWait wait;
 
     @BeforeTest
     public void initializeDriver() throws MalformedURLException {
         driver = getRemoteWebDriver();
-
-    }
-
-    @AfterTest
-    public void closeDriver(){
-        driver.quit();
     }
 
     @Test
@@ -49,9 +41,18 @@ public class ButtonsTest {
         actions.contextClick(rightClickMe).build().perform();
         String message = driver.findElement(By.tagName("p")).getText();
         System.out.println(message);
+
+        WebElement doubleClick = driver.findElement(By.id("doubleClickBtn"));
+        actions.doubleClick(doubleClick).build().perform();
+        String message2 = driver.findElement(By.tagName("p")).getText();
+
+        WebElement clickMe = driver.findElement(By.xpath("(//button[normalize-space()='Click Me'])[1]"));
+        actions.click(clickMe).build().perform();
+        String message3 = driver.findElement(By.tagName("p")).getText();
     }
 
-
-
-
+    @AfterTest
+    public void closeDriver(){
+        driver.quit();
+    }
 }
