@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment=" modificari Tema2">
+    <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment=" modificari xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Annallis" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Birds" beforeDir="false" />
@@ -57,7 +58,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_directory_selection": "C:/Users/gabri/IdeaProjects/Helin-QAC-g1-17-11-22/src/main/java/org/skillbrain",
-    "last_opened_file_path": "C:/Users/gabri/IdeaProjects/Helin-QAC-g1-17-11-22/src/test/java/org/skillbrain",
+    "last_opened_file_path": "C:/Users/gabri/IdeaProjects/Helin-QAC-g1-17-11-22",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -73,11 +74,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22" />
       <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\src\test\java\org\skillbrain" />
       <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\Grid" />
       <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\.idea\Grid" />
       <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\.idea\drivers\Grid" />
-      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\src\main\java\org\skillbrain" />
@@ -357,7 +358,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678824259680</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary=" modificari xm">
+      <created>1678824813928</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1678824813928</updated>
+    </task>
+    <task id="LOCAL-00025" summary=" modificari xml">
+      <created>1678824882805</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1678824882805</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -380,7 +395,8 @@
     <MESSAGE value="Adaugare modificari" />
     <MESSAGE value=" modificari Tema1" />
     <MESSAGE value=" modificari Tema2" />
-    <option name="LAST_COMMIT_MESSAGE" value=" modificari Tema2" />
+    <MESSAGE value=" modificari xml" />
+    <option name="LAST_COMMIT_MESSAGE" value=" modificari xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
