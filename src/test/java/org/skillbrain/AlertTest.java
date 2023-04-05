@@ -12,7 +12,7 @@ public class AlertTest extends Utils {
     private static ChromeDriver driver; // declar fara initializare
 
     public static void main(String[] args) throws IOException {
-        System.setProperty("webdriver.chrome.driver" , "drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver" , "drivers/chromedriver.exe");
         driver = new ChromeDriver();  // initilizare
         try {
             driver.manage().window().maximize();
