@@ -1,4 +1,4 @@
-package org.skillbrain.Tema7ChromeGrid;
+package org.skillbrain.Tema9ChromeGrid;
 
 import PageObjects.EmagHomePage;
 import Utilitis.Utils;

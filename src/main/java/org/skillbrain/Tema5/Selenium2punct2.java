@@ -1,4 +1,4 @@
-package org.skillbrain.Tema4;
+package org.skillbrain.Tema5;
 
 //  import jdk.internal.org.jline.terminal.Terminal;
 import org.apache.commons.io.FileUtils;
@@ -7,15 +7,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.Browser;
-import org.openqa.selenium.remote.ScreenshotException;
-import org.w3c.dom.html.HTMLInputElement;
-import org.w3c.dom.xpath.XPathNamespace;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+
 import java.time.LocalDateTime;
-import java.util.Objects;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.List;
 import java.io.File;

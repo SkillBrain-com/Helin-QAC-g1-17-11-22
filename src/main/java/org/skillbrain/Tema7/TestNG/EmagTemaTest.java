@@ -1,8 +1,7 @@
-package org.skillbrain.Tema5.TestNG;
+package org.skillbrain.Tema7.TestNG;
 
 import PageObjects.EmagTema;
 import Utilitis.Utils;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;

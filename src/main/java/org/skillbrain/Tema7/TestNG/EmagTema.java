@@ -1,4 +1,4 @@
-package org.skillbrain.Tema5.TestNG;
+package org.skillbrain.Tema7.TestNG;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -1,4 +1,4 @@
-package org.skillbrain.Tema6ChromeOptions;
+package org.skillbrain.Tema8ChromeOptions;
 
 import PageObjects.HerokuappTemaChromeOptins;
 import Utilitis.Utils;

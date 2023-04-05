@@ -1,4 +1,4 @@
-package org.skillbrain.Tema4;
+package org.skillbrain.Tema6;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;

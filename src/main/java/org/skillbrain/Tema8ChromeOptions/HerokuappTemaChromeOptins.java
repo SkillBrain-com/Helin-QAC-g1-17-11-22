@@ -1,4 +1,4 @@
-package org.skillbrain.Tema6ChromeOptions;
+package org.skillbrain.Tema8ChromeOptions;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
