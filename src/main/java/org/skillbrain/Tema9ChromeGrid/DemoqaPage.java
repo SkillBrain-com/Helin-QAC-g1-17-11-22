@@ -1,4 +1,4 @@
-package org.skillbrain.Tema7ChromeGrid;
+package org.skillbrain.Tema9ChromeGrid;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
