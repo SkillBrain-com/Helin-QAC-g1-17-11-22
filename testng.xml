@@ -3,27 +3,27 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/stelu/IdeaProjects/Helin-QAC-g1-17-11-22">
         <classes>
-            <class name="org.skillbrain.danaCatavei.AT101">
+            <class name="org.skillbrain.crinaSas.AT101">
                 <methods>
                     <include name="alertTest"/>
                 </methods>
             </class>
-            <class name="org.skillbrain.danaCatavei.AT101_Remote">
+            <class name="org.skillbrain.crinaSas.AT101_Remote">
                 <methods>
                     <include name="alertTest"/>
                 </methods>
             </class>
-            <class name="org.skillbrain.danaCatavei.AT202">
+            <class name="org.skillbrain.crinaSas.AT202">
                 <methods>
                     <include name="windowTest"/>
                 </methods>
             </class>
-            <class name="org.skillbrain.danaCatavei.AT202_Remote">
+            <class name="org.skillbrain.crinaSas.AT202_Remote">
                 <methods>
                     <include name="alertTest"/>
                 </methods>
             </class>
-            <class name="org.skillbrain.danaCatavei.eMagPageTest">
+            <class name="org.skillbrain.crinaSas.eMagPageTest">
                 <methods>
                     <include name="emagPageTest"/>
                     <include name="secondTest"/>
