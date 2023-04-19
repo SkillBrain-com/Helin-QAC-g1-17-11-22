@@ -9,8 +9,5 @@
         <module name="Helin-QAC-g1-17-11-22" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Helin-QAC-g1-17-11-22" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>
