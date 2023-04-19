@@ -19,8 +19,12 @@ import java.util.Set;
 
 public class Utils {
 
-    public static RemoteWebDriver getRemoteWebDriver() throws MalformedURLException {
-        return new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
+    public static RemoteWebDriver getRemoteWebDriver(){
+        try {
+            return new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static WebDriver getChromeDriver() {
