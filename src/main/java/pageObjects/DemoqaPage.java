@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class DemoqaPage {
 
-    public final static String APP_URL = "https://demoqa.com/";
+    public final static String APP_URL = "https://demoqa.com";
     private final static String BANNER_IMAGE = ".banner-image";
     private final static String GO_TO_REGISTRATION = "//a[normalize-space()='Go To Registration']";
 
