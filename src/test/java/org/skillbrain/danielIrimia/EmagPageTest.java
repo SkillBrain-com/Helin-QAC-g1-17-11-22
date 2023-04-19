@@ -89,8 +89,6 @@ public class EmagPageTest extends Utils {
         String abc ="abc";
     }
 
-
-
     @DataProvider(name ="endpointList")
     public Object[][] myEndpointProvider() {
         return new Object[][] {
