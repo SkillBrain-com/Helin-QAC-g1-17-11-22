@@ -1,3 +1,11 @@
 target/
 .DS_Store
+src/main/java
 Logs/
+ src/main/java/Calculus.java
+        src/main/java/SwitchTest.java
+        src/main/java/SwitchTestChild.java
+        src/main/java/TestInt.java
+        src/test/java/org/skillbrain/AT205.java
+        target/classes/SwitchTest.class
+        target/classes/SwitchTestChild.class
