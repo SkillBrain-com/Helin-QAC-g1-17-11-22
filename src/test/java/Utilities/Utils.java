@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Utils {
 
@@ -32,10 +33,18 @@ public class Utils {
         String destinationFile = null;
         TakesScreenshot screenshot = (TakesScreenshot) driver;
         File source = screenshot.getScreenshotAs(OutputType.FILE);
+        String DATE_FORMATTER = "yyyy-MM-dd-HHmmss";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMATTER);
+        String formatDateTime = LocalDateTime.now().format(formatter);
+        System.out.println("Formatted Time :" + formatDateTime);
+        int i=1;
         destinationFile = System.getProperty("user.dir")
-                + "/Logs/printScreen-" + LocalDateTime.now() + ".png";
+                + "/Logs/printScreen-" + formatDateTime.replace(":", "") + ".png";
         FileUtils.copyFile(source, new File(destinationFile));
+        i++;
     }
+
+
 
 
 }
