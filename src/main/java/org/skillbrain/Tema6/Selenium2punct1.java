@@ -52,7 +52,7 @@ public class Selenium2punct1 {
 
             System.out.println(driver.findElement(By.id("promptretval ")).getText());
 
-            try {//  driver.manage().window().maximize();
+            try { driver.manage().window().maximize();
                 driver.get("https://testpages.herokuapp.com/styled/index.html ");//
                 driver.findElement(By.id("alertButon")).click();
                 Alert alert2 = driver.switchTo().alert();//  driver.findElement(By.id("prompButton")).click();

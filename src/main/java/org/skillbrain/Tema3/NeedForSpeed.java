@@ -19,8 +19,7 @@ public class NeedForSpeed {
         System.out.println(car1.distanceCovered);
         System.out.println(car1.isDrained());
         NeedForSpeed nitrocar = nitro();
-        // nitrocar.drive();
-        // nitrocar.drive();
+
         for (int i = 0; i < 25; i++){
             nitrocar.drive();
         }
@@ -38,7 +37,7 @@ public class NeedForSpeed {
 
     public static NeedForSpeed nitro(){
         return new NeedForSpeed();
-        //  new NeedForSpeed(50, 4);
+
     }
     boolean isDrained(){
         if (battery <= 0){

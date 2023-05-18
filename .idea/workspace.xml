@@ -4,19 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment=" modificari xml">
-      <change afterPath="$PROJECT_DIR$/.idea/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/ElonToysCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Fighter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/NeedForSpeed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/PigLatin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/WizardsWarriors.java" afterDir="false" />
+    <list default="true" id="b966aecc-9e7e-419f-a6fb-7ae3bd670d8f" name="Changes" comment=" modificari Tema1&#10; modificari Tema2&#10; modificari Tema3&#10; modificari Tema5&#10; modificari Tema6">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Factorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/HerokuappTemaChromeOptins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/HerokuappTemaChromeOptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Notes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Annallis" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 2/Birds" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 3/Need for speed" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 3/Need for speed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 3/ElonToys" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema 3/pig latin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema3/NeedForSpeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema3/NeedForSpeed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema6/Selenium2punct1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema6/Selenium2punct1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema8ChromeOptions/HerokuappTemaChromeOptins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema8ChromeOptions/HerokuappTemaChromeOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema8ChromeOptions/HerokuappTemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skillbrain/Tema8ChromeOptions/HerokuappTemaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/skillbrain/HerokuappTemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/skillbrain/HerokuappTemaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/skillbrain/Tema4/Selenium1punct3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/skillbrain/Tema4/Selenium1punctele1si2.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_directory_selection": "C:/Users/gabri/IdeaProjects/Helin-QAC-g1-17-11-22/src/main/java/org/skillbrain",
-    "last_opened_file_path": "C:/Users/gabri/IdeaProjects/Helin-QAC-g1-17-11-22/.idea",
+    "last_opened_file_path": "C:/Users/gabri/IdeaProjects/Helin-QAC-g1-17-11-22/src/main/java/org/skillbrain",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -83,26 +87,26 @@
       <recent name="Utilites" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\.idea" />
-      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22" />
-      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\src\test\java\org\skillbrain" />
-      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\Grid" />
-      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\.idea\Grid" />
+      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\src\main\java\org\skillbrain" />
+      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\src\main\utils" />
+      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\src\main\java\org\skillbrain\Tema4" />
+      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\src\main\java\org\skillbrain\Tema3" />
+      <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\src\main\java\org\skillbrain\Tema 3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gabri\IdeaProjects\Helin-QAC-g1-17-11-22\src\main\java\org\skillbrain" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.skillbrain.Tema2" />
+      <recent name="org.skillbrain.Tema4" />
+      <recent name="org.skillbrain.Tema6" />
       <recent name="org.skillbrain" />
-      <recent name="org.skillbrain.Tema7ChromeGrid" />
-      <recent name="org.skillbrain.Tema6ChromeOptions" />
-      <recent name="org.skillbrain.Tema5.TestNG" />
+      <recent name="org.skillbrain.Tema3" />
+      <recent name="org.skillbrain.Tema2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WizardsWarriors">
-    <configuration name="ElonToys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.ElonToys" />
+  <component name="RunManager" selected="Application.NumerePrime">
+    <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.Factorial" />
       <module name="Helin-QAC-g1-17-11-22" />
       <extension name="coverage">
         <pattern>
@@ -114,8 +118,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElonToysCar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.ElonToysCar" />
+    <configuration name="NumerePrime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.NumerePrime" />
       <module name="Helin-QAC-g1-17-11-22" />
       <extension name="coverage">
         <pattern>
@@ -127,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Fighter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.Fighter" />
+    <configuration name="org.skillbrain.Tema6.Selenium2punct1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.Tema6.Selenium2punct1" />
       <module name="Helin-QAC-g1-17-11-22" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.skillbrain.*" />
+          <option name="PATTERN" value="org.skillbrain.Tema6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,39 +144,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NeedForSpeed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.NeedForSpeed" />
+    <configuration name="AT101GT" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Helin-QAC-g1-17-11-22" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.skillbrain.*" />
+          <option name="PATTERN" value="org.skillbrain.Tema9ChromeGrid.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.skillbrain.Tema9ChromeGrid" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.Tema9ChromeGrid.AT101GT" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WizardsWarriors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.skillbrain.WizardsWarriors" />
+    <configuration name="HerokuappTemaTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Helin-QAC-g1-17-11-22" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.skillbrain.*" />
+          <option name="PATTERN" value="org.skillbrain.Tema8ChromeOptions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.skillbrain.Tema8ChromeOptions" />
+      <option name="MAIN_CLASS_NAME" value="org.skillbrain.Tema8ChromeOptions.HerokuappTemaTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WizardsWarriors" />
-        <item itemvalue="Application.Fighter" />
-        <item itemvalue="Application.NeedForSpeed" />
-        <item itemvalue="Application.ElonToysCar" />
-        <item itemvalue="Application.ElonToys" />
+        <item itemvalue="Application.NumerePrime" />
+        <item itemvalue="Application.Factorial" />
+        <item itemvalue="TestNG.AT101GT" />
+        <item itemvalue="TestNG.HerokuappTemaTest" />
+        <item itemvalue="Application.org.skillbrain.Tema6.Selenium2punct1" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +379,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679746562888</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary=" modificari Tema1&#10; modificari Tema2&#10; modificari Tema3&#10; modificari Tema5&#10; modificari Tema6">
+      <created>1680729336785</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1680729336785</updated>
+    </task>
+    <task id="LOCAL-00028" summary=" modificari Tema1&#10; modificari Tema2&#10; modificari Tema3&#10; modificari Tema5&#10; modificari Tema6">
+      <created>1680729403871</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1680729403871</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -391,7 +417,8 @@
     <MESSAGE value=" modificari Tema1" />
     <MESSAGE value=" modificari Tema2" />
     <MESSAGE value=" modificari xml" />
-    <option name="LAST_COMMIT_MESSAGE" value=" modificari xml" />
+    <MESSAGE value=" modificari Tema1&#10; modificari Tema2&#10; modificari Tema3&#10; modificari Tema5&#10; modificari Tema6" />
+    <option name="LAST_COMMIT_MESSAGE" value=" modificari Tema1&#10; modificari Tema2&#10; modificari Tema3&#10; modificari Tema5&#10; modificari Tema6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

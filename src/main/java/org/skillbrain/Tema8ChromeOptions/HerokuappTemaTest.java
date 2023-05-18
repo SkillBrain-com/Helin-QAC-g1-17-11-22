@@ -1,6 +1,6 @@
 package org.skillbrain.Tema8ChromeOptions;
 
-import PageObjects.HerokuappTemaChromeOptins;
+import PageObjects.HerokuappTemaChromeOptions;
 import Utilitis.Utils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -34,7 +34,7 @@ public class HerokuappTemaTest extends Utils {
     @Test
     public void windowTest() {
         driver.get("https://testpages.herokuapp.com/styled/basic-html-form-test.html");
-        HerokuappTemaChromeOptins page = new HerokuappTemaChromeOptins(driver);
+        HerokuappTemaChromeOptions page = new HerokuappTemaChromeOptions(driver);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", page.userName);
         page.userName.click();
         page.password.click();

@@ -116,7 +116,7 @@ public class Notes {
     //https://github.com/SkillBrain-com/Helin-QAC-g1-17-11-22
     //script pt pauza scrol buton
     // ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",page.windowPanel);
-//
+// // TODO - Revizuieste codul cand revii la el
 //
 //
 //

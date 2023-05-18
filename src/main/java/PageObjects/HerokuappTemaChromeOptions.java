@@ -1,11 +1,15 @@
-package org.skillbrain.Tema8ChromeOptions;
+package PageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HerokuappTemaChromeOptins {
+import java.time.Duration;
+public class HerokuappTemaChromeOptions {
     private final static String USER_NAME="//input[@name='username']";
     private final static String PASSWORD="//input[@name='password']";
     private final static String COMMENT="//textarea[@name='comments']";
@@ -22,7 +26,7 @@ public WebElement comment;
 public WebElement submit;
 @FindBy(xpath = CHECK_BOX_1)
 public WebElement ckeckBox1;
-    public HerokuappTemaChromeOptins(WebDriver driver) {
+    public HerokuappTemaChromeOptions (WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 }
